@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'nav';
+
+
+@font-face {
+    font-family: Raleway-f;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-f;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+:root{
+    --index: calc(1vw+1vh); 
+    --button-color: #6844D0;
+}
+
+
+body{
+    color: #000;
+    background-color: #fff;
+    overflow-x: hidden;
+    font-family: Raleway-f;
+}
+
+.button {
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 1px solid #4A3AD1;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
