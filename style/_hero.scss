@@ -1,0 +1,91 @@
+.hero{
+    height: 610px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-main{
+    background: url(../img/main/hero.svg) center center/cover;
+    .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 14px 22px 14px;
+        background: #FFFFFF;
+        border-radius: 12px 0px 0px 12px;
+        gap: 36px;
+        right: 0;
+        position: absolute;
+        }
+}
+
+.hero-text{
+    margin-left: calc(var(--index)*11);
+    h1{
+        font-family: Raleway-f;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    p{
+        font-family: Raleway-f;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    
+        color: #FFFFFF;
+    }
+}
+
+// adaprive
+
+@media screen and (max-width: 960px) {
+    .hero-main{
+        background: url(../img/main/hero-mob.svg) center center/cover;
+        justify-content: center;
+        padding: calc(var(--index));
+        .link{
+            padding: 18px 35px 18px 35px;
+            gap: 64px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin-left: calc(var(--index)*10);
+            margin-right: calc(var(--index)*10);
+            max-height: 64px;
+            flex-direction: row;
+            border-radius: 12px 12px 0px 0px;
+            border: 0px;
+            img{
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .hero-text{
+            margin-left: 0px;
+            h1{
+                font-weight: 900;
+                font-size: 34px;
+                line-height: 41px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}

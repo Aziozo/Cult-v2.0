@@ -9,51 +9,171 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./dist/gsap.min.js" defer></script>
+    <script src="./dist/ScrollSmoother.min.js" defer></script>
+    <script src="./dist/ScrollTrigger.min.js" defer></script>
     <script src="./dist/app.js" defer></script>
     <title>Культурна Агенція</title>
 </head>
-<body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
-        </div>
-        <div class="nav-links">
-            <input type="checkbox" id="checkbox__toggle">
-            <label for="checkbox__toggle" class="hamburger">
-                <span class="nav-line">
-                </span>
-            </label>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list__item"><a href="./about.html">Про нас</a></li>
-                    <li class="menu-list__item"><a href="./projects.html">Проєкти</a></li>
-                    <li class="menu-list__item"><a href="./services.html">Послуги</a></li>
-                    <li class="menu-list__item"><a href="./partners.html">Партнери</a></li>
-                    <li class="menu-list__item"><a href="./news.html">Новини</a></li>
-                </ul>
-                <div class="menu-mobile">
-                    <button class="button">Підтримати</button>
-                    <div class="nav-lang">
-                        <div class="nav-lang__img">
-                            <img src="./img/lang__ua.svg" alt="">
-                        </div>
-                        <a href="#" class="lang lang-ua lang-active">UA</a>
-                        <a href="#" class="lang lang-eng">ENG</a>
+<body id="body">
+    <div class="wrapper">
+        <div class="content">
+<nav class="navbar">
+    <div class="navbar-logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+    </div>
+    <div class="nav-links">
+        <input type="checkbox" id="checkbox__toggle">
+        <label for="checkbox__toggle" class="hamburger">
+            <span class="nav-line">
+            </span>
+        </label>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-list__item main-page"><a href="./index.html">Головна</a></li>
+                <li class="menu-list__item"><a href="./about.html">Про нас</a></li>
+                <li class="menu-list__item"><a href="./projects.html">Проєкти</a></li>
+                <li class="menu-list__item"><a href="./services.html">Послуги</a></li>
+                <li class="menu-list__item"><a href="./partners.html">Партнери</a></li>
+                <li class="menu-list__item"><a href="./news.html">Новини</a></li>
+            </ul>
+            <div class="menu-mobile">
+                <button class="button">Підтримати</button>
+                <div class="nav-lang">
+                    <div class="nav-lang__img">
+                        <img src="./img/lang__ua.svg" alt="">
                     </div>
+                    <a href="#" class="lang lang-ua lang-active">UA</a>
+                    <a href="#" class="lang lang-eng">ENG</a>
                 </div>
             </div>
         </div>
-        <div class="nav-wrap">
-            <div class="nav-lang">
-                <div class="nav-lang__img">
-                    <img src="./img/lang__ua.svg" alt="">
-                </div>
-                <a href="#" class="lang-active">UA</a>
-                <a href="#" class="lang">ENG</a>
+    </div>
+    <div class="nav-wrap">
+        <div class="nav-lang">
+            <div class="nav-lang__img">
+                <img src="./img/lang__ua.svg" alt="">
             </div>
-            <a href="https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_cd4d68a17c01448283f68fc841b56e42" class="button nav-button">Підтримати</a>
+            <a href="#" class="lang-active">UA</a>
+            <a href="#" class="lang">ENG</a>
         </div>
-    </nav>
+        <a href="https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_cd4d68a17c01448283f68fc841b56e42"
+            class="button nav-button">Підтримати</a>
+    </div>
+</nav>
+<section class="hero hero-main">
+    <div class="hero-text">
+        <h1>Культурна Агенція</h1>
+        <p>Створюємо зв'язки та можливості</p>
+    </div>
+    <div class="link">
+        <a href="https://www.instagram.com/culturalagencya">
+            <img src="./img/main/igLogo.svg" alt="ig">
+        </a>
+        <a href="https://www.facebook.com/culturalagencya">
+            <img src="./img/main/fbLogo.svg" alt="ig">
+        </a>
+        <a href="mailto:info@agencya.org">
+            <img src="./img/main/emLogo.svg" alt="ig">
+        </a>
+    </div>
+</section>
+<div class="main-content">
+    <section class="about">
+        <div class="about-wrap">
+            <div class="about-text">
+                <h2 class="about-text__h2">Хто ми</h2>
+                <p class="about-text__p">Формально ми громадська організація, заснована у 2017 році в Харкові, а за
+                    суттю — люди, яких об'єднують цінності. За
+                    роки існування ми організували 20 фестивалів, буткемпи, які допомогли 150 командам реалізувати й
+                    посилити їхні проєкти.
+                    Наші події залучили 280 000 відвідувачів та 600 музикантів, діджеїв, лекторів. Хоча Агенція
+                    народилася і базувалася в
+                    Харкові, ми співпрацювали з громадськими та культурними діячами і діячками від Дружківки й
+                    Івано-Франківська до Малі та
+                    США.</p>
+            </div>
+            <a href="./about.html" class="button about-button">Детальніше</a>
+        </div>
+        <div class="about-img">
+            <img src="./img/main/about-img.svg">
+            <a class="button about-button__mobile">Детальніше</a>
+        </div>
+    </section>
+    <section class="projects">
+        <h2 class="projects__h2">Наші проєкти</h2>
+
+        <div class="projects-container owl-carousel">
+            <div class="projects-card" data-slide-index="0">
+                <div class="card-img">
+                    <img src="./img/main/navzaem-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">Навзаєм</h3>
+                    <p class="projects-card__dscr">Майданчик для комунікації фахівців креативної і культурної сфер</p>
+                </div>
+            </div>
+            <div class="projects-card" data-slide-index="1">
+                <div class="card-img">
+                    <img src="./img/main/planbfest-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">Plan B Fest</h3>
+                    <p class="projects-card__dscr">Міжнародний фестиваль соціальних інновацій та нової музики</p>
+                </div>
+            </div>
+            <div class="projects-card" data-slide-index="2">
+                <div class="card-img">
+                    <img src="./img/main/planbidea-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">Plan B Idea Boot Camp</h3>
+                    <p class="projects-card__dscr">Менторська програма для тих, хто хоче прокачати свій проєкт або
+                        реалізувати ідею.</p>
+                </div>
+            </div>
+            <div class="projects-card" data-slide-index="3">
+                <div class="card-img">
+                    <img src="./img/main/musicday-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">День Музики в Харкові</h3>
+                    <p class="projects-card__dscr">Частина міжнародного фестивалю Fete de la musique</p>
+                </div>
+            </div>
+            <div class="projects-card" data-slide-index="4">
+                <div class="card-img">
+                    <img src="./img/main/community-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">Community Party</h3>
+                    <p class="projects-card__dscr">Нетворкінг-вечірки для <br> культурної спільноти Харкова</p>
+                </div>
+            </div>
+            <div class="projects-card" data-slide-index="5">
+                <div class="card-img">
+                    <img src="./img/main/planbdvir-project.svg" alt="">
+                </div>
+                <div class="card-dscr">
+                    <h3 class="projects-card__name">Plan B Dvir</h3>
+                    <p class="projects-card__dscr">Відкритий майданчик для проведення подій, офіс культурних і
+                        соціальних ініціатив</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+        </div>
+    </div>
+   
+
+<!-- -------projects------- -->
+
+
+<script src="/dist/jquery.js"></script>
+<script src="./dist/owl.carousel.min.js"></script>
 </body>
 </html>
