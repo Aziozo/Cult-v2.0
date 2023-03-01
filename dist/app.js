@@ -1,20 +1,18 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-
+// ------- ScrollSmoother -----------
 ScrollSmoother.create({
     wrapper: '.wrapper',
-    content: '.content'
+    content: '.content',
+    smooth: 1.6,  
+    smoothTouch: 0.1,    
 })
-
-
-
-
 
 window.onload = function () {
             let link = document.createElement("link");
             link.href = "./style/style.css";      /**** your CSS file ****/
             link.rel = "stylesheet";
             link.type = "text/css";
-        }
+}
 
 // ------- project carousel -----------
 $(document).ready(function() {
@@ -31,7 +29,7 @@ $(document).ready(function() {
         autoWidth:true,
         loop:true,
         items: 1,
-        rows: 1 //custom option not used by Owl Carousel, but used by the algorithm below
+        rows: 2 //custom option not used by Owl Carousel, but used by the algorithm below
       },
       960: {
         items: 3,
@@ -152,3 +150,46 @@ $(document).ready(function() {
   //init
   carousel = el.owlCarousel(carouselOptions);
 });
+
+// ------- services carousel -----------
+$('.services-carousel').owlCarousel({
+    loop:false,
+    items: 4,
+    autoWidth:true,
+    stagePadding: 0,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            autoWidth:false,
+            loop:true,
+            items:1,
+            nav: true,
+        },
+        960:{
+            items:5
+        }
+    }
+})
+
+// ------- payment -----------
+
+    // ------- payment-carousel ----------- 
+     $('.payment-carousel').owlCarousel({
+            loop: true,
+            autoWidth: true,
+            mouseDrag: false,
+            nav: false,
+            autoplay: false,
+            autoplayHoverPause: false,
+            
+        })
+        var owl = $('.payment-carousel');
+        owl.owlCarousel();
+        owl.on('translate.payment-carousel', function (event) {
+        $('payment-carousel .owl-nav button').prop('disabled', true);
+        })
+        owl.on('translated.payment-carousel', function (event) {
+        $('payment-carousel .owl-nav button').prop('disabled', false);
+        $('#liqpay-project h1').html($('.active h2').text());
+        })

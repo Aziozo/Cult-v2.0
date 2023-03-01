@@ -8,8 +8,6 @@ h2{
     color: #000000;
 }
 
-
-
 // ---------------about------------------
 
 .about{
@@ -151,6 +149,13 @@ h2{
             letter-spacing: 0.02em;
         }
 
+        .projects-card{
+            margin-bottom: 15px;
+        }
+       .projects-container{
+        margin-top: 15px;
+       }
+
         .owl-nav{
             position: relative;
         }
@@ -182,7 +187,7 @@ h2{
             border-radius: 50%;
             
         }
-        
+
         .owl-next{
             right:calc(var(--index)*15);
         }
@@ -194,13 +199,200 @@ h2{
 
 }
 
+// ---------------services------------------
+
+.services{
+    .services-descr{
+        display: flex;
+        justify-content: space-between;
+    }
+    .services__p{
+        max-width: 760px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+    }
+
+    .services-carousel{
+        margin-top: 54px;
+    }
+
+    .slide{
+        h3{
+            font-family: Raleway-f;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        img{
+            margin-top: 12px;
+            width: 255px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .services{
+        .services-descr{
+            flex-direction: column;
+            .services__p{
+                margin-top: 24px;
+            }
+        }
+       
+        .owl-nav {
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            z-index: 200;
+        }
+
+        .owl-dots {
+            display: flex;
+            width: 100%;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            bottom: -40px;
+            z-index: 100;
+            gap: 7px;
+
+            .active {
+                background: #4A3AD1 !important;
+            }
+        }
+
+        .owl-dot {
+            width: 7px;
+            height: 7px;
+            background: #D9D9D9 !important;
+            border-radius: 50%;
+
+        }
+
+        .owl-next {
+            right: calc(var(--index)*15);
+        }
+
+        .owl-prev {
+            left: calc(var(--index)*15);
+        }
+    }
+}
+
+// ---------------partners------------------
+
+
+.partners{
+    .partners-mobile{
+        display: none;
+    }
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    .partners-logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .partners-desr{
+        max-width: 443px;
+        .partners__p{
+            margin-top: 14px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+        }
+    }
+    .partners-button{
+        margin-top: 32px;
+        width: 206px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .partners{
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        .partners__h2 {
+            display: none;
+        }
+    
+        .partners-mobile {
+            display: block !important;
+        }
+    
+        .partners-button {
+            width: 100%;
+            height: 69px;
+        }
+    }
+    
+}
+
+// ---------------support+payment------------------
+
+.support{
+    .support__p{
+        margin-top: 14px;
+    }
+}
+
+.payment{
+    .payment-carousel{
+        border-radius: 18px;
+        max-width: 350px;
+        height: 329px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ---------------owl-navigation------------------
+
 .owl-next,
 .owl-prev {
     span {
         display: none;
     }
-
     width: 72px;
     height: 48px;
     border: 1px solid #6844D0 !important;
@@ -213,4 +405,8 @@ h2{
 
 .owl-prev {
     background: url(../img/prev.svg) no-repeat center !important;
+}
+
+.disabled{
+    display: none;
 }
