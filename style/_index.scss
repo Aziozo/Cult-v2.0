@@ -98,6 +98,7 @@ h2{
 
 // ---------------projects------------------
 .projects{
+    margin-top: 72px;
     .projects-container{
         margin-top: 32px;
     }
@@ -139,4 +140,77 @@ h2{
     .card-dscr{
         padding: 18px 16px;
     }
+}
+
+@media screen and (max-width: 960px){
+    .projects{
+        .projects__h2 {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.02em;
+        }
+
+        .owl-nav{
+            position: relative;
+        }
+
+        .owl-next,
+        .owl-prev{
+            position: absolute;
+            z-index: 200;
+        }
+
+        .owl-dots{
+            display: flex;
+            width: 100%;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            bottom: -24px;
+            z-index: 100;
+            gap: 7px;
+            .active {
+                    background: #4A3AD1 !important;
+                }
+        }
+
+        .owl-dot{
+            width: 7px;
+            height: 7px;
+            background: #D9D9D9 !important;
+            border-radius: 50%;
+            
+        }
+        
+        .owl-next{
+            right:calc(var(--index)*15);
+        }
+
+        .owl-prev{
+            left:calc(var(--index)*15);
+        }
+    }
+
+}
+
+// ---------------owl-navigation------------------
+.owl-next,
+.owl-prev {
+    span {
+        display: none;
+    }
+
+    width: 72px;
+    height: 48px;
+    border: 1px solid #6844D0 !important;
+    border-radius: 18px;
+}
+
+.owl-next {
+    background: url(../img/next.svg) no-repeat center !important;
+}
+
+.owl-prev {
+    background: url(../img/prev.svg) no-repeat center !important;
 }

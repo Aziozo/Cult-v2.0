@@ -26,12 +26,12 @@ $(document).ready(function() {
     nav: true,
     dots: true,
     slideBy: 'page',
-    animateOut: 'fadeOutRight',
-    animateIn: 'fadeInRLeft',
     responsive: {
       0: {
+        autoWidth:true,
+        loop:true,
         items: 1,
-        rows: 3 //custom option not used by Owl Carousel, but used by the algorithm below
+        rows: 1 //custom option not used by Owl Carousel, but used by the algorithm below
       },
       960: {
         items: 3,
