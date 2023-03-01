@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -13,7 +17,8 @@
   height: 100px;
 }
 .navbar .navbar-logo img {
-  width: calc(var(--index) * 10);
+  width: 156px;
+  height: 45px;
 }
 .navbar a {
   text-decoration: none;
@@ -75,34 +80,130 @@
 }
 
 .hamburger {
+  display: none;
   font-size: 24px;
   cursor: pointer;
 }
 
 .nav-line {
-  background-color: #000;
+  background-color: #4A3AD1;
   display: block;
   height: 2px;
   position: relative;
   width: 24px;
+  content: "";
 }
-.nav-line ::before,
-.nav-line ::after {
-  background-color: #000;
+.nav-line::before, .nav-line::after {
+  background-color: #4A3AD1;
   content: "";
   display: block;
   position: absolute;
-  transition: all 0.3s;
+  transition: al 0.3s;
   width: 100%;
-  height: 100%;
+  height: 2px;
 }
-.nav-line ::before {
+.nav-line::before {
   top: 7px;
 }
-.nav-line ::after {
+.nav-line::after {
   top: -7px;
 }
 
+@media screen and (max-width: 960px) {
+  .navbar {
+    justify-content: space-between;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+  .menu .menu-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 32px;
+    margin-top: 64px;
+    gap: 72px;
+    background: url(../img/burger-mobile__bg.svg) no-repeat right;
+    background-color: transparent;
+  }
+  .menu .menu-list__item {
+    font-family: "Raleway-f";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+  }
+  .menu .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu .menu-mobile .nav-lang {
+    display: flex;
+    margin-top: 85px;
+    align-items: center;
+  }
+  .menu .menu-mobile .nav-lang .lang-ua {
+    margin-right: 32px;
+  }
+  .menu .menu-mobile .nav-lang .nav-lang__img {
+    margin-right: 6px;
+  }
+  .menu .menu-mobile .nav-lang .lang {
+    font-family: Raleway-f;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
+  .menu .menu-mobile .nav-lang .lang-active {
+    font-family: Raleway-f;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
+  .menu .button {
+    width: 80%;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 116px;
+  }
+  #checkbox__toggle:checked ~ .menu {
+    display: block;
+    max-height: 100%;
+    transition: all 0.5s;
+  }
+  #checkbox__toggle:checked ~ .hamburger .nav-line {
+    background-color: transparent;
+  }
+  #checkbox__toggle:checked ~ .hamburger .nav-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #checkbox__toggle:checked ~ .hamburger .nav-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .hamburger {
+    display: block;
+    padding: 20px 0;
+  }
+  .nav-wrap {
+    display: none;
+  }
+}
 @font-face {
   font-family: Raleway-f;
   src: url(../fonts/Raleway-Regular.ttf);

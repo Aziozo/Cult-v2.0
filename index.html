@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./dist/app.js" defer></script>
     <title>Культурна Агенція</title>
 </head>
@@ -21,7 +20,10 @@
         </div>
         <div class="nav-links">
             <input type="checkbox" id="checkbox__toggle">
-            <label for="checkbox__toggle" class="hamburger"><span class="nav-line"></span></label>
+            <label for="checkbox__toggle" class="hamburger">
+                <span class="nav-line">
+                </span>
+            </label>
             <div class="menu">
                 <ul class="menu-list">
                     <li class="menu-list__item"><a href="./about.html">Про нас</a></li>
@@ -30,6 +32,16 @@
                     <li class="menu-list__item"><a href="./partners.html">Партнери</a></li>
                     <li class="menu-list__item"><a href="./news.html">Новини</a></li>
                 </ul>
+                <div class="menu-mobile">
+                    <button class="button">Підтримати</button>
+                    <div class="nav-lang">
+                        <div class="nav-lang__img">
+                            <img src="./img/lang__ua.svg" alt="">
+                        </div>
+                        <a href="#" class="lang lang-ua lang-active">UA</a>
+                        <a href="#" class="lang lang-eng">ENG</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="nav-wrap">
