@@ -131,7 +131,7 @@ function sha1 (str) {
 }
 
 document.querySelector('#check').addEventListener('click', function(){
-    let chageProjectName = $('#liqpay-project h1').text()
+    let chageProjectName = $('.liqpay-project__name').text()
     let pubkey = 'sandbox_bpISwXbEenagrmrqaspArKtCYez4UH7ReUwLaFHh';
     let param = {
         public_key: "sandbox_i86618727647",

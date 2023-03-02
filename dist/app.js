@@ -1,11 +1,11 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-// ------- ScrollSmoother -----------
-ScrollSmoother.create({
-    wrapper: '.wrapper',
-    content: '.content',
-    smooth: 1.6,  
-    smoothTouch: 0.1,    
-})
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+// // ------- ScrollSmoother -----------
+// ScrollSmoother.create({
+//     wrapper: '.wrapper',
+//     content: '.content',
+//     smooth: 1.6,  
+//     smoothTouch: 0.1,    
+// })
 
 window.onload = function () {
             let link = document.createElement("link");
@@ -13,6 +13,45 @@ window.onload = function () {
             link.rel = "stylesheet";
             link.type = "text/css";
 }
+
+// ------- payment -----------
+
+    // ------- payment-carousel ----------- 
+     $('.payment-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            mouseDrag: true,
+            nav: true,
+            dots: true,
+            autoplay: false,
+        });
+        // ---change project name via carousel---
+        var owl = $('.payment-carousel');
+        owl.on('translated.owl.carousel', function (event) {
+        $('.liqpay-project__name').html($('.active .item__h3').text());
+        })
+
+
+    // ------- summ-buttons -----------
+    $("#one").click(function(){
+        $("#summ").val("100")
+    })
+    $("#two").click(function(){
+        $("#summ").val("200")
+    })
+    $("#five").click(function(){
+        $("#summ").val("500")
+    })
+    $("#input-clear").click(function(){
+        $("#summ").val("")
+    })
+     
+    // cleaner summ 
+     $(".cleaner").click(function () {
+            $("#summ").val("")
+        })
+
+
 
 // ------- project carousel -----------
 $(document).ready(function() {
@@ -172,24 +211,3 @@ $('.services-carousel').owlCarousel({
     }
 })
 
-// ------- payment -----------
-
-    // ------- payment-carousel ----------- 
-     $('.payment-carousel').owlCarousel({
-            loop: true,
-            autoWidth: true,
-            mouseDrag: false,
-            nav: false,
-            autoplay: false,
-            autoplayHoverPause: false,
-            
-        })
-        var owl = $('.payment-carousel');
-        owl.owlCarousel();
-        owl.on('translate.payment-carousel', function (event) {
-        $('payment-carousel .owl-nav button').prop('disabled', true);
-        })
-        owl.on('translated.payment-carousel', function (event) {
-        $('payment-carousel .owl-nav button').prop('disabled', false);
-        $('#liqpay-project h1').html($('.active h2').text());
-        })

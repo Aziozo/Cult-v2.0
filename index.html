@@ -18,7 +18,7 @@
     <script src="./dist/app.js" defer></script>
     <title>Культурна Агенція</title>
 </head>
-<body id="body">
+<body>
 <div class="wrapper">
 <div class="content">
 <nav class="navbar">
@@ -213,16 +213,168 @@
         <p class="support__p">Оберіть проєкт, який хочете підтримати</p>
     </section>
     <section class="payment">
-        <div class="payment-carousel">
+        <div class="payment-carousel owl-carousel">
             <div class="payment-item">
-                
+                <div class="item-img">
+                    <img src="./img/main/navzaem-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        Навзаєм
+                    </h3>
+                    <p class="item__p">
+                        Майданчик для комунікації фахівців креативної і культурної сфер
+                    </p>
+                </div>
             </div>
+            <div class="payment-item">
+                <div class="item-img">
+                    <img src="./img/main/planbfest-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        Plan B Fest
+                    </h3>
+                    <p class="item__p">
+                        Міжнародний фестиваль соціальних інновацій та нової музики
+                    </p>
+                </div>
+            </div>
+            <div class="payment-item">
+                <div class="item-img">
+                    <img src="./img/main/planbidea-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        Plan B Idea Boot Camp
+                    </h3>
+                    <p class="item__p">
+                        Менторська програма для тих, хто хоче прокачати свій проєкт або реалізувати ідею.
+                    </p>
+                </div>
+            </div>
+            <div class="payment-item">
+                <div class="item-img">
+                    <img src="./img/main/musicday-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        День Музики в Харкові
+                    </h3>
+                    <p class="item__p">
+                        Частина міжнародного фестивалю Fete de la musique
+                    </p>
+                </div>
+            </div>
+            <div class="payment-item">
+                <div class="item-img">
+                    <img src="./img/main/community-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        Community Party
+                    </h3>
+                    <p class="item__p">
+                        Нетворкінг-вечірки для культурної спільноти Харкова
+                    </p>
+                </div>
+            </div>
+            <div class="payment-item">
+                <div class="item-img">
+                    <img src="./img/main/planbdvir-project.svg">
+                </div>
+                <div class="item-descr">
+                    <h3 class="item__h3">
+                        Plan B Dvir
+                    </h3>
+                    <p class="item__p">
+                        Відкритий майданчик для проведення подій, офіс культурних і соціальних ініціатив
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="liqpay">
+           <div class="liqpay-project__name">Навзаєм</div>
+            <p class="select-summ">Оберіть суму</p>
+            <div class="wrapper-summ"></div>
+            <div class="summ-buttons">
+                <button id="one">100 грн</button>
+                <button id="two">200 грн</button>
+                <button id="five">500 грн</button>
+            </div>
+            <form method="POST" action="https://www.liqpay.ua/api/3/checkout" accept-charset="utf-8">
+                <input type="hidden" name="data" value="" id="data" />
+                <input type="hidden" name="signature" value="" id="signature" />
+                <input type="number" name="summ" id="summ" placeholder="Введіть сумму" min="1"
+                    onkeypress="return event.charCode >= 48" required>
+                <div class="cleaner"><img src="./img/main/close.svg" alt=""></div>
+                <div class="form-wrapper">
+                    <input id="check" type="submit" value="Підримати">
+                    <img src="./img/main/liqpay.svg" alt="">
+                </div>
+            </form>
         </div>
     </section>
 </div>
 </div>
 </div>
-   
+<footer>
+    <div class="footer-container">
+        <div class="footer-item">
+            <h2 class="footer__h2">Про нас</h2>
+            <div class="footer-links">
+                <a href="./about.html#we">Наші Успіхи</a>
+                <a href="./about.html#values">Наші цінності</a>
+                <a href="./about.html#team">Команда</a>
+                <a href="./about.html#reports">Звіти</a>
+                <a href="./about.html">Ми в медіа</a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer__h2">Послуги</h2>
+            <div class="footer-links">
+                <a href="./services.html#service-1">Оренда обладнання</a>
+                <a href="./services.html#service-2">Організація подій</a>
+                <a href="./services.html#service-3">Трансляції</a>
+                <a href="./services.html#service-4">Зйомка подій</a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer__h2">Інформація</h2>
+            <div class="footer-links">
+                <a href="">Політика конфіденційності</a>
+                <a href="">Публічна оферта</a>
+                <a href="">Обробка данних</a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer__h2">Проєкти</h2>
+            <div class="footer-links">
+                <a href="./projects.html#navzaem">Навзаєм</a>
+                <a href="./projects.html#plan-b-fest">Plan B Fest</a>
+                <a href="./projects.html#idea">Plan B</a>
+                <a href="./projects.html#music">День музики в Харкові</a>
+                <a href="./projects.html#party">Community Party</a>
+                <a href="./projects.html#dvir">Plan B Dvir</a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer__h2">Підтримка</h2>
+            <div class="footer-links">
+                <a href="">Фінансова підтримка</a>
+                <a href="">Хочу допомагати</a>
+            </div>
+        </div>
+        <div class="footer-item">
+            <h2 class="footer__h2">Партнери</h2>
+            <div class="footer-links">
+                <a href="">Стати партнером</a>
+                <a href="">Наші партнери</a>
+            </div>
+        </div>
+    </div>
+    <p class="license"><span>2022 - 2023</span>. Всі права захищені.</p>
+</footer> 
 
 <!-- payment -->
 <script src="./dist/pay.js">

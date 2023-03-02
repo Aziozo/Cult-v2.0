@@ -1,0 +1,14 @@
+
+
+.about-us{
+    .about-us__container{
+        display: flex;
+        justify-content: space-between;
+        >img{
+            max-width: 464px;
+        }
+        .about-us__wrap{
+            max-width: 539px;
+        }
+    }
+}

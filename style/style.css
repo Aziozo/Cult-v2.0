@@ -221,22 +221,6 @@
   position: relative;
 }
 
-.hero-main {
-  background: url(../img/main/hero.svg) center center/cover;
-}
-.hero-main .link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 14px 22px 14px;
-  background: #FFFFFF;
-  border-radius: 12px 0px 0px 12px;
-  gap: 36px;
-  right: 0;
-  position: absolute;
-}
-
 .hero-text {
   margin-left: calc(var(--index) * 11);
 }
@@ -258,6 +242,26 @@
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+}
+
+.hero-main {
+  background: url(../img/main/hero.svg) center center/cover;
+}
+.hero-main .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 14px 22px 14px;
+  background: #FFFFFF;
+  border-radius: 12px 0px 0px 12px;
+  gap: 36px;
+  right: 0;
+  position: absolute;
+}
+
+.hero-about {
+  background: url(../img/about/hero.svg) center center/cover;
 }
 
 @media screen and (max-width: 960px) {
@@ -591,12 +595,203 @@ h2 {
   margin-top: 14px;
 }
 
+.payment {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 .payment .payment-carousel {
   border-radius: 18px;
-  max-width: 350px;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+  width: 350px;
   height: 329px;
 }
+.payment .payment-carousel .owl-nav {
+  margin-top: 24px;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  gap: 44px;
+}
+.payment .payment-carousel .owl-dots {
+  display: flex;
+  gap: 7px;
+  margin-top: 43px;
+}
+.payment .payment-carousel .owl-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #D9D9D9 !important;
+  border-radius: 50%;
+}
+.payment .payment-carousel .owl-dots .active {
+  background-color: #4A3AD1 !important;
+}
+.payment .payment-item {
+  width: 350px;
+  height: 329px;
+}
+.payment .item-descr {
+  padding: 18px 16px 18px 16px;
+}
+.payment .item__h3 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+.payment .item__p {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+}
+.payment .liqpay {
+  height: 100%;
+}
+.payment .liqpay input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.payment .liqpay input::-webkit-outer-spin-button,
+.payment .liqpay input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.payment .liqpay .liqpay-project__name {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.payment .liqpay .select-summ {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.payment .liqpay .summ-buttons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.payment .liqpay .summ-buttons button {
+  width: 113px;
+  height: 44px;
+  border: 1px solid #6844D0;
+  border-radius: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  background: transparent;
+  cursor: pointer;
+}
+.payment .liqpay .summ-buttons button:hover {
+  transition: 0.2s;
+  background-color: #6844D0;
+  color: white;
+}
+.payment .liqpay input {
+  width: 635px;
+  height: 64px;
+  padding: 16px 18px 16px 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  border: 0px;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.payment .liqpay input:focus {
+  outline: none;
+}
+.payment .liqpay input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.payment .liqpay input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.payment .liqpay form {
+  margin-top: 63px;
+}
+.payment .liqpay .cleaner {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+  position: relative;
+  bottom: 50px;
+  left: 603px;
+}
+.payment .liqpay .form-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.payment .liqpay .form-wrapper input {
+  width: 162px;
+  height: 53px;
+  background: #6844D0;
+  border-radius: 18px;
+  border: 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.payment .liqpay .form-wrapper img {
+  max-height: 53px;
+  max-width: 138px;
+}
+.payment .liqpay .form-wrapper input:hover {
+  cursor: pointer;
+}
 
+@media screen and (max-width: 960px) {
+  .payment {
+    flex-direction: column;
+    align-items: center;
+  }
+  .liqpay {
+    max-width: calc(100% - 10px);
+    margin-top: 128px;
+  }
+  .liqpay input {
+    width: 100% !important;
+  }
+  .liqpay .cleaner {
+    left: calc(100% - 30px) !important;
+  }
+  .liqpay .form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
 .owl-next,
 .owl-prev {
   width: 72px;
@@ -619,6 +814,91 @@ h2 {
 
 .disabled {
   display: none;
+}
+
+footer {
+  background-color: #000;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 73px;
+  width: 100%;
+  padding-top: 64px;
+}
+footer .footer-container .footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .footer-container .footer-item .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footer-container .footer-item .footer-links a {
+  font-style: normal;
+  font-weight: 250;
+  font-size: 12px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+footer .footer-container .footer-item .footer__h2 {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+footer .license {
+  color: #FFFFFF;
+  font-family: Montserrat-f;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  margin-top: 14px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 960px) {
+  footer {
+    padding: 0px 30px 0px 30px;
+  }
+  footer .license {
+    margin-bottom: 30px;
+  }
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer a {
+    font-style: normal;
+    font-weight: 250;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+}
+.about-us .about-us__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .about-us__container > img {
+  max-width: 464px;
+}
+.about-us .about-us__container .about-us__wrap {
+  max-width: 539px;
 }
 
 @font-face {
@@ -675,6 +955,10 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
   }
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .main-content {
   background-color: #fff;
@@ -687,6 +971,4 @@ img {
 .main-content section {
   max-width: 1100px;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
 }

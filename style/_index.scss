@@ -352,10 +352,200 @@ h2{
 }
 
 .payment{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
     .payment-carousel{
         border-radius: 18px;
-        max-width: 350px;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+        width: 350px;
         height: 329px;
+        .owl-nav{
+            margin-top: 24px;
+            position: absolute;
+            right:0px;
+            display: flex;
+            gap: 44px;
+        }
+        .owl-dots{
+            display: flex;
+            gap: 7px;
+            margin-top: 43px;
+        }
+        .owl-dot {
+            width: 7px;
+            height: 7px;
+            background-color: #D9D9D9 !important;
+            border-radius: 50%;
+        }
+        .owl-dots .active {
+            background-color: #4A3AD1 !important;
+        }
+    }
+    .payment-item{
+        width: 350px;
+        height: 329px;
+    }
+
+    .item-descr{
+        padding: 18px 16px 18px 16px;
+    }
+
+    .item__h3{
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+
+    .item__p{
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.02em;
+    }
+    // ---------------liqpay------------------
+
+    .liqpay{
+        input:focus::-webkit-input-placeholder {
+                opacity: 0;
+            }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        height: 100%;
+        .liqpay-project__name{
+           
+            font-weight: 800;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        .select-summ{
+            margin-top: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+        }
+        .summ-buttons{
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            button{
+                width: 113px;
+                height: 44px;
+                border: 1px solid #6844D0;
+                border-radius: 24px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                background: transparent;
+                cursor: pointer;
+                &:hover{
+                    transition: 0.2s;
+                    background-color: #6844D0;
+                    color: white;
+                }
+            }
+        }
+        input {
+            width: 635px;
+            height: 64px;
+            padding: 16px 18px 16px 18px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #000000;
+            border: 0px;
+            outline: none;
+            border-bottom: 2px solid black;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+            }
+        }
+        form{
+            margin-top: 63px;
+        }
+        .cleaner {
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            background: transparent;
+            border: 0px;
+            position: relative;
+            bottom: 50px;
+            left: 603px;
+        }
+        .form-wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            input{
+            width: 162px;
+            height: 53px;
+            background: #6844D0;
+            border-radius: 18px;
+            border: 0px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            }
+            img{
+                max-height: 53px;
+                max-width: 138px;
+            }
+        }
+
+        .form-wrapper input:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .payment{
+        flex-direction: column;
+        align-items: center;
+    }
+    .liqpay{
+        max-width: calc(100% - 10px);
+        margin-top: 128px;
+        input{
+            width: 100% !important;
+        }
+        .cleaner {
+            left: calc(100% - 30px) !important;
+        }
+        .form-wrapper{
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     }
 }
 
