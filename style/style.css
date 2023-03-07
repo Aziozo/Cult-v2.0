@@ -1207,12 +1207,6 @@ footer .license {
 .reports .reports .owl-dots button {
   margin-top: 22px;
 }
-.reports .owl-dots {
-  background: url(../img/about/reports/Line.svg);
-  background-size: auto 2px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .reports .reports .owl-dots .active {
   font-weight: 800;
 }
