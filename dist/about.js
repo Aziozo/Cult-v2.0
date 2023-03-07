@@ -29,11 +29,10 @@ $(document).ready(function() {
     margin: 20,
     nav: true,
     dots: true,
-    mouseDrag:true,
     slideBy: 'page',
     responsive: {
       0: {
-
+        mouseDrag: false,
         nav: true,
         dots: true,
         loop:false,
@@ -172,14 +171,14 @@ $('.reports-carousel').owlCarousel({
     dots: true,
     autoplay: false,
 });
-var owl = $('.reports-carousel');
-owl.owlCarousel();
-owl.on('translate.owl.carousel', function (event) {
-    $('.reports .owl-dots .owl-dot').prop('disabled', true)
-    })
-owl.on('translated.owl.carousel', function (event) {
-    $('.reports .owl-dots .owl-dot').prop('disabled', false)
-    })
+// var owl = $('.reports-carousel');
+// owl.owlCarousel();
+// owl.on('translate.owl.carousel', function (event) {
+//     $('.reports .owl-dots .owl-dot').prop('disabled', true)
+//     })
+// owl.on('translated.owl.carousel', function (event) {
+//     $('.reports .owl-dots .owl-dot').prop('disabled', false)
+//     })
 
 // gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 // // ------- ScrollSmoother -----------
