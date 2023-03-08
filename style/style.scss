@@ -57,6 +57,13 @@ body{
     }
 
 }
+
+@media screen and (max-width: 960px){
+    html,body{
+        overflow-x: hidden;
+    }
+}
+
 a{
     all: none;
     text-decoration: none;
