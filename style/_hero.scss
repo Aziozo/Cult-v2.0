@@ -8,13 +8,12 @@
     margin-left: calc(var(--index)*11);
 
     h1 {
-        font-family: Raleway-f;
+        font-family: Raleway-sb;
         font-style: normal;
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 75px;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
         letter-spacing: 0.02em;
-        text-transform: uppercase;
         color: #FFFFFF;
     }
 
@@ -28,9 +27,6 @@
         color: #FFFFFF;
     }
 }
-
-
-
 
 .hero-main{
     h1{
@@ -58,6 +54,10 @@
 .hero-about{
     background: url(../img/about/hero.svg) center center/cover;
 }
+.hero-projects{
+    background: url(../img/projects//hero.svg) center center/cover;
+}
+
 // adaprive
 
 @media screen and (max-width: 960px) {
@@ -99,5 +99,13 @@
                 letter-spacing: 0.02em;
             }
         }
+    }
+
+    .hero-about{
+        .hero-text {
+                h1 {
+                    display: none;
+                }
+            }
     }
 }
