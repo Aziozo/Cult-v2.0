@@ -58,6 +58,10 @@
     background: url(../img/projects//hero.svg) center center/cover;
 }
 
+.hero-services{
+    background: url(../img/services/hero.svg) center center/cover;
+}
+
 // adaprive
 
 @media screen and (max-width: 960px) {
@@ -107,5 +111,9 @@
                     display: none;
                 }
             }
+    }
+
+    .hero-services{
+        background: url(../img/services/hero-mob.svg) center center/cover;
     }
 }

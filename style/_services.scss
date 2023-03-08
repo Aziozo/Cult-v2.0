@@ -1,0 +1,27 @@
+.services-page{
+    h2{
+        font-family: Raleway-b;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+    .experience{
+        .experience-wrap{
+            display: flex;
+            justify-content: center;
+            p{
+                margin-top: 18px;
+                max-width: 919px;
+                width: 100%;
+            }
+        }
+    }
+    .our-services{
+        .services-grid{
+            display: grid;
+        }
+    }
+}

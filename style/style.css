@@ -275,6 +275,10 @@
   background: url(../img/projects//hero.svg) center center/cover;
 }
 
+.hero-services {
+  background: url(../img/services/hero.svg) center center/cover;
+}
+
 @media screen and (max-width: 960px) {
   .hero-main {
     background: url(../img/main/hero-mob.svg) center center/cover;
@@ -317,6 +321,9 @@
   }
   .hero-about .hero-text h1 {
     display: none;
+  }
+  .hero-services {
+    background: url(../img/services/hero-mob.svg) center center/cover;
   }
 }
 h2 {
@@ -1348,6 +1355,32 @@ footer .license {
     width: 100%;
   }
 }
+.dev {
+  width: var(--index);
+}
+
+.services-page h2 {
+  font-family: Raleway-b;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.services-page .experience .experience-wrap {
+  display: flex;
+  justify-content: center;
+}
+.services-page .experience .experience-wrap p {
+  margin-top: 18px;
+  max-width: 919px;
+  width: 100%;
+}
+.services-page .our-services .services-grid {
+  display: grid;
+}
+
 @font-face {
   font-family: Raleway-f;
   src: url(../fonts/Raleway-Regular.ttf);
