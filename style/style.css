@@ -884,6 +884,7 @@ footer .footer-container .footer-item .footer-links a {
   color: #FFFFFF;
 }
 footer .footer-container .footer-item .footer__h2 {
+  font-family: Raleway-sb;
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 600;
@@ -899,7 +900,8 @@ footer .license {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 0.02em;
-  margin-top: 14px;
+  margin-top: 63px;
+  margin-bottom: 14px;
   color: #FFFFFF;
 }
 
@@ -933,6 +935,7 @@ footer .license {
   max-width: 539px;
 }
 .about-us .about-us__container h3 {
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -989,6 +992,9 @@ footer .license {
   margin-left: 16px;
   max-width: 340px;
 }
+.values .values-abt p {
+  margin-top: 8px;
+}
 .values h1 {
   font-family: Montserrat-f;
   font-style: normal;
@@ -999,6 +1005,7 @@ footer .license {
   color: #4A3AD1;
 }
 .values h2 {
+  font-family: Raleway-b;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1010,6 +1017,7 @@ footer .license {
   color: #000000;
 }
 .values h3 {
+  font-family: Raleway-sb;
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
@@ -1035,6 +1043,7 @@ footer .license {
   }
 }
 .team h3 {
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -1069,6 +1078,7 @@ footer .license {
   max-width: 245px;
 }
 .team .name p {
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1139,11 +1149,23 @@ footer .license {
   }
 }
 .reports h3 {
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 0.02em;
+}
+.reports h2 {
+  margin-top: 14px;
+  font-family: Raleway-sb;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
 }
 .reports .owl-item {
   display: flex;
@@ -1190,6 +1212,7 @@ footer .license {
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #000000;
+  margin-top: 10px;
 }
 .reports .report__descr a {
   font-family: Raleway-f;
@@ -1211,7 +1234,7 @@ footer .license {
   height: 56px;
   background: #6844D0;
   border-radius: 18px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .reports .dwnld img {
   width: 24px;
@@ -1301,6 +1324,7 @@ footer .license {
     width: 100%;
   }
   .reports .report__descr p {
+    height: 180px;
     margin-top: 12px;
   }
   .reports .report__descr a {

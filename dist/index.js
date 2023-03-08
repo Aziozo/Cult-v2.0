@@ -206,7 +206,6 @@ $('.services-carousel').owlCarousel({
     margin: 22,
     autoWidth:true,
     stagePadding: 0,
-    nav:false,
     responsive:{
         0:{
             autoWidth:false,
@@ -219,5 +218,3 @@ $('.services-carousel').owlCarousel({
         }
     }
 })
-
-// ------- team carousel ----------

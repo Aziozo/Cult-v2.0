@@ -11,6 +11,7 @@
             max-width: 539px;
         }
         h3{
+            font-family: Raleway-sb;
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
@@ -74,6 +75,9 @@
     .values-abt {
         margin-left: 16px;
         max-width: 340px;
+        p{
+            margin-top: 8px;
+        }
     }
     h1 {
         font-family: Montserrat-f;
@@ -85,6 +89,7 @@
         color: #4A3AD1;
     }
     h2{
+        font-family: Raleway-b;
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -96,6 +101,7 @@
         color: #000000;
     }
     h3{
+        font-family: Raleway-sb;
         font-weight: 600;
         font-size: 48px;
         line-height: 56px;
@@ -128,11 +134,12 @@
 
 .team{
         h3{
+            font-family: Raleway-sb;
             font-style: normal;
-                font-weight: 600;
-                font-size: 48px;
-                line-height: 56px;
-                letter-spacing: 0.02em;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: 0.02em;
         }
 
         .team-carousel {
@@ -169,7 +176,7 @@
         }
     
         .name p {
-            
+            font-family: Raleway-sb;
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -256,11 +263,24 @@
 
 .reports{
     h3{
+        font-family: Raleway-sb;
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
         line-height: 56px;
         letter-spacing: 0.02em;
+    }
+
+    h2{
+        margin-top: 14px;
+        font-family: Raleway-sb;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #000000;
     }
 
     .owl-item {
@@ -313,6 +333,7 @@
             line-height: 19px;
             letter-spacing: 0.02em;
             color: #000000;
+            margin-top: 10px;
         }
     
         .report__descr a {
@@ -336,7 +357,7 @@
             height: 56px;
             background: #6844D0;
             border-radius: 18px;
-            margin-top: 32px;
+            margin-top: 16px;
         }
     
         .dwnld img {
@@ -459,6 +480,7 @@
             margin: 0px;
             width: 100%;
             p{
+                height: 180px;
                 margin-top: 12px;
             }
             a{
