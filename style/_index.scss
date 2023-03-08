@@ -1,5 +1,5 @@
 h2{
-    font-family: Raleway-f;
+    font-family: Raleway-sb;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -118,7 +118,7 @@ h2{
     cursor: pointer;
     h3{
         // color: #fff;
-        font-family: Raleway-f;
+        font-family: Raleway-b;
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -221,7 +221,7 @@ h2{
 
     .slide{
         h3{
-            font-family: Raleway-f;
+            font-family: Raleway-sb;
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -303,6 +303,29 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 180px;
+            width: 100%;
+            height: 131px;
+            img{
+                object-fit: contain;
+            }
+        #hoe{
+            width: 96px;
+            height: 66px;
+        }
+        #goethe{
+            width: 120px;
+            height: 55px;
+        }
+        #mfv{
+            width: 120px;
+            height: 36px;
+        }
+        }
     }
     .partners-desr{
         max-width: 443px;

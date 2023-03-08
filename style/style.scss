@@ -19,6 +19,20 @@
     font-family: Raleway-b;
     src: url(../fonts/Raleway-Bold.ttf);
 }
+@font-face {
+    font-family: Raleway-eb;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Raleway-sb;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: Raleway-black;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+
 
 @font-face {
     font-family: Montserrat-f;
@@ -70,6 +84,7 @@ h3 {
     border-radius: 18px;
     border: 1px solid #4A3AD1;
     cursor: pointer;
+    font-family: Raleway-b;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

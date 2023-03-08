@@ -25,7 +25,6 @@
         font-size: 24px;
         line-height: 28px;
         letter-spacing: 0.02em;
-
         color: #FFFFFF;
     }
 }
@@ -34,6 +33,14 @@
 
 
 .hero-main{
+    h1{
+        font-family: Raleway-black;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
     background: url(../img/main/hero.svg) center center/cover;
     .link {
         display: flex;

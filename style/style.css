@@ -247,6 +247,14 @@
 .hero-main {
   background: url(../img/main/hero.svg) center center/cover;
 }
+.hero-main h1 {
+  font-family: Raleway-black;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
 .hero-main .link {
   display: flex;
   flex-direction: column;
@@ -306,7 +314,7 @@
   }
 }
 h2 {
-  font-family: Raleway-f;
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -406,7 +414,7 @@ h2 {
   cursor: pointer;
 }
 .projects-card h3 {
-  font-family: Raleway-f;
+  font-family: Raleway-b;
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -489,7 +497,7 @@ h2 {
   margin-top: 54px;
 }
 .services .slide h3 {
-  font-family: Raleway-f;
+  font-family: Raleway-sb;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -556,6 +564,30 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+}
+.partners .partners-logos .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  width: 100%;
+  height: 131px;
+}
+.partners .partners-logos .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.partners .partners-logos .logo #hoe {
+  width: 96px;
+  height: 66px;
+}
+.partners .partners-logos .logo #goethe {
+  width: 120px;
+  height: 55px;
+}
+.partners .partners-logos .logo #mfv {
+  width: 120px;
+  height: 36px;
 }
 .partners .partners-desr {
   max-width: 443px;
@@ -1284,6 +1316,18 @@ footer .license {
   src: url(../fonts/Raleway-Bold.ttf);
 }
 @font-face {
+  font-family: Raleway-eb;
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Raleway-sb;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: Raleway-black;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
   font-family: Montserrat-f;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
@@ -1331,6 +1375,7 @@ h3 {
   border-radius: 18px;
   border: 1px solid #4A3AD1;
   cursor: pointer;
+  font-family: Raleway-b;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

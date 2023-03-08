@@ -201,11 +201,11 @@ $(document).ready(function() {
 
 // ------- services carousel -----------
 $('.services-carousel').owlCarousel({
-    loop:false,
+    loop:true,
     items: 4,
+    margin: 22,
     autoWidth:true,
     stagePadding: 0,
-    margin:10,
     nav:false,
     responsive:{
         0:{
