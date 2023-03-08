@@ -350,6 +350,13 @@ h2{
         gap: 30px;
         display: flex;
         flex-direction: column;
+
+        .partners-logos{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+
         .partners__h2 {
             display: none;
         }
