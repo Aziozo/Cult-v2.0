@@ -193,7 +193,7 @@ h2{
         }
 
         .owl-prev{
-            left:calc(var(--index)*15);
+            left:60px;
         }
     }
 
@@ -280,11 +280,11 @@ h2{
         }
 
         .owl-next {
-            right: calc(var(--index)*15);
+            right: 60px;
         }
 
         .owl-prev {
-            left: calc(var(--index)*15);
+            left: 60px;
         }
     }
 }
@@ -353,7 +353,7 @@ h2{
 
         .partners-logos{
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
         }
 
 

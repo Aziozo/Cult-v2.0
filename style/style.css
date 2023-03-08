@@ -295,8 +295,8 @@
     bottom: 0;
     right: 0;
     left: 0;
-    margin-left: calc(var(--index) * 10);
-    margin-right: calc(var(--index) * 10);
+    margin-left: 70px;
+    margin-right: 70px;
     max-height: 64px;
     flex-direction: row;
     border-radius: 12px 12px 0px 0px;
@@ -498,7 +498,7 @@ h2 {
     right: calc(var(--index) * 15);
   }
   .projects .owl-prev {
-    left: calc(var(--index) * 15);
+    left: 60px;
   }
 }
 .services .services-descr {
@@ -566,10 +566,10 @@ h2 {
     border-radius: 50%;
   }
   .services .owl-next {
-    right: calc(var(--index) * 15);
+    right: 60px;
   }
   .services .owl-prev {
-    left: calc(var(--index) * 15);
+    left: 60px;
   }
 }
 .partners {
@@ -634,7 +634,7 @@ h2 {
   }
   .partners .partners-logos {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .partners .partners__h2 {
     display: none;
