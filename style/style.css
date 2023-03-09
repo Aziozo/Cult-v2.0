@@ -219,6 +219,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  padding-left: 165px;
 }
 
 .hero-text h1 {
@@ -281,10 +282,12 @@
 }
 
 @media screen and (max-width: 960px) {
+  .hero {
+    padding: 0px 20px 0px 20px;
+  }
   .hero-main {
     background: url(../img/main/hero-mob.svg) center center/cover;
     justify-content: center;
-    padding: 0px 20px 0px 20px;
   }
   .hero-main .link {
     padding: 18px 35px 18px 35px;
@@ -1572,6 +1575,56 @@ footer .license {
   }
 }
 
+.partners-page .partners-descr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners-page .partners-descr h1 {
+  font-family: Raleway-sb;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.partners-page .partners-descr p {
+  max-width: 538px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.partners-page .financial-partners,
+.partners-page .project-partners {
+  display: flex;
+  flex-direction: column;
+}
+.partners-page .owl-carousel {
+  margin-top: 40px;
+  height: 400px;
+}
+.partners-page .partners-item {
+  width: 100%;
+  height: 117px;
+  max-width: 350px;
+}
+
+.partners-right {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 960px) {
+  .partners-page .partners-descr {
+    flex-direction: column !important;
+  }
+  .partners-page p {
+    margin-top: 12px;
+  }
+}
 @font-face {
   font-family: Raleway-f;
   src: url(../fonts/Raleway-Regular.ttf);
@@ -1599,8 +1652,6 @@ footer .license {
 :root {
   --index: calc(1vw+1vh);
   --button-color: #6844D0;
-  --d: 700ms;
-  --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 body {

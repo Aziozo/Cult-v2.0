@@ -1,0 +1,60 @@
+.partners-page{
+    .partners-descr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-family: Raleway-sb;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: 0.02em;
+
+            color: #000000;
+        }
+
+        p {
+            max-width: 538px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+    }
+    .financial-partners,
+    .project-partners{
+        display: flex;
+        flex-direction: column;
+    }
+    .owl-carousel {
+        margin-top: 40px;
+        height: 400px;
+    }
+    .partners-item {
+        width: 100%;
+        height: 117px;
+        max-width: 350px;
+    }
+}
+
+.partners-right{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 960px){
+.partners-page{
+    .partners-descr{
+        flex-direction: column !important;
+    }
+p{
+    margin-top: 12px;
+}    
+
+
+
+}
+}

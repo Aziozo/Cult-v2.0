@@ -3,10 +3,9 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding-left: 165px;
 }
 .hero-text {
-    
-
     h1 {
         font-family: Raleway-sb;
         font-style: normal;
@@ -69,10 +68,14 @@
 // adaprive
 
 @media screen and (max-width: 960px) {
+    .hero{
+        padding: 0px 20px 0px 20px;
+    }
+    
     .hero-main{
         background: url(../img/main/hero-mob.svg) center center/cover;
         justify-content: center;
-        padding: 0px 20px 0px 20px;
+        
         .link{
             padding: 18px 35px 18px 35px;
             gap: 64px;
