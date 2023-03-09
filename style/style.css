@@ -1684,10 +1684,14 @@ footer .license {
   .partners-page .partners-descr {
     flex-direction: column !important;
   }
+  .partners-page .owl-nav {
+    gap: 160px;
+  }
   .partners-page p {
     margin-top: 12px;
   }
   .banner {
+    position: relative;
     align-items: center;
     justify-content: flex-start;
     padding: 62px 0px 44px 0px;
@@ -1700,11 +1704,18 @@ footer .license {
     letter-spacing: 0.02em;
   }
   .banner p {
+    margin-top: 6px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.02em;
+  }
+  .banner button {
+    bottom: 44px;
+    position: absolute;
+    max-width: 314px;
+    width: 100%;
   }
 }
 @font-face {
