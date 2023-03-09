@@ -221,9 +221,6 @@
   position: relative;
 }
 
-.hero-text {
-  margin-left: calc(var(--index) * 11);
-}
 .hero-text h1 {
   font-family: Raleway-sb;
   font-style: normal;
