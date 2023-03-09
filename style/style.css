@@ -496,7 +496,7 @@ h2 {
     border-radius: 50%;
   }
   .projects .owl-next {
-    right: calc(var(--index) * 15);
+    right: 60px;
   }
   .projects .owl-prev {
     left: 60px;
