@@ -157,7 +157,9 @@ h2{
        }
 
         .owl-nav{
-            position: relative;
+            position: absolute;
+            width: 100%;
+            height: 48px;
         }
 
         .owl-next,
@@ -172,7 +174,7 @@ h2{
             position: absolute;
             align-items: center;
             justify-content: center;
-            bottom: -24px;
+            bottom: -28px;
             z-index: 100;
             gap: 7px;
             .active {
