@@ -70,9 +70,11 @@
 @media screen and (max-width: 960px) {
     .hero{
         padding: 0px 20px 0px 20px;
+        height: 350px;
     }
     
     .hero-main{
+        height: 600px;
         background: url(../img/main/hero-mob.svg) center center/cover;
         justify-content: center;
         

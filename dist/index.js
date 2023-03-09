@@ -1,11 +1,11 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-// ------- ScrollSmoother -----------
-ScrollSmoother.create({
-    wrapper: '.wrapper',
-    content: '.content',
-    smooth: 1,  
-    smoothTouch: 0.1,    
-})
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+// // ------- ScrollSmoother -----------
+// ScrollSmoother.create({
+//     wrapper: '.wrapper',
+//     content: '.content',
+//     smooth: 1,  
+//     smoothTouch: 0.1,    
+// })
 
 
 // ------- modals -----------
