@@ -7,11 +7,14 @@ $(document).ready(function() {
     margin: 0,
     nav: true,
     dots: true,
+    slideBy: 'page',
     responsive: {
       0: {
+        slideBy: 'page',
         mouseDrag: false,
         nav: true,
         dots: true,
+        
         loop:false,
         items: 1,
         rows: 3 //custom option not used by Owl Carousel, but used by the algorithm below
@@ -142,10 +145,12 @@ $(document).ready(function() {
   var carousel;
   var carouselOptions = {
     margin: 0,
+    slideBy: 'page',
     nav: true,
     dots: true,
     responsive: {
       0: {
+        slideBy: 'page',
         mouseDrag: false,
         nav: true,
         dots: true,
@@ -280,9 +285,11 @@ $(document).ready(function() {
   var carouselOptions = {
     margin: 0,
     nav: true,
+    slideBy: 'page',
     dots: true,
     responsive: {
       0: {
+        slideBy: 'page',
         mouseDrag: false,
         nav: true,
         dots: true,
