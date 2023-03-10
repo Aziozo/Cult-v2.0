@@ -1,5 +1,5 @@
 h2{
-    font-family: Raleway-sb;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -12,7 +12,7 @@ h2{
 
 .about{
     display: flex;
-    gap: 32px;
+   
     justify-content: space-between;
     .about-wrap{
         width: calc(var(--index)*37);
@@ -51,7 +51,7 @@ h2{
 
 @media screen and (max-width: 960px){
     .about{
-        gap: 0px;
+        
         flex-direction: column;
         align-items: center;
         .about-wrap,
@@ -70,7 +70,7 @@ h2{
         }
 
         .about-button__mobile{
-            margin-top: 60px;
+            margin-top: 20px;
             display: flex;
             text-align: center;
             height: 69px;
@@ -142,6 +142,7 @@ h2{
 
 @media screen and (max-width: 960px){
     .projects{
+        margin-top: 140px;
         .projects__h2 {
             font-weight: 600;
             font-size: 36px;
@@ -173,9 +174,9 @@ h2{
             position: absolute;
             align-items: center;
             justify-content: center;
-            bottom: -40px;
+            bottom: -47px;
             z-index: 100;
-            gap: 7px;
+           
             .active {
                     background: #4A3AD1 !important;
                 }
@@ -240,6 +241,11 @@ h2{
 
 @media screen and (max-width: 960px){
     .services{
+        margin-top: 90px;
+
+        .services-carousel{
+            margin-top: 32px;
+        }
         .services-descr{
             flex-direction: column;
             .services__p{
@@ -264,9 +270,9 @@ h2{
             position: absolute;
             align-items: center;
             justify-content: center;
-            bottom: -40px;
+            bottom: -47px;
             z-index: 100;
-            gap: 7px;
+            
 
             .active {
                 background: #4A3AD1 !important;
@@ -301,7 +307,7 @@ h2{
     }
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    
     .partners-logos{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -350,7 +356,8 @@ h2{
 
 @media screen and (max-width: 960px){
     .partners{
-        gap: 30px;
+        margin-top: 90px;
+        
         display: flex;
         flex-direction: column;
 
@@ -400,11 +407,11 @@ h2{
             position: absolute;
             right:0px;
             display: flex;
-            gap: 44px;
+            
         }
         .owl-dots{
             display: flex;
-            gap: 7px;
+            
             margin-top: 43px;
         }
         .owl-dot {
@@ -474,7 +481,7 @@ h2{
             margin-top: 80px;
             display: flex;
             justify-content: center;
-            gap: 32px;
+            
             button{
                 width: 113px;
                 height: 44px;
@@ -580,7 +587,7 @@ h2{
         .form-wrapper{
             flex-direction: column;
             align-items: center;
-            gap: 40px;
+            
         }
     }
 }
@@ -613,6 +620,10 @@ h2{
 
 
 // ---------------owl-navigation------------------
+
+.owl-dot{
+    margin: 3px;
+}
 
 .owl-next,
 .owl-prev {

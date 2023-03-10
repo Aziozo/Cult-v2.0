@@ -336,7 +336,7 @@
   }
 }
 h2 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -347,7 +347,6 @@ h2 {
 
 .about {
   display: flex;
-  gap: 32px;
   justify-content: space-between;
 }
 .about .about-wrap {
@@ -383,7 +382,6 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .about {
-    gap: 0px;
     flex-direction: column;
     align-items: center;
   }
@@ -400,7 +398,7 @@ h2 {
     display: none;
   }
   .about .about-button__mobile {
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     text-align: center;
     height: 69px;
@@ -457,6 +455,9 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .projects {
+    margin-top: 140px;
+  }
   .projects .projects__h2 {
     font-weight: 600;
     font-size: 36px;
@@ -484,9 +485,8 @@ h2 {
     position: absolute;
     align-items: center;
     justify-content: center;
-    bottom: -40px;
+    bottom: -47px;
     z-index: 100;
-    gap: 7px;
   }
   .projects .owl-dots .active {
     background: #4A3AD1 !important;
@@ -537,6 +537,12 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .services {
+    margin-top: 90px;
+  }
+  .services .services-carousel {
+    margin-top: 32px;
+  }
   .services .services-descr {
     flex-direction: column;
   }
@@ -558,9 +564,8 @@ h2 {
     position: absolute;
     align-items: center;
     justify-content: center;
-    bottom: -40px;
+    bottom: -47px;
     z-index: 100;
-    gap: 7px;
   }
   .services .owl-dots .active {
     background: #4A3AD1 !important;
@@ -582,7 +587,6 @@ h2 {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
-  gap: 90px;
 }
 .partners .partners-mobile {
   display: none;
@@ -635,7 +639,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .partners {
-    gap: 30px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
   }
@@ -678,11 +682,9 @@ h2 {
   position: absolute;
   right: 0px;
   display: flex;
-  gap: 44px;
 }
 .payment .payment-carousel .owl-dots {
   display: flex;
-  gap: 7px;
   margin-top: 43px;
 }
 .payment .payment-carousel .owl-dot {
@@ -745,7 +747,6 @@ h2 {
   margin-top: 80px;
   display: flex;
   justify-content: center;
-  gap: 32px;
 }
 .payment .liqpay .summ-buttons button {
   width: 113px;
@@ -857,9 +858,12 @@ h2 {
   .liqpay .form-wrapper {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
   }
 }
+.owl-dot {
+  margin: 3px;
+}
+
 .owl-next,
 .owl-prev {
   width: 72px;
@@ -1822,9 +1826,6 @@ h3 {
   section {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .main-content {
-    gap: 72px !important;
   }
 }
 .main-content {
