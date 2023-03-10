@@ -203,6 +203,7 @@ h2{
 // ---------------services------------------
 
 .services{
+    margin-top: 100px;
     .services-descr{
         display: flex;
         justify-content: space-between;
@@ -294,6 +295,7 @@ h2{
 
 
 .partners{
+    margin-top: 100px;
     .partners-mobile{
         display: none;
     }
@@ -377,12 +379,14 @@ h2{
 // ---------------support+payment------------------
 
 .support{
+    margin-top: 100px;
     .support__p{
         margin-top: 14px;
     }
 }
 
 .payment{
+    margin-top: 32px;
     display: flex;
     justify-content: space-between;
     position: relative;
