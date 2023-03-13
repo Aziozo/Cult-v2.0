@@ -985,6 +985,15 @@ footer .license {
     color: #FFFFFF;
   }
 }
+.about-page section {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .services-page section {
+    margin-top: 72ppx;
+  }
+}
 .about-us .about-us__container {
   display: flex;
   justify-content: space-between;
