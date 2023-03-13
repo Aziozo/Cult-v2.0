@@ -15,12 +15,11 @@ h2{
    
     justify-content: space-between;
     .about-wrap{
-        width: calc(var(--index)*37);
         max-width: 539px;
         position: relative;
         .about-text__p {
             margin-top: 14px;
-            font-family: Raleway-f;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -118,7 +117,7 @@ h2{
     cursor: pointer;
     h3{
         // color: #fff;
-        font-family: Raleway-b;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -127,7 +126,7 @@ h2{
     }
     p{
         // color: #fff;
-        font-family: Raleway-f;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -224,7 +223,7 @@ h2{
 
     .slide{
         h3{
-            font-family: Raleway-sb;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -434,7 +433,7 @@ h2{
     }
 
     .item__h3{
-        font-family: Raleway-eb;
+        font-family: 'Raleway';
         font-weight: 800;
         font-size: 24px;
         line-height: 28px;

@@ -14,26 +14,7 @@
 @import 'partners';
 
 
-@font-face {
-    font-family: Raleway-f;
-    src: url(../fonts/Raleway-Regular.ttf);
-}
-@font-face {
-    font-family: Raleway-b;
-    src: url(../fonts/Raleway-Bold.ttf);
-}
-@font-face {
-    font-family: Raleway-eb;
-    src: url(../fonts/Raleway-ExtraBold.ttf);
-}
-@font-face {
-    font-family: Raleway-sb;
-    src: url(../fonts/Raleway-SemiBold.ttf);
-}
-@font-face {
-    font-family: Raleway-black;
-    src: url(../fonts/Raleway-SemiBold.ttf);
-}
+
 
 
 @font-face {
@@ -51,7 +32,7 @@ body{
     color: #000;
     background-color: #fff;
     overflow-x: hidden;
-    font-family: Raleway-f;
+    font-family: 'Raleway';
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar{
