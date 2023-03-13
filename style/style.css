@@ -123,7 +123,7 @@
     z-index: 100;
     max-height: 0;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     text-align: center;
     right: 0;
     left: 0;
@@ -993,7 +993,7 @@ footer .license {
   max-width: 539px;
 }
 .about-us .about-us__container h3 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -1002,6 +1002,7 @@ footer .license {
   color: #000000;
 }
 .about-us .about-us__container p {
+  font-family: "Raleway";
   margin-top: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1063,7 +1064,7 @@ footer .license {
   color: #4A3AD1;
 }
 .values h2 {
-  font-family: Raleway-b;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1075,7 +1076,7 @@ footer .license {
   color: #000000;
 }
 .values h3 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-weight: 600;
   font-size: 48px;
   line-height: 56px;
@@ -1083,6 +1084,7 @@ footer .license {
   color: #000000;
 }
 .values p {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1092,6 +1094,9 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .values {
+    margin-top: 72px;
+  }
   .values h1 {
     min-width: 38px;
   }
@@ -1101,7 +1106,7 @@ footer .license {
   }
 }
 .team h3 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -1136,7 +1141,7 @@ footer .license {
   max-width: 245px;
 }
 .team .name p {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1165,13 +1170,16 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .team {
+    margin-top: 72px;
+  }
   .team .team-carousel {
     position: relative;
     width: calc(100% - 10px);
   }
   .team .team-member {
     max-width: 181px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .team .team-avatar {
     width: 148px;
@@ -1207,7 +1215,7 @@ footer .license {
   }
 }
 .reports h3 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -1216,7 +1224,7 @@ footer .license {
 }
 .reports h2 {
   margin-top: 14px;
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1263,7 +1271,7 @@ footer .license {
   margin-left: 80px;
 }
 .reports .report__descr p {
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1273,7 +1281,7 @@ footer .license {
   margin-top: 10px;
 }
 .reports .report__descr a {
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1361,6 +1369,9 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .reports {
+    margin-top: 72px;
+  }
   .reports .owl-carousel .owl-item {
     height: 550px;
   }
@@ -1383,14 +1394,14 @@ footer .license {
     width: 100%;
   }
   .reports .report__descr h2 {
-    font-family: Raleway-sb;
+    margin-top: 24px;
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    margin-top: 0px;
   }
   .reports .report__descr p {
     height: 180px;

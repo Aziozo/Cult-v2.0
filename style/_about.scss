@@ -11,7 +11,7 @@
             max-width: 539px;
         }
         h3{
-            font-family: Raleway-sb;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
@@ -20,6 +20,7 @@
             color: #000000;
         }
         p{
+            font-family: 'Raleway';
             margin-top: 14px;
             font-style: normal;
             font-weight: 400;
@@ -89,7 +90,7 @@
         color: #4A3AD1;
     }
     h2{
-        font-family: Raleway-b;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -101,7 +102,7 @@
         color: #000000;
     }
     h3{
-        font-family: Raleway-sb;
+        font-family: 'Raleway';
         font-weight: 600;
         font-size: 48px;
         line-height: 56px;
@@ -109,6 +110,7 @@
         color: #000000;
     }
     p{
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -119,7 +121,7 @@
 }
 @media screen and (max-width: 960px){
     .values{
-       
+        margin-top: 72px;
         h1{
             min-width: 38px;
         }
@@ -134,7 +136,7 @@
 
 .team{
         h3{
-            font-family: Raleway-sb;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 600;
             font-size: 48px;
@@ -176,7 +178,7 @@
         }
     
         .name p {
-            font-family: Raleway-sb;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -211,13 +213,14 @@
 
 @media screen and (max-width: 960px){
     .team{
+        margin-top: 72px;
         .team-carousel{
             position: relative;
             width: calc(100% - 10px);
         }
         .team-member{
             max-width: 181px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .team-avatar{
             width: 148px;
@@ -263,7 +266,7 @@
 
 .reports{
     h3{
-        font-family: Raleway-sb;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
@@ -273,7 +276,7 @@
 
     h2{
         margin-top: 14px;
-        font-family: Raleway-sb;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -326,7 +329,7 @@
         }
     
         .report__descr p {
-            font-family: Raleway-f;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -337,7 +340,7 @@
         }
     
         .report__descr a {
-            font-family: Raleway-f;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
@@ -449,6 +452,7 @@
 
 @media screen and (max-width: 960px){
     .reports{
+        margin-top: 72px;
         .owl-carousel{
             .owl-item{
                 height: 550px;
@@ -474,16 +478,18 @@
             margin: 0px;
             width: 100%;
             h2{
-                font-family: Raleway-sb;
+                margin-top: 24px;
+                font-family: 'Raleway';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 21px;
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
-                margin-top: 0px;
+                
         }
             p{
+
                 height: 180px;
                 margin-top: 12px;
             }
