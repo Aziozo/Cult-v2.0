@@ -223,7 +223,7 @@
 }
 
 .hero-text h1 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -232,7 +232,7 @@
   color: #FFFFFF;
 }
 .hero-text p {
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -245,7 +245,7 @@
   background: url(../img/main/hero.svg) center center/cover;
 }
 .hero-main h1 {
-  font-family: Raleway-black;
+  font-family: "Raleway";
   font-weight: 900;
   font-size: 64px;
   line-height: 75px;
@@ -350,13 +350,12 @@ h2 {
   justify-content: space-between;
 }
 .about .about-wrap {
-  width: calc(var(--index) * 37);
   max-width: 539px;
   position: relative;
 }
 .about .about-wrap .about-text__p {
   margin-top: 14px;
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -434,7 +433,7 @@ h2 {
   cursor: pointer;
 }
 .projects-card h3 {
-  font-family: Raleway-b;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -442,7 +441,7 @@ h2 {
   letter-spacing: 0.02em;
 }
 .projects-card p {
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -523,7 +522,7 @@ h2 {
   margin-top: 54px;
 }
 .services .slide h3 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -704,7 +703,7 @@ h2 {
   padding: 18px 16px 18px 16px;
 }
 .payment .item__h3 {
-  font-family: Raleway-eb;
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
@@ -1734,26 +1733,6 @@ footer .license {
   }
 }
 @font-face {
-  font-family: Raleway-f;
-  src: url(../fonts/Raleway-Regular.ttf);
-}
-@font-face {
-  font-family: Raleway-b;
-  src: url(../fonts/Raleway-Bold.ttf);
-}
-@font-face {
-  font-family: Raleway-eb;
-  src: url(../fonts/Raleway-ExtraBold.ttf);
-}
-@font-face {
-  font-family: Raleway-sb;
-  src: url(../fonts/Raleway-SemiBold.ttf);
-}
-@font-face {
-  font-family: Raleway-black;
-  src: url(../fonts/Raleway-SemiBold.ttf);
-}
-@font-face {
   font-family: Montserrat-f;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
@@ -1766,7 +1745,7 @@ body {
   color: #000;
   background-color: #fff;
   overflow-x: hidden;
-  font-family: Raleway-f;
+  font-family: "Raleway";
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
