@@ -935,9 +935,9 @@ footer .footer-container .footer-item {
 footer .footer-container .footer-item .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 footer .footer-container .footer-item .footer-links a {
+  margin: 7px 0px 7px 0px;
   font-style: normal;
   font-weight: 250;
   font-size: 12px;
