@@ -1421,7 +1421,7 @@ footer .license {
 }
 
 .services-page h2 {
-  font-family: Raleway-b;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -1496,7 +1496,7 @@ footer .license {
   margin-top: 1rem;
 }
 .services-page .our-services .title {
-  font-family: Raleway-b;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1506,7 +1506,7 @@ footer .license {
 }
 .services-page .our-services .copy {
   width: 492px;
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1524,7 +1524,7 @@ footer .license {
   background-color: transparent;
   margin-left: 359px;
   margin-right: 32px;
-  font-family: Raleway-f;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
