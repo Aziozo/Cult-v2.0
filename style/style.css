@@ -1585,6 +1585,9 @@ footer .license {
   background: url(../img/services/service-4.svg) center center/cover;
 }
 @media screen and (max-width: 960px) {
+  .services-page .our-services {
+    margin-top: 64px;
+  }
   .services-page .our-services .services-grid {
     grid-template-columns: 1fr;
   }
