@@ -308,6 +308,7 @@ h2{
     flex-direction: row;
     
     .partners-logos{
+        margin-right: 84px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -361,6 +362,7 @@ h2{
         flex-direction: column;
 
         .partners-logos{
+            margin-right: 0px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
         }
