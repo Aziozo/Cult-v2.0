@@ -840,9 +840,15 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .support {
+    margin-top: 42px;
+  }
   .payment {
     flex-direction: column;
     align-items: center;
+  }
+  .payment .owl-nav button {
+    margin: 0px 22px 0px 22px;
   }
   .liqpay {
     max-width: calc(100% - 10px);
@@ -857,6 +863,14 @@ h2 {
   .liqpay .form-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+  .liqpay .form-wrapper img {
+    margin-top: 20px;
+  }
+  .liqpay .summ-buttons button {
+    max-width: 120px;
+    width: 100%;
+    margin: 0px 15px 0px 15px;
   }
 }
 .owl-dot {
@@ -923,7 +937,7 @@ footer .footer-container .footer-item .footer-links a {
   color: #FFFFFF;
 }
 footer .footer-container .footer-item .footer__h2 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 600;

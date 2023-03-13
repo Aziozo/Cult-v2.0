@@ -570,9 +570,17 @@ h2{
 }
 
 @media screen and (max-width: 960px){
-    .payment{
+    .support{
+        margin-top: 42px;
+    }   
+     .payment{
         flex-direction: column;
         align-items: center;
+        .owl-nav{
+            button{
+                margin: 0px 22px 0px 22px;
+            }
+        }
     }
     .liqpay{
         max-width: calc(100% - 10px);
@@ -585,8 +593,17 @@ h2{
         }
         .form-wrapper{
             flex-direction: column;
-            align-items: center;
-            
+            align-items: center; 
+            img{
+                margin-top: 20px;
+            }
+        }
+        .summ-buttons{
+            button{
+                max-width: 120px;
+                width: 100%;
+                margin: 0px 15px 0px 15px;
+            }
         }
     }
 }
