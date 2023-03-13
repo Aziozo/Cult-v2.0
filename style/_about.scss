@@ -5,10 +5,17 @@
 }
 
 
+
+
 @media screen and (max-width: 960px){
     .services-page section {
             margin-top: 72ppx;
         }
+    .about-page-wrapper {
+        .main-content {
+            margin-top: 0px;
+        }
+    }
 }
 .about-us{
     .about-us__container{
@@ -464,6 +471,7 @@
     .reports{
         margin-top: 72px;
         .owl-carousel{
+            margin-top: 24px;
             .owl-item{
                 height: 550px;
             }

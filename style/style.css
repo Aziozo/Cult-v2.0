@@ -993,6 +993,9 @@ footer .license {
   .services-page section {
     margin-top: 72ppx;
   }
+  .about-page-wrapper .main-content {
+    margin-top: 0px;
+  }
 }
 .about-us .about-us__container {
   display: flex;
@@ -1383,6 +1386,9 @@ footer .license {
 @media screen and (max-width: 960px) {
   .reports {
     margin-top: 72px;
+  }
+  .reports .owl-carousel {
+    margin-top: 24px;
   }
   .reports .owl-carousel .owl-item {
     height: 550px;
