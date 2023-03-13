@@ -485,10 +485,13 @@ h2{
         }
         .summ-buttons{
             margin-top: 32px;
+            
             display: flex;
             justify-content: center;
             
             button{
+
+                margin: 0px 16px 0px 16px;
                 width: 113px;
                 height: 44px;
                 border: 1px solid #6844D0;
@@ -607,6 +610,7 @@ h2{
         }
         .summ-buttons{
             button{
+                
                 max-width: 120px;
                 width: 100%;
                 margin: 0px 15px 0px 15px;
