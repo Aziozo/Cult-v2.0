@@ -472,14 +472,17 @@ h2{
         }
         .select-summ{
             margin-top: 8px;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 14px;
+            line-height: 16px;
             letter-spacing: 0.02em;
+        
+            color: #000000;
         }
         .summ-buttons{
-            margin-top: 80px;
+            margin-top: 32px;
             display: flex;
             justify-content: center;
             

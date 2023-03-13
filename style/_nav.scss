@@ -123,13 +123,13 @@
         right: 0;
         left: 0;
         background-color: #fff;
+
         .menu-list{
             flex-direction: column;
             align-items: flex-start;
             padding-left: 32px;
-            margin-top: calc(10vw - 8px);
-            gap: 10vw;
-            background: url(../img/burger-mobile__bg.svg) no-repeat right;
+            background: url(../img/burger-mobile__bg.png) no-repeat right;
+            
             .main-page{
                 display: block;
             }
@@ -142,6 +142,8 @@
             font-size: 28px;
             line-height: 33px;
             letter-spacing: 0.02em;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .menu-mobile{
@@ -196,6 +198,7 @@
     #checkbox__toggle:checked ~ .menu {
         display: block;
         max-height: 100%;
+        height: 100%;
         transition: all .5s;
     }
 
