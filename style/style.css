@@ -682,6 +682,9 @@ h2 {
   right: 0px;
   display: flex;
 }
+.payment .payment-carousel .owl-nav button {
+  margin: 0px 15px 0px 15px;
+}
 .payment .payment-carousel .owl-dots {
   display: flex;
   margin-top: 43px;

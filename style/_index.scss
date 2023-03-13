@@ -406,7 +406,9 @@ h2{
             position: absolute;
             right:0px;
             display: flex;
-            
+            button{
+                margin: 0px 15px 0px 15px;
+            }
         }
         .owl-dots{
             display: flex;
