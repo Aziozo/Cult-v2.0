@@ -159,6 +159,10 @@
             }
         }
         .menu-list__item{
+            .current{
+                font-size: 22px;
+                font-weight: 700;
+            }
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 500;

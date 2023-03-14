@@ -171,6 +171,10 @@
     letter-spacing: 0.02em;
     margin: 0px 0px 5vh 0px;
   }
+  .menu .menu-list__item .current {
+    font-size: 22px;
+    font-weight: 700;
+  }
   .menu .menu-mobile {
     display: flex;
     flex-direction: column;
