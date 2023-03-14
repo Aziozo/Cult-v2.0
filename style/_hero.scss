@@ -133,4 +133,9 @@
         }
         background: url(../img/partners/hero-mob.svg) center center/cover;
     }
+    .hero-projects{
+        .hero-text{
+            display: none;
+        }
+    }
 }

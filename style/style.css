@@ -364,6 +364,9 @@
   .hero-partners .hero-text h1 {
     display: none;
   }
+  .hero-projects .hero-text {
+    display: none;
+  }
 }
 h2 {
   font-family: "Raleway";
