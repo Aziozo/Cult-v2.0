@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button class="try">try</button>
+
+    <script>
+         const options = {
+                async: true,
+                crossDomain: true,
+                method: 'POST',
+                headers: {
+                    accept: 'application/json; charset=UTF-8',
+                    'content-type': 'application/json',
+                    authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
+                },
+                body: JSON.stringify({ contact: { channels: [{ type: 'email', value: 'test@test.re' }] } })
+            };
+        $('.try').click(function(){
+            fetch('https://esputnik.com/api/v1/contact/subscribe', options)
+                .then(response => response.json())
+                .then(response => console.log(response))
+                .catch(err => console.error(err));
+        })
+    </script>
+</body>
+</html>
