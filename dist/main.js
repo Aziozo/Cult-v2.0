@@ -1,6 +1,9 @@
 art = $('title').text();
 console.log(art);
-if (art = "Культурна Агенція") {
-    art = "Головна"
+if (art == "Культурна Агенція") {
+    
 }
-$(".current").append(' <h1 class="current-h1">'+art+'</h1>')
+else{
+    console.log('else');
+    $(".current").append(' <h1 class="current-h1">'+art+'</h1>');
+}

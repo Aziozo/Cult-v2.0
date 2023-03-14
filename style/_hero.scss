@@ -126,6 +126,11 @@
         background: url(../img/services/hero-mob.svg) center center/cover;
     }
     .hero-partners{
+        .hero-text{
+            h1{
+                display: none;
+            }
+        }
         background: url(../img/partners/hero-mob.svg) center center/cover;
     }
 }

@@ -354,6 +354,9 @@
   .hero-partners {
     background: url(../img/partners/hero-mob.svg) center center/cover;
   }
+  .hero-partners .hero-text h1 {
+    display: none;
+  }
 }
 h2 {
   font-family: "Raleway";
@@ -1665,6 +1668,9 @@ footer .license {
 
 .partners-page section {
   margin-top: 100px;
+}
+.partners-page .financial-partners {
+  margin-top: 0px;
 }
 .partners-page .partners-descr {
   display: flex;
