@@ -124,6 +124,9 @@
 
     .hero-services{
         background: url(../img/services/hero-mob.svg) center center/cover;
+        .hero-text{
+            display: none;
+        }
     }
     .hero-partners{
         .hero-text{

@@ -358,6 +358,9 @@
   .hero-services {
     background: url(../img/services/hero-mob.svg) center center/cover;
   }
+  .hero-services .hero-text {
+    display: none;
+  }
   .hero-partners {
     background: url(../img/partners/hero-mob.svg) center center/cover;
   }
