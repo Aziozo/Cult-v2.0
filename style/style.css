@@ -216,6 +216,9 @@
   #checkbox__toggle:checked ~ .menu {
     display: block;
     min-height: 100%;
+    top: -70px;
+    padding-bottom: 70px;
+    transform: translateY(70px);
     transition: all 0.5s;
   }
   #checkbox__toggle:checked ~ .hamburger .nav-line {
