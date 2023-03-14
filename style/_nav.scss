@@ -220,9 +220,7 @@
     #checkbox__toggle:checked ~ .menu {
         display: block;
         min-height: 100%;
-        top: -70px;
-        padding-bottom: 80px;
-        transform: translateY(80px);
+    
         transition: all .5s;
     }
 
