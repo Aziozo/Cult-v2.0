@@ -1,6 +1,10 @@
 .menu-mobile{
     display: none;
 }
+
+.current{
+    display: none;
+}
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +115,19 @@
 }
 
 @media screen and (max-width: 960px) {
+    .current{
+        display: block;
+        h1{
+            margin-left: 21px;
+            margin-bottom: 32px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
+    }
+    }
     .navbar{
         justify-content: space-between;
         padding-left: 21px;
