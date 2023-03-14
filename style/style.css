@@ -2066,6 +2066,54 @@ footer .license {
   color: #000000;
 }
 
+@media screen and (max-width: 960px) {
+  .news-page .news {
+    flex-direction: column;
+  }
+  .news-page .news .news-descr {
+    margin-left: 0px;
+  }
+  .news-page .news .news-descr h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+  .news-page .news .news-descr > p {
+    margin-top: 15px;
+  }
+  .news-page .news .news-descr a {
+    margin-top: 24px;
+    width: 100%;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+  }
+  .news-page .owl-carousel .news-item .news-container {
+    height: 142px;
+  }
+  .news-page .owl-carousel .news-item .news-container .news-img {
+    max-width: 180px;
+    height: 142px;
+  }
+  .news-page .owl-carousel .news-item .news-container .news-wrap h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+  .news-page .owl-carousel .news-item .news-container .news-wrap p {
+    max-width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+}
 @font-face {
   font-family: Montserrat-f;
   src: url(../fonts/Montserrat-Regular.ttf);
