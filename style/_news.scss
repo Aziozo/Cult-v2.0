@@ -202,15 +202,28 @@
             line-height: 19px;
             letter-spacing: 0.02em;
             }
+            .tegs{
+                margin-top: 18px;
+                flex-wrap: wrap;
+            }
         }
     }
     .owl-carousel{
+        .owl-nav{
+            button{
+                margin: 0px 50px 0px 50px;
+            }
+        }
         .news-item{
             .news-container{
                 height: 142px;
                 .news-img{
+                    img{
+                        object-fit: cover;
+                        border-radius: 6px;
+                    }
                     max-width: 180px;
-                    height: 142px;
+                    height: 100%;
                 }
                 .news-wrap{
                     h3{
@@ -218,9 +231,10 @@
                     font-size: 14px;
                     line-height: 16px;
                     letter-spacing: 0.02em;
-                    }
+                    } 
                     p{
                     max-width: 140px;
+                    max-height: 70px;
                     text-overflow: ellipsis;
                     // white-space: nowrap;
                     overflow: hidden;
