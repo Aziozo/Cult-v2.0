@@ -59,6 +59,9 @@
   text-decoration: none;
   align-items: center;
 }
+.nav-wrap .nav-lang .nav-lang__img {
+  margin-right: 4px;
+}
 .nav-wrap .nav-lang .lang-active {
   margin-right: 12px;
   font-weight: 600 !important;
