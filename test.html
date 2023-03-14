@@ -13,15 +13,13 @@
 
     <script>
          const options = {
-                async: true,
-                crossDomain: true,
                 method: 'POST',
                 headers: {
                     accept: 'application/json; charset=UTF-8',
                     'content-type': 'application/json',
                     authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
                 },
-                body: JSON.stringify({ contact: { channels: [{ type: 'email', value: 'test@test.re' }] } })
+                body: JSON.stringify({ contact: { channels: [{ type: 'email', value: 'teste@tesst.re' }] } })
             };
         $('.try').click(function(){
             fetch('https://esputnik.com/api/v1/contact/subscribe', options)
