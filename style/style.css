@@ -1459,10 +1459,74 @@ footer .license {
     width: 100%;
   }
 }
-.dev {
-  width: var(--index);
+.project-page :nth-child(1) {
+  margin-top: 0px;
+}
+.project-page .right {
+  flex-direction: row-reverse;
+}
+.project-page .right .project-descr {
+  margin-right: 95px;
+  margin-left: 0px;
+}
+.project-page section {
+  max-width: 1440px !important;
+  margin-top: 100px;
+}
+.project-page .project {
+  display: flex;
+}
+.project-page .project .project-descr {
+  margin-left: 95px;
+  max-width: 540px;
+}
+.project-page .project .project-descr h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.project-page .project .project-descr p {
+  margin-top: 8px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.project-page .project .project-descr button {
+  margin-top: 32px;
+  height: 51px;
+  width: 162px;
+  background-color: transparent;
+  color: #000;
+}
+.project-page .project .project-descr button:hover {
+  background-color: #6844D0;
+  color: #fff;
+  transition: all 0.2s;
 }
 
+@media screen and (max-width: 960px) {
+  .project-page .project {
+    flex-direction: column;
+  }
+  .project-page .project .project-descr {
+    margin: 0px;
+  }
+  .project-page .project .project-descr h1 {
+    margin-top: 14px;
+  }
+  .project-page .project .project-descr button {
+    width: 100%;
+    height: 55px;
+  }
+}
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);

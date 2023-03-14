@@ -18,20 +18,10 @@ checkBox = document.getElementById('checkbox__toggle').addEventListener('click',
     }
 });
 
-// $('.menu-list').find('a').each(function() {
-
-//     if($(this).attr('href')==$(location).attr('href')
-//     ||($(this).attr('href')==$(location).attr('pathname'))){
-//            $(this).parent.addClass("current");
-//            console.log();
-//     }
-// });
 
 $('.menu-list').find('li a').each(function() {
-    
     if($(this).attr('href')==$(location).attr('href')
     ||($(this).attr('href')==$(location).attr('pathname'))){
-        
         $(this).addClass("current");
     }
 });
