@@ -211,7 +211,7 @@
     height: 64px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vw;
+    margin-top: 20px;
   }
   #checkbox__toggle:checked ~ .menu {
     display: block;
