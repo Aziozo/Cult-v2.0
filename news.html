@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>Новини</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+        </div>
+        <div class="nav-links">
+            <input type="checkbox" id="checkbox__toggle">
+            <label for="checkbox__toggle" class="hamburger">
+                <span class="nav-line">
+                </span>
+            </label>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item main-page"><a href="/index.html">Головна</a></li>
+                    <li class="menu-list__item"><a href="/about.html">Про нас</a></li>
+                    <li class="menu-list__item"><a href="/projects.html">Проекти</a></li>
+                    <li class="menu-list__item"><a href="/services.html">Послуги</a></li>
+                    <li class="menu-list__item"><a href="/partners.html">Партнери</a></li>
+                    <li class="menu-list__item"><a href="/news.html">Новини</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <button class="button">Підтримати</button>
+                    <div class="nav-lang">
+                        <div class="nav-lang__img">
+                            <img src="./img/lang__ua.svg" alt="">
+                        </div>
+                        <a href="#" class="lang lang-ua lang-active">UA</a>
+                        <a href="#" class="lang lang-eng">ENG</a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav-lang">
+                <div class="nav-lang__img">
+                    <img src="./img/lang__ua.svg" alt="">
+                </div>
+                <a href="#" class="lang-active">UA</a>
+                <a href="#" class="lang">ENG</a>
+            </div>
+            <a href="https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_cd4d68a17c01448283f68fc841b56e42"
+                class="button nav-button">Підтримати</a>
+        </div>
+    </nav>
+    <div class="news-page">
+        <section class="news">
+            <div class="news-img">
+                <img src="/img/news/news-1.png">
+            </div>
+            <div class="news-descr">
+                <div class="tegs">
+                    <div class="teg">
+                        <p>#НАВЗАЄМ</p>
+                    </div>
+                    <div class="teg">
+                        <p>#ПРЯМУЄМОРАЗОМ</p>
+                    </div>
+                </div>
+                <h1>Ми запустили свій крутий<br>сайт, щоб ви отримали новини!</h1>
+                <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися. Lorem Ipsum
+                використовують тому, що той забезпечує більш менш стандартне заповнення шаблону, а також реальний розподіл букв і
+                пробілів в абзацах, який не виходить при простій дублікації "Тут ваш текст.. Тут ваш текст.. Тут ваш текст.." Багато
+                програм електронної верстки та редактори</p>
+                <a class="button">Детальніше</a>
+            </div>
+        </section>
+        <section class="more-news">
+            <h2>Ще новини</h2>
+            <div class="owl-carousel" id="more">
+                <a href="#" class="news-item" data-slide-index="0">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="1">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="2">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="3">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="4">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="5">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="6">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="7">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="news-item" data-slide-index="8">
+                    <div class="news-container">
+                        <div class="news-img">
+                            <img src="./img/news/news-2.png">
+                        </div>
+                        <div class="news-wrap">
+                            <h3>Ми запустили свій крутий сайт, щоб ви отримали</h3>
+                            <p>Давно з'ясовано, що при оцінці дизайну та композиції текст, що читається, заважає зосередитися автаівоаівовфідівфів ...</p>
+                            <div class="date">20.11.2023</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+</body>
+<script src="./dist/owl.carousel.min.js"></script>
+<script src="./dist/news.js"></script>
+<script src="./dist/main.js"></script>
+</html>

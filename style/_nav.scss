@@ -43,6 +43,9 @@
         letter-spacing: 0.02em;
         margin: 0px 16px 0px 16px;
         a{color: #000;}
+        .current-a{
+            font-weight: 600;
+        }
     }
 }
 
@@ -159,7 +162,7 @@
             }
         }
         .menu-list__item{
-            .current{
+            .current-a{
                 font-size: 22px;
                 font-weight: 700;
             }

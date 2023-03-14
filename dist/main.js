@@ -3,7 +3,6 @@ if (art == "Культурна Агенція") {
     art = "Головна"
 }
 else{
-    console.log('else');
     $(".current").append(' <h1 class="current-h1">'+art+'</h1>');
 }
 
@@ -22,6 +21,12 @@ checkBox = document.getElementById('checkbox__toggle').addEventListener('click',
 $('.menu-list').find('li a').each(function() {
     if($(this).attr('href')==$(location).attr('href')
     ||($(this).attr('href')==$(location).attr('pathname'))){
-        $(this).addClass("current");
+        $(this).addClass("current-a");
     }
 });
+
+if ($(location).attr('pathname')=='/partners.html'){
+    console.log('true');
+    $('footer').css('margin-top','0px')
+}
+
