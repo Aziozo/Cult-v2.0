@@ -1643,13 +1643,16 @@ footer .license {
   }
 }
 
+.partners-page section {
+  margin-top: 100px;
+}
 .partners-page .partners-descr {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .partners-page .partners-descr h1 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -1722,7 +1725,7 @@ footer .license {
   background: url(../img/partners/banner.png) center center/cover;
 }
 .banner h1 {
-  font-family: Raleway-sb;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;

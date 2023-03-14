@@ -1,11 +1,14 @@
 .partners-page{
+    section{
+        margin-top: 100px;
+    }
     .partners-descr {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         h1 {
-            font-family: Raleway-sb;
+            font-family: 'Raleway';
             font-style: normal;
             font-weight: 600;
             font-size: 48px;
@@ -80,7 +83,7 @@
     height: 350px;
     background: url(../img/partners/banner.png) center center/cover;
     h1{
-        font-family: Raleway-sb;
+        font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
         font-size: 48px;
