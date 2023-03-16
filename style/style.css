@@ -2487,6 +2487,7 @@ h3 {
   outline: none;
 }
 .order .modal-container .contact-form > input {
+  -webkit-appearance: none;
   margin-top: 12px;
   border: 0px;
   border-bottom: 1px solid #000;
