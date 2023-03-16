@@ -2638,6 +2638,8 @@ h3 {
     letter-spacing: 0.02em;
   }
   .order .modal-container .contact-form > input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     padding-left: 0px;
   }
 }

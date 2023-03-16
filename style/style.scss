@@ -400,6 +400,8 @@ h3 {
         }
         .contact-form{
         >input{
+            -webkit-appearance: none;
+            -webkit-border-radius: 0;
             padding-left: 0px;
         }
         }
