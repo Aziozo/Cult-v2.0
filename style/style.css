@@ -8,7 +8,7 @@
   display: none;
 }
 
-.current {
+.current-page {
   display: none;
 }
 
@@ -124,10 +124,10 @@
 }
 
 @media screen and (max-width: 960px) {
-  .current {
+  .current-page {
     display: block;
   }
-  .current h1 {
+  .current-page h1 {
     margin-left: 21px;
     margin-bottom: 32px;
     font-family: "Raleway";
@@ -2130,8 +2130,8 @@ footer .license {
 .email {
   width: 100%;
   height: 313px;
-  background-color: #4A3AD1;
   padding: 47px 165px 47px 165px;
+  background: url(../img/banner-email.png) no-repeat right, #4A3AD1;
 }
 .email .email-container {
   display: flex;
@@ -2140,7 +2140,7 @@ footer .license {
 .email .email-container .email-wrapper {
   height: 210px;
   position: relative;
-  max-width: 294px;
+  max-width: 296px;
 }
 .email .email-container .email-wrapper img {
   width: 190px;
@@ -2208,7 +2208,84 @@ footer .license {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+.email .email-container .email-form .email-form__wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+.email .email-container .email-form .email-form__wrapper form .form-wrapper {
+  display: flex;
+}
+.email .email-container .email-form .email-form__wrapper form textarea:focus,
+.email .email-container .email-form .email-form__wrapper form input:focus {
+  outline: none;
+}
+.email .email-container .email-form .email-form__wrapper form input[type=email] {
+  width: 324px;
+  height: 54px;
+  border: 0px;
+  border-radius: 11px 0px 0px 11px;
+  padding: 17px 24px 17px 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.email .email-container .email-form .email-form__wrapper form input[type=email]::-moz-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.email .email-container .email-form .email-form__wrapper form input[type=email]::placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+.email .email-container .email-form .email-form__wrapper form input[type=submit] {
+  height: 54px;
+  border: 0px;
+  padding: 19px 16px 19px 16px;
+  background-color: #000;
+  color: #FFFFFF;
+  border-radius: 0px 11px 11px 0px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.email .email-container .email-form .email-form__wrapper form .checkbox {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email .email-container .email-form .email-form__wrapper form .checkbox label {
+  margin-left: 14px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
 
+@media screen and (max-width: 1100px) {
+  .email {
+    padding: 47px 50px 47px 50px;
+  }
+}
 @font-face {
   font-family: Montserrat-f;
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -2297,9 +2374,8 @@ h3 {
 }
 
 .modal {
-  width: 100%;
-  height: 395px;
-  max-width: 734px !important;
+  max-width: 100% !important;
+  height: 100%;
   background-color: #fff;
   border-radius: 15px !important;
   padding: 0px !important;
@@ -2310,6 +2386,9 @@ h3 {
   background: url(../img/main/close.svg) !important;
 }
 
+.team-modal {
+  max-width: 734px !important;
+}
 .team-modal .team-avatar {
   width: 300px;
   height: 395px;
@@ -2362,6 +2441,129 @@ h3 {
 }
 .team-modal .team-mobile-img {
   display: none !important;
+}
+
+.order {
+  width: 578px !important;
+  background-color: #fff;
+}
+.order .modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 44px 51px 39px 51px;
+  width: 100%;
+  height: 100%;
+}
+.order .modal-container h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.order .modal-container p {
+  margin-top: 8px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+}
+.order .modal-container .contact-form {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.order .modal-container .contact-form input::-webkit-outer-spin-button,
+.order .modal-container .contact-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.order .modal-container .contact-form textarea:focus,
+.order .modal-container .contact-form input:focus {
+  outline: none;
+}
+.order .modal-container .contact-form > input {
+  margin-top: 12px;
+  border: 0px;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  height: 60px;
+  padding-left: 23px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.order .modal-container .contact-form > input::-moz-placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.order .modal-container .contact-form > input::placeholder {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.order .modal-container .contact-form input[type=number] {
+  font-family: Montserrat-f;
+}
+.order .modal-container .contact-form .contact-form__wrap {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.order .modal-container .contact-form .contact-form__wrap input[type=checkbox] {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+.order .modal-container .contact-form .contact-form__wrap label {
+  margin-left: 14px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.order .modal-container .contact-form .contact-form__wrap .politic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .modal-container .contact-form .contact-form__wrap input[type=submit] {
+  margin-top: 18px;
+  width: 212px;
+  height: 51px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 18px;
+  background-color: #6844D0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
@@ -2418,5 +2620,19 @@ h3 {
   .team-modal .team-avatar img {
     width: 322px;
     height: 300px;
+  }
+  .order {
+    height: auto;
+  }
+  .order .modal-container {
+    padding: 50px 20px;
+  }
+  .order .modal-container h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
   }
 }

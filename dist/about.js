@@ -2,7 +2,7 @@
 
 
 // ------- modals -----------
-  $(function() {
+$(function() {
     $('div.[data-modal]').on('click', function() {
         event.preventDefault();
          $($(this).data('modal')).modal({
@@ -171,20 +171,3 @@ $('.reports-carousel').owlCarousel({
     dots: true,
     autoplay: false,
 });
-// var owl = $('.reports-carousel');
-// owl.owlCarousel();
-// owl.on('translate.owl.carousel', function (event) {
-//     $('.reports .owl-dots .owl-dot').prop('disabled', true)
-//     })
-// owl.on('translated.owl.carousel', function (event) {
-//     $('.reports .owl-dots .owl-dot').prop('disabled', false)
-//     })
-
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-// // ------- ScrollSmoother -----------
-// ScrollSmoother.create({
-//     wrapper: '.wrapper',
-//     content: '.content',
-//     smooth: 2,  
-//     smoothTouch: 0.1,    
-// })

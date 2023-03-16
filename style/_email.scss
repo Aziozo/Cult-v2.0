@@ -1,15 +1,17 @@
 .email{
     width: 100%;
     height: 313px;
-    background-color: #4A3AD1;
     padding: 47px 165px 47px 165px;
+    background: url(../img/banner-email.png) no-repeat right, #4A3AD1;
+   
+    
     .email-container{
         display: flex;
         justify-content: space-between;
         .email-wrapper{
             height: 210px;
             position: relative;
-            max-width: 294px;
+            max-width: 296px;
             img{
                 width: 190px;
                 height: auto;
@@ -79,7 +81,77 @@
                     letter-spacing: 0.02em;
                     color: #FFFFFF;
                 }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 9px;
+                    .form-wrapper{
+                        display: flex;
+                    }
+                    textarea:focus,
+                    input:focus {
+                        outline: none;
+                    }
+                    input[type="email"] {
+                        width: 324px;
+                        height: 54px;
+                        border: 0px;
+                        border-radius: 11px 0px 0px 11px;
+                        padding: 17px 24px 17px 24px;
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.02em;
+                        &::placeholder{
+                            font-family: 'Raleway';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 0.02em;
+                        }
+                    }
+                    input[type="submit"]{
+                        height: 54px;
+                        border: 0px;
+                        padding: 19px 16px 19px 16px;
+                        background-color: #000;
+                        color: #FFFFFF;
+                        border-radius: 0px 11px 11px 0px;
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.02em;
+                        cursor: pointer;
+                    }
+                    .checkbox{
+                        margin-top: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        label{
+                        margin-left: 14px;
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 0.02em;
+                        color: #FFFFFF; 
+                        }
+                    }
+                }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .email{
+        padding: 47px 50px 47px 50px;
     }
 }

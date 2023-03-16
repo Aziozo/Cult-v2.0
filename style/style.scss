@@ -119,9 +119,8 @@ h3 {
 // -----modals-----
 
 .modal {
-    width: 100%;
-    height: 395px;
-    max-width: 734px !important;
+    max-width: 100% !important;
+    height: 100%;
     background-color: #fff;
     border-radius: 15px !important;
     padding: 0px !important;
@@ -135,6 +134,7 @@ h3 {
 }
 
 .team-modal{
+    max-width: 734px !important;
     .team-avatar{
         width: 300px;
         height: 395px;
@@ -202,6 +202,122 @@ h3 {
     }
 }
 
+.order{
+    width: 578px !important;
+    background-color: #fff;
+    .modal-container{
+        display: flex;
+        flex-direction: column;
+        padding: 44px 51px 39px 51px;
+        width: 100%;
+        height: 100%;
+        h1{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        }
+        p{
+        margin-top: 8px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        }
+        .contact-form{
+            margin-top: 4px;
+            display: flex;
+            flex-direction: column;
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            textarea:focus,
+            input:focus {
+                outline: none;
+            }
+            >input{
+                margin-top: 12px;
+                border: 0px;
+                border-bottom: 1px solid #000;
+                width: 100%;
+                height: 60px;
+                padding-left: 23px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                &::placeholder{
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
+            }
+            input[type="number"]{
+                font-family: Montserrat-f;
+            }
+            .contact-form__wrap{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                input[type="checkbox"]{
+                    cursor: pointer;
+                    width: 18px;
+                    height: 18px;
+                }
+                label{
+                margin-left: 14px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.02em;
+                color: #000000;
+                }
+                .politic{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                input[type="submit"]{
+                    margin-top: 18px;
+                    width: 212px;
+                    height: 51px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 0.02em;
+                    color: #FFFFFF;
+                    border: 0px;
+                    border-radius: 18px;
+                    background-color: #6844D0;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
 @media screen and (max-width: 960px){
 .modal {
     max-width: 300px !important;
@@ -268,4 +384,19 @@ h3 {
     }
 
 }
+.order{
+    height: auto;
+    .modal-container{
+        padding: 50px 20px;
+        h1{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
+        }
+    }
 }
+}
+

@@ -64,7 +64,7 @@
         class="button nav-button">Підтримати</a>
 </div>
 </nav>
-<div class="current"></div>
+<div class="current-page"></div>
 <section class="hero hero-main">
 <div class="hero-text">
     <h1>Культурна Агенція</h1>
@@ -218,7 +218,7 @@
         <h2 class="partners__h2">Партнери</h2>
         <p class="partners__p">Весь час наші проєкти підтримували фінансово, медійно чи операційно організації, які поділяють наші цінності та цілі.
         Надійне партнерство, що триває роками, є одним із найбільших надбань. Пишаємося співпрацею!</p>
-        <button class="button partners-button">Стати партнером</button>
+        <a href="#order" rel="modal:open" class="button partners-button">Стати партнером</a>
     </div>
 </section>
 <section class="support" id="support">
@@ -329,6 +329,7 @@
     </div>
 </section>
 </div>
+
 <footer>
     <div class="footer-container">
         <div class="footer-item">
@@ -387,6 +388,29 @@
     </div>
     <p class="license"><span>2022 - 2023</span>. Всі права захищені.</p>
 </footer>
+
+<section class="modals">
+    <div class="modal order" id="order">
+        <div class="modal-container">
+            <h1>Співпрацювати</h1>
+            <p>Ми вже хочемо дізнатися, яку співпрацю ви маєте на думці. Або ж давайте придумаємо її разом — тільки відправте нам свій
+            контакт через форму нижче</p>
+            <form action="" class="contact-form">
+                <input type="text" name="partner-form__name" id="partner-form__name" placeholder="Як вас звати" required>
+                <input type="number" name="partner-form__phone" id="partner-form__phone" placeholder="Залиште номер телефону" required>
+                <input type="email" name="partner-form__mail" id="partner-form__mail" placeholder="Залиште імейл" required>
+                <input type="text" name="partner-form__text" id="partner-form__text" placeholder="Що хочете запропонувати?" required>
+                <div class="contact-form__wrap">
+                    <div class="politic">
+                        <input type="checkbox" name="contact-form__checkbox" required>
+                        <label for="contact-form__checkbox">Я погоджуюся з Політикою конфіденційності</label>
+                    </div>
+                    <input type="submit" value="Надіслати">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 <!-- payment -->
 <script src="./dist/pay.js">
 </script>

@@ -34,49 +34,55 @@
             <div class="email-form__wrapper">
                 <p>Підпишіться на розсилку</p>
                 <form action="" id="form-email">
-                    <input type="email" name="mail" id="email">
-                    <input type="submit" id="email-send">
+                    <div class="form-wrapper">
+                        <input type="email" name="mail" id="email" placeholder="@gmail.com" class="email-input">
+                        <input type="submit" id="email-send" value="Підписатися">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="check" id="check-mail" required>
+                        <label for="check">Я підтверджую згоду з політикою конфединційності</label>
+                    </div>
                 </form>         
             </div>
         </div>
     </div>
 </section>
+<script>
+    let button = $('#email-send')
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://esputnik.com/api/v1/contact/subscribe',
+            method: 'POST',
+            headers: {
+                accept: 'application/json; charset=UTF-8',
+                'content-type': 'application/json',
+                authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
+            },
+            processData: false,
+            data: '{"contact":{"channels":[{"type":"email","value":"default"}]}}'
+        };
+        
+        var newdata = $('#email')
+        $('#form-email').submit(function(){
+        event.preventDefault();
+        let varer = { contact: { channels: [{ type: 'email', value: 'test@mail.com' }] } }
+        let supone = {
+            type: 'email', 
+            value: 'test@mail.com'
+            }
+        supone.value = newdata.val()
+        varer.contact.channels[0] = supone
+        settings.data = JSON.stringify(varer)
+        $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+        })
+
+    
 
 
 
-
-    <script>
-
-        let button = $('#email-send')
-          const settings = {
-                async: true,
-                crossDomain: true,
-                url: 'https://esputnik.com/api/v1/contact/subscribe',
-                method: 'POST',
-                headers: {
-                    accept: 'application/json; charset=UTF-8',
-                    'content-type': 'application/json',
-                    authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
-                },
-                processData: false,
-                data: '{"contact":{"channels":[{"type":"email","value":"default"}]}}'
-            };
-           var newdata = $('#email')
-           $('#form-email').submit(function(){
-            event.preventDefault();
-            let newbody = '{"contact":{"channels":[{"type":"email","value:"'+newdata.val()+'"}]}}'
-            settings.data = JSON.stringify(newbody) 
-            console.log(settings);
-            $.ajax(settings).done(function (response) {
-                   console.log(response);
-               });
-           })
-           
-
-                
-         
-           
-       
-    </script>
+</script>
 </body>
 </html>

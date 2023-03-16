@@ -3,7 +3,7 @@ if (art == "Культурна Агенція") {
     art = "Головна"
 }
 else{
-    $(".current").append(' <h1 class="current-h1">'+art+'</h1>');
+    $(".current-page").append(' <h1 class="current-h1">'+art+'</h1>');
 }
 
 checkBox = document.getElementById('checkbox__toggle').addEventListener('click', event => {
@@ -30,3 +30,4 @@ if ($(location).attr('pathname')=='/partners.html'){
     $('footer').css('margin-top','0px')
 }
 
+  
