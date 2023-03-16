@@ -4,29 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="./style/style.min.css">
     <title>Document</title>
 </head>
 <body>
-    <button class="try">try</button>
+
+<section class="email">
+    <div class="email-container">
+        <div class="email-wrapper">
+            <img src="./img/logo-white.png">
+            <p>Ми відкриті до питань і пропозицій, тож чекаємо на ваші листи</p>
+            <div class="buttons">
+                <button class="contact-button">Зв'язатися</button>
+                <button class="project-button">Проєкти</button>
+            </div>
+        </div>
+        <div class="email-form">
+            <a href="mailto:info@agencya.org">test@gmail.com</a>
+            <div class="email-form__links">
+                <a href=""><img src="./img/Facebook - Negative.png"></a>
+                <a href=""><img src="./img/Instagram - Negative.png"></a>
+            </div>
+            <div class="email-form__wrapper">
+                <p>Підпишіться на розсилку</p>
+                <form action="" id="form-email">
+                    <input type="email" name="mail" id="email">
+                    <input type="submit" id="email-send">
+                </form>         
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
     <script>
-         const options = {
+
+        let button = $('#email-send')
+          const settings = {
+                async: true,
+                crossDomain: true,
+                url: 'https://esputnik.com/api/v1/contact/subscribe',
                 method: 'POST',
                 headers: {
                     accept: 'application/json; charset=UTF-8',
                     'content-type': 'application/json',
                     authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
                 },
-                body: JSON.stringify({ contact: { channels: [{ type: 'email', value: 'neosmart511@gmail.com' }] } })
+                processData: false,
+                data: '{"contact":{"channels":[{"type":"email","value":"default"}]}}'
             };
-        $('.try').click(function(){
-            fetch('https://esputnik.com/api/v1/contact/subscribe', options)
-                .then(response => response.json())
-                .then(response => console.log(response))
-                .catch(err => console.error(err));
-        })
+           var newdata = $('#email')
+           $('#form-email').submit(function(){
+            event.preventDefault();
+            let newbody = '{"contact":{"channels":[{"type":"email","value:"'+newdata.val()+'"}]}}'
+            settings.data = JSON.stringify(newbody) 
+            console.log(settings);
+            $.ajax(settings).done(function (response) {
+                   console.log(response);
+               });
+           })
+           
+
+                
+         
+           
+       
     </script>
 </body>
 </html>

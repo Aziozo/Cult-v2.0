@@ -2127,6 +2127,88 @@ footer .license {
     letter-spacing: 0.02em;
   }
 }
+.email {
+  width: 100%;
+  height: 313px;
+  background-color: #4A3AD1;
+  padding: 47px 165px 47px 165px;
+}
+.email .email-container {
+  display: flex;
+  justify-content: space-between;
+}
+.email .email-container .email-wrapper {
+  height: 210px;
+  position: relative;
+  max-width: 294px;
+}
+.email .email-container .email-wrapper img {
+  width: 190px;
+  height: auto;
+}
+.email .email-container .email-wrapper p {
+  margin-top: 18px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.email .email-container .email-wrapper .buttons {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+.email .email-container .email-wrapper .buttons button {
+  cursor: pointer;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  width: 140px;
+  height: 48px;
+  border-radius: 18px;
+  border: 0px;
+}
+.email .email-container .email-wrapper .buttons .contact-button {
+  background-color: #000;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+.email .email-container .email-form > a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.email .email-container .email-form .email-form__links {
+  margin-top: 28px;
+}
+.email .email-container .email-form .email-form__links a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 76px;
+}
+.email .email-container .email-form .email-form__wrapper {
+  margin-top: 22px;
+}
+.email .email-container .email-form .email-form__wrapper p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: Montserrat-f;
   src: url(../fonts/Montserrat-Regular.ttf);
