@@ -2642,4 +2642,10 @@ h3 {
     -webkit-border-radius: 0;
     padding-left: 0px;
   }
+  .order .modal-container .contact-form .contact-form__wrap {
+    margin-top: 20px;
+  }
+  .order .modal-container .contact-form .contact-form__wrap input[type=submit] {
+    margin-top: 40px;
+  }
 }

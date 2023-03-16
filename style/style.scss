@@ -404,6 +404,12 @@ h3 {
             -webkit-border-radius: 0;
             padding-left: 0px;
         }
+        .contact-form__wrap {
+            margin-top: 20px;
+            input[type="submit"] {
+                margin-top: 40px;
+            }
+        }
         }
     }
 }
