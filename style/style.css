@@ -2375,7 +2375,7 @@ h3 {
 
 .modal {
   max-width: 100% !important;
-  height: 100%;
+  height: auto;
   background-color: #fff;
   border-radius: 15px !important;
   padding: 0px !important;
