@@ -386,6 +386,7 @@ h2 {
 
 .about {
   display: flex;
+  margin-top: 20px;
   justify-content: space-between;
 }
 .about .about-wrap {
@@ -456,7 +457,7 @@ h2 {
   }
 }
 .projects {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .projects .projects-container {
   margin-top: 32px;
@@ -543,7 +544,7 @@ h2 {
   }
 }
 .services {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .services .services-descr {
   display: flex;
@@ -622,7 +623,7 @@ h2 {
   }
 }
 .partners {
-  margin-top: 100px;
+  margin-top: 120px;
   display: flex;
   flex-direction: row;
 }
@@ -699,7 +700,7 @@ h2 {
   }
 }
 .support {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .support .support__p {
   margin-top: 14px;
