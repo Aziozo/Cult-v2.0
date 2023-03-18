@@ -1024,6 +1024,9 @@ footer .license {
     color: #FFFFFF;
   }
 }
+.about-page {
+  margin-top: 0px !important;
+}
 .about-page section {
   margin-top: 100px;
 }
