@@ -543,7 +543,7 @@ h2 {
   }
 }
 .services {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .services .services-descr {
   display: flex;
@@ -1267,6 +1267,9 @@ footer .license {
   .team .owl-dots .active * {
     background: #4A3AD1 !important;
   }
+}
+.reports {
+  margin-top: 80px !important;
 }
 .reports h3 {
   font-family: "Raleway";
