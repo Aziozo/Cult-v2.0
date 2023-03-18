@@ -1163,6 +1163,9 @@ footer .license {
     gap: 71px !important;
   }
 }
+.team {
+  margin-top: 44px !important;
+}
 .team h3 {
   font-family: "Raleway";
   font-style: normal;
