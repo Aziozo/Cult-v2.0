@@ -834,6 +834,7 @@ h2 {
   outline: none;
 }
 .payment .liqpay input::-moz-placeholder {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -842,6 +843,7 @@ h2 {
   color: #000000;
 }
 .payment .liqpay input::placeholder {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
