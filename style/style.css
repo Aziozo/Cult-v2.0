@@ -544,7 +544,7 @@ h2 {
   }
 }
 .services {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .services .services-descr {
   display: flex;
@@ -577,7 +577,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .services {
-    margin-top: 60px;
+    margin-top: 90px;
   }
   .services .services-carousel {
     margin-top: 32px;
