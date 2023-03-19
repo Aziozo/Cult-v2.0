@@ -1,6 +1,6 @@
 .partners-page{
     section{
-        margin-top: 100px;
+        margin-top: 172px;
     }
     .financial-partners{
         margin-top: 0px;
@@ -38,8 +38,13 @@
     }
     .owl-carousel {
         position: relative;
-        margin-top: 40px;
+        margin-top: 54px;
         height: 400px;
+        .owl-item{
+            img{
+                // width: 315px;
+            }
+        }
     }
     .partners-item {
         width: 100%;
@@ -50,7 +55,7 @@
         button{
             z-index: 20;
         }
-        margin-top: 52px;
+        margin-top: 54px;
         display: flex;
         justify-content: center;
         gap: 193px;

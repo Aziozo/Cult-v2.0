@@ -7,6 +7,7 @@ $(document).ready(function() {
     margin: 0,
     nav: true,
     dots: true,
+    margin: 31,
     slideBy: 'page',
     responsive: {
       0: {

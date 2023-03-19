@@ -1764,7 +1764,7 @@ footer .license {
 }
 
 .partners-page section {
-  margin-top: 100px;
+  margin-top: 172px;
 }
 .partners-page .financial-partners {
   margin-top: 0px;
@@ -1799,7 +1799,7 @@ footer .license {
 }
 .partners-page .owl-carousel {
   position: relative;
-  margin-top: 40px;
+  margin-top: 54px;
   height: 400px;
 }
 .partners-page .partners-item {
@@ -1808,7 +1808,7 @@ footer .license {
   max-width: 350px;
 }
 .partners-page .owl-nav {
-  margin-top: 52px;
+  margin-top: 54px;
   display: flex;
   justify-content: center;
   gap: 193px;
