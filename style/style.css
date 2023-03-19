@@ -2111,6 +2111,7 @@ footer .license {
   margin-top: 24px;
 }
 .some-news .news-wrap .new-wrap__head {
+  margin-top: 0px;
   display: flex;
   align-items: center;
 }
