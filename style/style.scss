@@ -103,6 +103,14 @@ h3 {
 }
 
 
+.points {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 .main-content{
     background-color: #fff;
     display: flex;

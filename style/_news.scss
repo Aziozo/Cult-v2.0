@@ -142,6 +142,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+
                     // justify-content: center;
                     position: relative;
                     max-width: 270px;
@@ -156,13 +157,7 @@
                             letter-spacing: 0.02em;
                             color: #000000;
                     }
-                    .points {
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 3;
-                        -webkit-box-orient: vertical;
-                    }
+                    
                     >p{  
                     margin-top: 8px;
                     font-family: 'Raleway';
@@ -193,6 +188,84 @@
         }
     }
 }
+
+// news exemple
+.some-news{
+    margin-bottom: 100px;
+    display: flex;
+    .news-wrap{
+        margin-right: 126px;
+        max-width: 730px;
+        width: 100%;
+        // background-color: pink;
+        height: 100%;
+        >div{
+            margin-top: 24px;
+        }
+        .new-wrap__head{
+            display: flex;
+            align-items: center;
+            h1{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 0.02em;
+                color: #000000;
+            }
+        }
+        .news-wrap__body{
+            .news-body-img{
+                margin-bottom: 32px;
+            }
+            .news-article{
+                h2{
+                    margin-bottom: 8px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
+                p{
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
+            }
+            .news-video{
+                margin-top: 24px;
+                p{
+                    margin-top: 32px;
+                    font-family: 'Raleway';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .other-news{
+        max-width: 255px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        opacity: .5;
+        height: 1000px;
+    }
+}
+
 
 @media screen and (max-width: 960px){
 .news-page{
