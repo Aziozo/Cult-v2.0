@@ -2229,7 +2229,7 @@ footer .license {
 .email .email-container .email-form .email-form__links a img {
   width: 32px;
   height: 32px;
-  margin-right: 76px;
+  margin: 0px 44px 0px 0px;
 }
 .email .email-container .email-form .email-form__wrapper {
   margin-top: 22px;
