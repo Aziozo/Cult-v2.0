@@ -2344,6 +2344,7 @@ footer .license {
     width: 100%;
   }
   .email .email-container .email-wrapper .buttons button {
+    color: #000;
     margin-top: 32px;
     width: 100%;
     margin-right: 0px;
