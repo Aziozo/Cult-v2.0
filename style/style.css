@@ -2108,6 +2108,30 @@ footer .license {
   max-width: 1100px;
   width: 100%;
 }
+.news-content .news-nav {
+  margin-bottom: 32px;
+  max-width: 1100px;
+  width: 100%;
+}
+.news-content .news-nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.news-content .news-nav a img {
+  width: 18px;
+  height: 18px;
+}
+.news-content .news-nav .date {
+  display: none;
+}
 
 .some-news {
   margin-bottom: 100px;
@@ -2246,6 +2270,19 @@ footer .license {
   }
   .news-content {
     margin-top: 32px;
+  }
+  .news-content .news-nav {
+    margin-bottom: 32px;
+    padding: 0px 15px 0px 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .news-content .news-nav .date {
+    display: block;
+  }
+  .some-news .news-wrap .new-wrap__head .date {
+    display: none;
   }
   .some-news .other-news {
     display: none;
