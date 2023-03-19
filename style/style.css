@@ -2055,7 +2055,6 @@ footer .license {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   max-width: 270px;
   width: 100%;
