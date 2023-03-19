@@ -3,7 +3,7 @@
         margin-top: 148px;
     }
 
-   & ~ .email{
+   & ~   .email{
         margin-top: 0px;
     }
 
@@ -126,6 +126,9 @@
 
 @media screen and (max-width: 960px){
 .partners-page{
+    & ~ .email{
+        margin-top: 0px;
+    }
     .partners-descr{
         flex-direction: column !important;
     }

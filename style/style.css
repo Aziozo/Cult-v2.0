@@ -1878,6 +1878,9 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .partners-page ~ .email {
+    margin-top: 0px;
+  }
   .partners-page .partners-descr {
     flex-direction: column !important;
   }
