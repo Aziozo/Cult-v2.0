@@ -1,4 +1,5 @@
 .email{
+    margin-top: 100px;
     width: 100%;
     height: 313px;
     padding: 47px 165px 47px 165px;
@@ -152,6 +153,7 @@
 
 @media screen and (max-width: 1100px){
     .email{
+        margin-top: 72px;
         padding: 30px 20px 30px 20px;
         height: 100%;
         .email-container{
@@ -199,7 +201,6 @@
                     }
                 }
                 .email-form__wrapper{
-                    
                     form{
                         .form-wrapper{
                             justify-content: center;
@@ -215,6 +216,15 @@
                             font-size: 10px;
                             line-height: 16px;
                             letter-spacing: 0.02em;
+                        }
+                        .checkbox{
+                            label{
+                                font-weight: 500;
+                                font-size: 13px;
+                                line-height: 15px;
+                                letter-spacing: 0.02em;
+                                color: #FFFFFF;
+                            }
                         }
                     }
                 }
