@@ -2196,7 +2196,10 @@ footer .license {
   bottom: 0px;
   display: flex;
 }
-.email .email-container .email-wrapper .buttons button {
+.email .email-container .email-wrapper .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-family: "Raleway";
   font-style: normal;
@@ -2213,6 +2216,10 @@ footer .license {
   background-color: #000;
   color: #FFFFFF;
   margin-right: 16px;
+}
+.email .email-container .email-wrapper .buttons .project-button {
+  background-color: #fff;
+  color: #000;
 }
 .email .email-container .email-form > a {
   font-family: "Raleway";
@@ -2344,7 +2351,7 @@ footer .license {
     margin-top: 11px;
     width: 100%;
   }
-  .email .email-container .email-wrapper .buttons button {
+  .email .email-container .email-wrapper .buttons a {
     color: #000;
     margin-top: 32px;
     width: 100%;
@@ -2548,18 +2555,21 @@ h3 {
   display: none !important;
 }
 
-.order {
+.order,
+.contact-us {
   width: 578px !important;
   background-color: #fff;
 }
-.order .modal-container {
+.order .modal-container,
+.contact-us .modal-container {
   display: flex;
   flex-direction: column;
   padding: 44px 51px 39px 51px;
   width: 100%;
   height: 100%;
 }
-.order .modal-container h1 {
+.order .modal-container h1,
+.contact-us .modal-container h1 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
@@ -2568,7 +2578,8 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container p {
+.order .modal-container p,
+.contact-us .modal-container p {
   margin-top: 8px;
   font-family: "Raleway";
   font-style: normal;
@@ -2577,21 +2588,27 @@ h3 {
   line-height: 140%;
   letter-spacing: 0.02em;
 }
-.order .modal-container .contact-form {
+.order .modal-container .contact-form,
+.contact-us .modal-container .contact-form {
   margin-top: 4px;
   display: flex;
   flex-direction: column;
 }
 .order .modal-container .contact-form input::-webkit-outer-spin-button,
-.order .modal-container .contact-form input::-webkit-inner-spin-button {
+.order .modal-container .contact-form input::-webkit-inner-spin-button,
+.contact-us .modal-container .contact-form input::-webkit-outer-spin-button,
+.contact-us .modal-container .contact-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 .order .modal-container .contact-form textarea:focus,
-.order .modal-container .contact-form input:focus {
+.order .modal-container .contact-form input:focus,
+.contact-us .modal-container .contact-form textarea:focus,
+.contact-us .modal-container .contact-form input:focus {
   outline: none;
 }
-.order .modal-container .contact-form > input {
+.order .modal-container .contact-form > input,
+.contact-us .modal-container .contact-form > input {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   margin-top: 12px;
@@ -2608,7 +2625,7 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container .contact-form > input::-moz-placeholder {
+.order .modal-container .contact-form > input::-moz-placeholder, .contact-us .modal-container .contact-form > input::-moz-placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
@@ -2617,7 +2634,8 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container .contact-form > input::placeholder {
+.order .modal-container .contact-form > input::placeholder,
+.contact-us .modal-container .contact-form > input::placeholder {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
@@ -2626,22 +2644,26 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container .contact-form input[type=number] {
+.order .modal-container .contact-form input[type=number],
+.contact-us .modal-container .contact-form input[type=number] {
   font-family: Montserrat-f;
 }
-.order .modal-container .contact-form .contact-form__wrap {
+.order .modal-container .contact-form .contact-form__wrap,
+.contact-us .modal-container .contact-form .contact-form__wrap {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.order .modal-container .contact-form .contact-form__wrap input[type=checkbox] {
+.order .modal-container .contact-form .contact-form__wrap input[type=checkbox],
+.contact-us .modal-container .contact-form .contact-form__wrap input[type=checkbox] {
   cursor: pointer;
   width: 18px;
   height: 18px;
 }
-.order .modal-container .contact-form .contact-form__wrap label {
+.order .modal-container .contact-form .contact-form__wrap label,
+.contact-us .modal-container .contact-form .contact-form__wrap label {
   margin-left: 14px;
   font-family: "Raleway";
   font-style: normal;
@@ -2651,12 +2673,14 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container .contact-form .contact-form__wrap .politic {
+.order .modal-container .contact-form .contact-form__wrap .politic,
+.contact-us .modal-container .contact-form .contact-form__wrap .politic {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.order .modal-container .contact-form .contact-form__wrap input[type=submit] {
+.order .modal-container .contact-form .contact-form__wrap input[type=submit],
+.contact-us .modal-container .contact-form .contact-form__wrap input[type=submit] {
   margin-top: 18px;
   width: 212px;
   height: 51px;
@@ -2728,13 +2752,16 @@ h3 {
     width: 322px;
     height: 300px;
   }
-  .order {
+  .order,
+  .contact-us {
     height: auto;
   }
-  .order .modal-container {
+  .order .modal-container,
+  .contact-us .modal-container {
     padding: 50px 20px;
   }
-  .order .modal-container h1 {
+  .order .modal-container h1,
+  .contact-us .modal-container h1 {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 600;
@@ -2742,15 +2769,18 @@ h3 {
     line-height: 38px;
     letter-spacing: 0.02em;
   }
-  .order .modal-container .contact-form > input {
+  .order .modal-container .contact-form > input,
+  .contact-us .modal-container .contact-form > input {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     padding-left: 0px;
   }
-  .order .modal-container .contact-form .contact-form__wrap {
+  .order .modal-container .contact-form .contact-form__wrap,
+  .contact-us .modal-container .contact-form .contact-form__wrap {
     margin-top: 20px;
   }
-  .order .modal-container .contact-form .contact-form__wrap input[type=submit] {
+  .order .modal-container .contact-form .contact-form__wrap input[type=submit],
+  .contact-us .modal-container .contact-form .contact-form__wrap input[type=submit] {
     margin-top: 40px;
   }
 }

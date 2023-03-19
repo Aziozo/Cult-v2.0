@@ -31,7 +31,10 @@
                 position: absolute;
                 bottom: 0px;
                 display: flex;
-                button{
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     cursor: pointer;
                     font-family: 'Raleway';
                     font-style: normal;
@@ -48,6 +51,10 @@
                     background-color: #000;
                     color: #FFFFFF;
                     margin-right: 16px;
+                }
+                .project-button{
+                    background-color: #fff;
+                    color: #000;
                 }
             }
         }
@@ -175,7 +182,7 @@
                     position: static;
                     margin-top: 11px;
                     width: 100%;
-                    button{
+                    a{
                         color: #000;
                         margin-top: 32px;
                         width: 100%;
