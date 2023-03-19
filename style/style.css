@@ -1965,6 +1965,7 @@ footer .license {
 }
 .news-page .news .news-descr a {
   position: absolute;
+  font-weight: 500;
   bottom: 0px;
   width: 154px;
   height: 51px;
@@ -1975,6 +1976,7 @@ footer .license {
 .news-page .news .news-descr a:hover {
   background-color: #6844D0;
   color: #fff;
+  font-weight: 700;
 }
 .news-page .news .news-descr .tegs {
   display: flex;
