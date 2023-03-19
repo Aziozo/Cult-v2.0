@@ -1864,7 +1864,7 @@ footer .license {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
-.banner button {
+.banner a {
   margin-top: 28px;
   width: 167px;
   height: 51px;
@@ -1905,7 +1905,7 @@ footer .license {
     text-align: center;
     letter-spacing: 0.02em;
   }
-  .banner button {
+  .banner a {
     bottom: 44px;
     position: absolute;
     max-width: 314px;

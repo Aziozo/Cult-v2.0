@@ -30,4 +30,33 @@ if ($(location).attr('pathname')=='/partners.html'){
     $('footer').css('margin-top','0px')
 }
 
-  
+  let button = $('#email-send')
+        const settings = {
+            async: true,
+            crossDomain: true,
+            url: 'https://esputnik.com/api/v1/contact/subscribe',
+            method: 'POST',
+            headers: {
+                accept: 'application/json; charset=UTF-8',
+                'content-type': 'application/json',
+                authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
+            },
+            processData: false,
+            data: '{"contact":{"channels":[{"type":"email","value":"default"}]}}'
+        };
+        
+        var newdata = $('#email')
+        $('#form-email').submit(function(){
+        event.preventDefault();
+        let varer = { contact: { channels: [{ type: 'email', value: 'test@mail.com' }] } }
+        let supone = {
+            type: 'email', 
+            value: 'test@mail.com'
+            }
+        supone.value = newdata.val()
+        varer.contact.channels[0] = supone
+        settings.data = JSON.stringify(varer)
+        $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+        })
