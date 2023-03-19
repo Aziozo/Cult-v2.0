@@ -1766,6 +1766,9 @@ footer .license {
 .partners-page section {
   margin-top: 148px;
 }
+.partners-page ~ .email {
+  margin-top: 0px;
+}
 .partners-page .financial-partners {
   margin-top: 0px;
 }

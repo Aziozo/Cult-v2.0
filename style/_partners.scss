@@ -2,6 +2,11 @@
     section{
         margin-top: 148px;
     }
+
+   & ~ .email{
+        margin-top: 0px;
+    }
+
     .financial-partners{
         margin-top: 0px;
     }
