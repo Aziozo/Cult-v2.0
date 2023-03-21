@@ -3182,6 +3182,44 @@ h3 {
 
 @media screen and (max-width: 960px) {
   .project-hero {
-    background: url(../img/navzaem/hero-mobile.png) center center/cover;
+    background: url(../img/navzaem/Frame\ 310.svg) center center/cover;
+  }
+  .project-hero .hero-text {
+    display: none;
+  }
+  .project-content .project-block__dersr h2 {
+    margin-bottom: 24px;
+  }
+  .project-content .project-block__dersr p {
+    margin-bottom: 24px;
+  }
+  .project-content .project-block {
+    margin-top: 72px;
+    flex-direction: column;
+  }
+  .project-content .project-block .stats {
+    flex-direction: column;
+  }
+  .project-content .project-block .stats :nth-child(1) {
+    margin-top: 0px !important;
+  }
+  .project-content .project-block .stats .stats-wrap {
+    margin-top: 30px;
+    margin-left: 33px;
+    margin-right: 0px;
+  }
+  .project-content .reverse {
+    flex-direction: column;
+    margin-top: 44px;
+  }
+  .project-content .support-block {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .project-content #more .owl-nav button {
+    margin: 0px 50px 0px 50px;
+  }
+  .support-block {
+    margin-bottom: 44px;
   }
 }

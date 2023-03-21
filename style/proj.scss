@@ -291,6 +291,52 @@
 
 @media screen and (max-width: 960px){
     .project-hero{
-        background: url(../img/navzaem/hero-mobile.png) center center/cover ;
+        .hero-text{
+            display: none;
+        }
+        background: url(../img/navzaem/Frame\ 310.svg) center center/cover ;
     }
+    .project-content{
+        .project-block__dersr {
+            h2 {
+            margin-bottom: 24px;
+            }
+            p{
+            margin-bottom: 24px;
+            }
+        }
+        .project-block {
+            margin-top: 72px;
+            flex-direction: column;
+            .stats{
+                flex-direction: column;
+                & :nth-child(1){
+                    margin-top: 0px !important;
+                }
+                .stats-wrap{
+                    margin-top: 30px;
+                    margin-left: 33px;
+                    margin-right: 0px;
+                }
+            }
+        }
+        .reverse {
+            flex-direction: column;
+            margin-top: 44px;
+        }
+        .support-block{
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        #more{
+        .owl-nav button {
+                margin: 0px 50px 0px 50px;
+            }
+        }
+            
+    }
+    .support-block{
+        margin-bottom: 44px;
+    }
+    
 }
