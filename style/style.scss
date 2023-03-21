@@ -132,6 +132,28 @@ h3 {
     background-color: #fff;
     border-radius: 15px !important;
     padding: 0px !important;
+    .sended{
+        padding: 74px 42px 74px 42px !important;
+        height: 578px !important;
+        border-radius: 12px;
+        background: url(../img/Rectangle\ 5.png) center center/cover;
+        h1{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px !important;
+            line-height: 38px !important;
+            letter-spacing: 0.02em;
+        }
+        p{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+        }
+    }
     a.close-modal {
         top: 32px !important;
         right: 32px !important;
