@@ -2364,6 +2364,7 @@ footer .license {
   position: absolute;
   bottom: 0px;
   display: flex;
+  margin-bottom: 17px;
 }
 .email .email-container .email-wrapper .buttons a {
   display: flex;
@@ -2518,9 +2519,11 @@ footer .license {
     flex-direction: column;
     position: static;
     margin-top: 11px;
+    margin-bottom: 0px;
     width: 100%;
   }
   .email .email-container .email-wrapper .buttons a {
+    height: 64px;
     color: #000;
     margin-top: 32px;
     width: 100%;

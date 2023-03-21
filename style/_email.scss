@@ -32,6 +32,7 @@
                 position: absolute;
                 bottom: 0px;
                 display: flex;
+                margin-bottom: 17px;
                 a{
                     display: flex;
                     align-items: center;
@@ -182,8 +183,10 @@
                     flex-direction: column;
                     position: static;
                     margin-top: 11px;
+                    margin-bottom: 0px;
                     width: 100%;
                     a{
+                        height: 64px;
                         color: #000;
                         margin-top: 32px;
                         width: 100%;
