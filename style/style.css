@@ -505,6 +505,7 @@ h2 {
   }
   .projects .projects-card {
     margin-bottom: 15px;
+    max-width: calc(100vw - 30px);
   }
   .projects .projects-container {
     margin-top: 15px;
