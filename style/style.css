@@ -421,6 +421,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .about {
+    margin-top: 64px;
     flex-direction: column;
     align-items: center;
   }
@@ -440,7 +441,8 @@ h2 {
     margin-top: 20px;
     display: flex;
     text-align: center;
-    height: 69px;
+    height: 64px;
+    border: 0px;
   }
   .about .about-img {
     margin-top: 12px;
@@ -451,9 +453,9 @@ h2 {
     line-height: 19px;
   }
   .about .about-text__h2 {
-    font-weight: 600px;
-    font-size: 36px;
-    line-height: 42px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 .projects {
@@ -494,13 +496,16 @@ h2 {
 }
 
 @media screen and (max-width: 960px) {
+  .index-page {
+    margin-top: 0px !important;
+  }
   .projects {
-    margin-top: 140px;
+    margin-top: 156px;
   }
   .projects .projects__h2 {
     font-weight: 600;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 32px;
+    line-height: 38px;
     letter-spacing: 0.02em;
   }
   .projects .projects-card {
@@ -578,13 +583,21 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .services {
-    margin-top: 90px;
+    margin-top: 120px;
   }
   .services .services-carousel {
     margin-top: 32px;
   }
   .services .services-descr {
     flex-direction: column;
+  }
+  .services .services-descr > h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
   }
   .services .services-descr .services__p {
     margin-top: 24px;
@@ -680,7 +693,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .partners {
-    margin-top: 90px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
   }
@@ -694,6 +707,12 @@ h2 {
   }
   .partners .partners-mobile {
     display: block !important;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
   }
   .partners .partners-button {
     width: 100%;
@@ -894,7 +913,19 @@ h2 {
   .support {
     margin-top: 42px;
   }
+  .support .support__h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+  }
+  .support .support__p {
+    margin-top: 12px;
+  }
   .payment {
+    margin-top: 38px;
     flex-direction: column;
     align-items: center;
   }
@@ -904,6 +935,9 @@ h2 {
   .liqpay {
     max-width: calc(100% - 10px);
     margin-top: 128px;
+  }
+  .liqpay input[type=submit] {
+    height: 64px !important;
   }
   .liqpay input {
     width: 100% !important;
@@ -2858,7 +2892,6 @@ h3 {
 @media screen and (max-width: 960px) {
   .modal {
     max-width: 300px !important;
-    min-height: 695px;
   }
   .modal .modal-container {
     flex-direction: column;

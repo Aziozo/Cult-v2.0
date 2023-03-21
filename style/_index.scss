@@ -50,7 +50,7 @@ h2{
 
 @media screen and (max-width: 960px){
     .about{
-        
+        margin-top: 64px;
         flex-direction: column;
         align-items: center;
         .about-wrap,
@@ -72,7 +72,8 @@ h2{
             margin-top: 20px;
             display: flex;
             text-align: center;
-            height: 69px;
+            height: 64px;
+            border: 0px;
         }
         
         .about-img{
@@ -86,9 +87,9 @@ h2{
         }
 
         .about-text__h2{
-            font-weight: 600px;
-            font-size: 36px;
-            line-height: 42px;
+            font-weight: 600; 
+            font-size: 32px;
+            line-height: 38px;
         }
     }
 }
@@ -140,12 +141,15 @@ h2{
 }
 
 @media screen and (max-width: 960px){
+    .index-page{
+        margin-top: 0px !important;
+    }
     .projects{
-        margin-top: 140px;
+        margin-top: 156px;
         .projects__h2 {
             font-weight: 600;
-            font-size: 36px;
-            line-height: 42px;
+            font-size: 32px;
+            line-height: 38px;
             letter-spacing: 0.02em;
         }
 
@@ -241,13 +245,21 @@ h2{
 
 @media screen and (max-width: 960px){
     .services{
-        margin-top: 90px;
+        margin-top: 120px;
 
         .services-carousel{
             margin-top: 32px;
         }
         .services-descr{
             flex-direction: column;
+            >h2{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                letter-spacing: 0.02em;
+            }
             .services__p{
                 margin-top: 24px;
             }
@@ -357,7 +369,7 @@ h2{
 
 @media screen and (max-width: 960px){
     .partners{
-        margin-top: 90px;
+        margin-top: 120px;
         
         display: flex;
         flex-direction: column;
@@ -375,6 +387,12 @@ h2{
     
         .partners-mobile {
             display: block !important;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
         }
     
         .partners-button {
@@ -582,8 +600,20 @@ h2{
 @media screen and (max-width: 960px){
     .support{
         margin-top: 42px;
+        .support__h2{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: 0.02em;
+        }
+        .support__p{
+            margin-top: 12px;
+        }
     }   
      .payment{
+        margin-top: 38px;
         flex-direction: column;
         align-items: center;
         .owl-nav{
@@ -595,6 +625,9 @@ h2{
     .liqpay{
         max-width: calc(100% - 10px);
         margin-top: 128px;
+        input[type="submit"]{
+            height: 64px !important;
+        }
         input{
             width: 100% !important;
         }
