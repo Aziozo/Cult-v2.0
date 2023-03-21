@@ -2976,7 +2976,7 @@ h3 {
   flex-direction: column;
 }
 .project-content .project-block {
-  margin-top: 100px;
+  margin-top: 130px;
   display: flex;
   justify-content: space-between;
   max-width: 1100px;
@@ -3145,7 +3145,7 @@ h3 {
   color: #000000;
 }
 .project-content .sup-line {
-  margin-top: 100px;
+  margin-top: 130px;
   margin-bottom: 0px;
   width: 100%;
 }
