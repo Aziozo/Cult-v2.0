@@ -1289,7 +1289,8 @@ footer .license {
   }
   .team .team-member {
     max-width: 181px;
-    margin-bottom: 20px;
+    height: 100%;
+    margin-bottom: 24px;
   }
   .team .team-avatar {
     width: 148px;
@@ -1304,6 +1305,9 @@ footer .license {
     height: 100%;
     display: flex;
     align-items: center;
+  }
+  .team .name p {
+    font-size: 16px;
   }
   .team .role p {
     font-size: 12px;

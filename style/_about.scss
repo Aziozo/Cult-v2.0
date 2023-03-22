@@ -245,7 +245,9 @@
         }
         .team-member{
             max-width: 181px;
-            margin-bottom: 20px;
+            height: 100%;
+
+            margin-bottom: 24px;
         }
         .team-avatar{
             width: 148px;
@@ -261,6 +263,9 @@
             height: 100%;
             display: flex;
             align-items: center;
+            p{
+                font-size: 16px;
+            }
         }
         .role{
             p{
