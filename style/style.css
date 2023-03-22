@@ -1542,6 +1542,13 @@ footer .license {
   }
   .reports .report__descr a {
     width: 100%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
   }
 }
 .project-page :nth-child(1) {
