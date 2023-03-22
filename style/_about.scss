@@ -60,10 +60,14 @@
 .about-us{
     h3{
         margin-top: 20px;
+        font-size: 32px;
     }
 
     .about-us__container {
         flex-direction: column !important;
+        h3{
+            font-size: 32px;
+        }
     }
 }
   
@@ -143,6 +147,9 @@
         margin-top: 72px;
         h1{
             min-width: 38px;
+        }
+        h3{
+            font-size: 32px;
         }
     }
     .values-container{
@@ -238,6 +245,9 @@
 
 @media screen and (max-width: 960px){
     .team{
+        h3{
+            font-size: 32px;
+        }
         margin-top: 72px;
         .team-carousel{
             position: relative;
@@ -483,6 +493,9 @@
 
 @media screen and (max-width: 960px){
     .reports{
+        h3{
+            font-size: 32px;
+        }
         margin-top: 72px;
         .owl-carousel{
             margin-top: 24px;

@@ -1122,9 +1122,13 @@ footer .license {
 @media screen and (max-width: 960px) {
   .about-us h3 {
     margin-top: 20px;
+    font-size: 32px;
   }
   .about-us .about-us__container {
     flex-direction: column !important;
+  }
+  .about-us .about-us__container h3 {
+    font-size: 32px;
   }
 }
 .values {
@@ -1201,6 +1205,9 @@ footer .license {
   }
   .values h1 {
     min-width: 38px;
+  }
+  .values h3 {
+    font-size: 32px;
   }
   .values-container {
     flex-direction: column;
@@ -1282,6 +1289,9 @@ footer .license {
 @media screen and (max-width: 960px) {
   .team {
     margin-top: 72px;
+  }
+  .team h3 {
+    font-size: 32px;
   }
   .team .team-carousel {
     position: relative;
@@ -1488,6 +1498,9 @@ footer .license {
 @media screen and (max-width: 960px) {
   .reports {
     margin-top: 72px;
+  }
+  .reports h3 {
+    font-size: 32px;
   }
   .reports .owl-carousel {
     margin-top: 24px;
