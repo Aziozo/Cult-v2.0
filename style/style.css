@@ -1577,7 +1577,7 @@ footer .license {
 .project-page .project .project-descr h1 {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 32px;
   line-height: 38px;
   letter-spacing: 0.02em;
@@ -1864,7 +1864,7 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 56px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -1961,6 +1961,10 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .partners-page .partners-item {
+    width: 100%;
+    max-width: 100%;
+  }
   .partners-page ~ .email {
     margin-top: 0px;
   }
