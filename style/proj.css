@@ -1098,7 +1098,7 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 42px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -1184,7 +1184,7 @@ footer .license {
 .values h3 {
   font-family: "Raleway";
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 56px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -1221,7 +1221,7 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 56px;
   letter-spacing: 0.02em;
 }
@@ -1350,7 +1350,7 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 32px;
   line-height: 56px;
   letter-spacing: 0.02em;
 }
@@ -2020,6 +2020,9 @@ footer .license {
   width: 100%;
   align-items: center;
 }
+.news-page .news-wrapper {
+  display: none;
+}
 .news-page section {
   max-width: 1100px;
   width: 100%;
@@ -2302,7 +2305,18 @@ footer .license {
 
 @media screen and (max-width: 960px) {
   .news-page .news {
+    margin-top: 0px;
     flex-direction: column;
+  }
+  .news-page .news .news-wrapper {
+    display: block;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
   }
   .news-page .news .news-descr {
     margin-left: 0px;

@@ -1,4 +1,7 @@
 .news-page{
+    .news-wrapper{
+        display: none;
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,6 +312,18 @@
 @media screen and (max-width: 960px){
 .news-page{
     .news{
+        margin-top: 0px;
+        .news-wrapper{
+            display: block;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 42px;
+            letter-spacing: 0.02em;
+            margin-bottom: 28px;
+
+        }
         flex-direction: column;
         .news-descr{
             margin-left: 0px;
