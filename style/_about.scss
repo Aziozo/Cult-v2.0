@@ -256,7 +256,6 @@
         .team-member{
             max-width: 181px;
             height: 100%;
-
             margin-bottom: 24px;
         }
         .team-avatar{
@@ -297,6 +296,16 @@
             left: 40%;
             .active *{
                 background: #4A3AD1 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .team{
+        .name{
+            p{
+                font-size: 14px;               
             }
         }
     }

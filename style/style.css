@@ -1338,6 +1338,11 @@ footer .license {
     background: #4A3AD1 !important;
   }
 }
+@media screen and (max-width: 375px) {
+  .team .name p {
+    font-size: 14px;
+  }
+}
 .reports {
   margin-top: 80px !important;
 }
