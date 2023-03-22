@@ -1824,6 +1824,9 @@ footer .license {
     height: 332px;
     padding: 0 24px 18px 24px;
   }
+  .services-page .our-services .card .btn {
+    height: 54px;
+  }
   .services-page .our-services .content {
     width: 100%;
     padding-left: 0px;
@@ -1841,6 +1844,11 @@ footer .license {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .services-page {
+    margin-top: 64px !important;
+  }
+}
 .partners-page section {
   margin-top: 148px;
 }

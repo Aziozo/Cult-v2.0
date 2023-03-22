@@ -209,6 +209,10 @@ h2{
         max-width: 386px;
         height: 332px;
         padding: 0 24px 18px 24px;
+        .btn{
+            height: 54px;
+        }
+        
     }
     .content {
         width: 100%;
@@ -231,3 +235,8 @@ h2{
 }
 
 
+@media screen and (max-width: 960px){
+    .services-page {
+            margin-top: 64px !important;
+        }
+}
