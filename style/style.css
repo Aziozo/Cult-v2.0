@@ -1949,6 +1949,15 @@ footer .license {
   }
   .partners-page .partners-descr {
     flex-direction: column !important;
+    align-items: flex-start;
+  }
+  .partners-page .partners-descr h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.02em;
   }
   .partners-page .owl-nav {
     gap: 160px;

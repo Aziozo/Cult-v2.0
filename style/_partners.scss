@@ -131,6 +131,15 @@
     }
     .partners-descr{
         flex-direction: column !important;
+        align-items: flex-start;
+        h1{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+            letter-spacing: 0.02em;
+        }
     }
     .owl-nav{
         gap: 160px;
