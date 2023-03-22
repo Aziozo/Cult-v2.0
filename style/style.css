@@ -1136,7 +1136,7 @@ footer .license {
   width: 100%;
 }
 .values .values-container {
-  margin-top: 44px;
+  margin-top: 64px;
   display: flex;
   justify-content: center;
   gap: 150px;
@@ -1213,9 +1213,6 @@ footer .license {
     flex-direction: column;
     gap: 71px !important;
   }
-}
-.team {
-  margin-top: 44px !important;
 }
 .team h3 {
   font-family: "Raleway";
@@ -1344,7 +1341,7 @@ footer .license {
   }
 }
 .reports {
-  margin-top: 80px !important;
+  margin-top: 60px !important;
 }
 .reports h3 {
   font-family: "Raleway";
@@ -1406,7 +1403,7 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -2403,10 +2400,14 @@ footer .license {
   height: 313px;
   padding: 47px 165px 47px 165px;
   background: url(../img/banner-email.png) no-repeat right, #4A3AD1;
+  display: flex;
+  justify-content: center;
 }
 .email .email-container {
   display: flex;
   justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
 }
 .email .email-container .email-wrapper {
   height: 210px;

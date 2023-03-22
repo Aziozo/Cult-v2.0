@@ -4,12 +4,14 @@
     height: 313px;
     padding: 47px 165px 47px 165px;
     background: url(../img/banner-email.png) no-repeat right, #4A3AD1;
-   
-  
+    display: flex;
+    justify-content: center;
     
     .email-container{
         display: flex;
         justify-content: space-between;
+        max-width: 1100px;
+            width: 100%;
         .email-wrapper{
             height: 210px;
             position: relative;
@@ -165,9 +167,12 @@
         margin-top: 72px;
         padding: 30px 20px 30px 20px;
         height: 100%;
+        
+
         .email-container{
             flex-direction: column;
             align-items: center;
+           
             .email-wrapper{
                 display: flex;
                 flex-direction: column;
