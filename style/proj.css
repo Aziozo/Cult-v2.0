@@ -2407,6 +2407,10 @@ footer .license {
   .news-content .news-nav .date {
     display: block;
   }
+  .some-news .news-wrap .news-wrap__body .news-video iframe {
+    width: 306px;
+    height: 100%;
+  }
   .some-news .news-wrap .new-wrap__head .date {
     display: none;
   }

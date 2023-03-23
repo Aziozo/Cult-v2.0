@@ -413,6 +413,15 @@
 
 .some-news{
     .news-wrap{
+        .news-wrap__body{
+            .news-video{
+                iframe{
+                    
+                    width: 306px;
+                    height: 100%;
+                }
+            }
+        }
         .new-wrap__head{
             .date{
                 display: none;
