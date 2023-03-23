@@ -1,88 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./dist/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="./style/style.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>Культурна Агенція</title>
 </head>
 <body>
-
-<section class="email">
-    <div class="email-container">
-        <div class="email-wrapper">
-            <img src="./img/logo-white.png">
-            <p>Ми відкриті до питань і пропозицій, тож чекаємо на ваші листи</p>
-            <div class="buttons">
-                <button class="contact-button">Зв'язатися</button>
-                <button class="project-button">Проєкти</button>
+    <div class="main-content">
+        <section class="wrapper">
+            <a href="#get-service" rel="modal:open" class="button" style="width: 500px; height: 50px;">ЖМАК</a>
+        </section>
+    </div>
+    <div class="modals">
+        <div class="modal get-service" id="get-service">
+            <div class="get-service__content">
+                <div class="wrapper">
+                <h2 class="proj-id">Оренда обладнання</h2>
+                <div class="get-service__carousel owl-carousel">
+                    <div class="item-service">
+                        <p style="display: none;" class="project-name">Оренда обладнання</p>
+                        <img src="/img/services/service-1.svg">
+                    </div>
+                    <div class="item-service">
+                        <p style="display: none;" class="project-name">Організація подій</p>
+                        <img src="/img/services/service-2.svg">
+                    </div>
+                    <div class="item-service">
+                        <p style="display: none;" class="project-name">Трансляції</p>
+                        <img src="/img/services/service-3.svg">
+                    </div>
+                    <div class="item-service">
+                        <p style="display: none;" class="project-name">Зйомка подій</p>
+                        <img src="/img/services/service-4.svg">
+                    </div>
+                </div>
+                </div>
+                <div class="form-wrapper">
+                    <h2>Замовити послугу</h2>
+                    <p>Якщо вас зацікавили наші технічна база або експертиза, залиште запит, і давайте обговоримо формат співпраці</p>
+                    <form action="" class="contact-form">
+                        <input type="text" name="partner-form__name" id="partner-form__name" placeholder="Як вас звати" required>
+                        <input type="number" name="partner-form__phone" id="partner-form__phone" placeholder="Залиште номер телефону" required>
+                        <input type="email" name="partner-form__mail" id="partner-form__mail" placeholder="Залиште імейл" required>
+                        <input type="text" name="partner-form__text" id="partner-form__text" placeholder="Ваш коментар"
+                            required>
+                        <div class="contact-form__wrap">
+                        <div class="politic">
+                            <input type="checkbox" name="contact-form__checkbox" required>
+                            <label for="contact-form__checkbox">Я погоджуюся з Політикою конфіденційності</label>
+                        </div>
+                        <input type="submit" value="Замовити">
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="email-form">
-            <a href="mailto:info@agencya.org">test@gmail.com</a>
-            <div class="email-form__links">
-                <a href="https://www.facebook.com/culturalagencya"><img src="./img/Facebook - Negative.png"></a>
-                <a href="https://www.instagram.com/culturalagencya"><img src="./img/Instagram - Negative.png"></a>
-            </div>
-            <div class="email-form__wrapper">
-                <p>Підпишіться на розсилку</p>
-                <form action="" id="form-email">
+            <div class="mobile-service">
+                <h2>Замовити послугу</h2>
+                <p>Якщо вас зацікавили наші технічна база або експертиза, залиште запит, і давайте обговоримо формат співпраці</p>
+                <div class="mobile-wrapper">
+                    <h2 class="proj-id">Оренда обладнання</h2>
+                    <div class="service-carousel__mobile owl-carousel">
+                        <div class="item-service">
+                            <p style="display: none;" class="project-name">Оренда обладнання</p>
+                            <img src="/img/services/service-1.svg">
+                        </div>
+                        <div class="item-service">
+                            <p style="display: none;" class="project-name">Організація подій</p>
+                            <img src="/img/services/service-2.svg">
+                        </div>
+                        <div class="item-service">
+                            <p style="display: none;" class="project-name">Трансляції</p>
+                            <img src="/img/services/service-3.svg">
+                        </div>
+                        <div class="item-service">
+                            <p style="display: none;" class="project-name">Зйомка подій</p>
+                            <img src="/img/services/service-4.svg">
+                        </div>
+                    </div>
                     <div class="form-wrapper">
-                        <input type="email" name="mail" id="email" placeholder="@gmail.com" class="email-input">
-                        <input type="submit" id="email-send" value="Підписатися">
+                        <form action="" class="contact-form">
+                            <input type="text" name="partner-form__name" id="partner-form__name" placeholder="Як вас звати" required>
+                            <input type="number" name="partner-form__phone" id="partner-form__phone" placeholder="Залиште номер телефону"
+                                required>
+                            <input type="email" name="partner-form__mail" id="partner-form__mail" placeholder="Залиште імейл" required>
+                            <input type="text" name="partner-form__text" id="partner-form__text" placeholder="Ваш коментар" required>
+                            <div class="contact-form__wrap">
+                                <div class="politic">
+                                    <input type="checkbox" name="contact-form__checkbox" required>
+                                    <label for="contact-form__checkbox">Я погоджуюся з Політикою конфіденційності</label>
+                                </div>
+                                <input type="submit" value="Замовити">
+                            </div>
+                        </form>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" name="check" id="check-mail" required>
-                        <label for="check">Я підтверджую згоду з політикою конфединційності</label>
-                    </div>
-                </form>         
+                </div>
             </div>
         </div>
     </div>
-</section>
-<script>
-    let button = $('#email-send')
-        const settings = {
-            async: true,
-            crossDomain: true,
-            url: 'https://esputnik.com/api/v1/contact/subscribe',
-            method: 'POST',
-            headers: {
-                accept: 'application/json; charset=UTF-8',
-                'content-type': 'application/json',
-                authorization: 'Basic MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y6MkE4RDU3MTcwNTRFOEQ5QUJCRjY5QTM2MjcwQzY3Q0Y='
-            },
-            processData: false,
-            data: '{"contact":{"channels":[{"type":"email","value":"default"}]}}'
-        };
-        
-        var newdata = $('#email')
-        $('#form-email').submit(function(){
-        event.preventDefault();
-        let varer = { contact: { channels: [{ type: 'email', value: 'test@mail.com' }] } }
-        let supone = {
-            type: 'email', 
-            value: 'test@mail.com'
-            }
-        supone.value = newdata.val()
-        varer.contact.channels[0] = supone
-        settings.data = JSON.stringify(varer)
-        $.ajax(settings).done(function (response) {
-                console.log(response);
-            });
-        })
 
-    
-
-
-
-</script>
+<script src="/dist/jquery.js"></script>
+<script src="./dist/owl.carousel.min.js"></script>
+<script src="./dist/main.js"></script>
 </body>
-</html>

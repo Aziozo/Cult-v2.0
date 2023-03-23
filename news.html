@@ -208,7 +208,8 @@
                     <p>Підпишіться на розсилку</p>
                     <form action="" id="form-email">
                         <div class="form-wrapper">
-                            <input type="email" name="mail" id="email" placeholder="@gmail.com" class="email-input">
+                            <input type="email" name="mail" id="email" placeholder="@gmail.com" class="email-input"
+                                required>
                             <input type="submit" id="email-send" value="Підписатися">
                         </div>
                         <div class="checkbox">
@@ -216,6 +217,12 @@
                             <label for="check">Я підтверджую згоду з політикою конфединційності</label>
                         </div>
                     </form>
+                    <div class="form-email__submited">
+                        <svg class="animated-check" viewBox="0 0 24 24">
+                            <path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />
+                        </svg>
+                        <p>Ви успішно підписались на розсилку!</p>
+                    </div>
                 </div>
             </div>
         </div>

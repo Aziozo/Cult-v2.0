@@ -26,7 +26,6 @@ $('.menu-list').find('li a').each(function() {
 });
 
 if ($(location).attr('pathname')=='/partners.html'){
-    console.log('true');
     $('footer').css('margin-top','0px')
 }
 
@@ -68,10 +67,31 @@ let button = $('#email-send')
     
     $('.contact-form').submit(function (e) {
         e.preventDefault();
-        console.log("check");
         $('.contact-form').css("display","none")
         $('.modal-container>h1').replaceWith( "<h1>Ваш запит було відправленно!</h1>" );
         $('.modal-container>p').replaceWith( "<p>Ми дуже шануємо ваше повідомлення, та відповімо вам як тільки його побачимо!</p>" );
         $('.modal-container').addClass('sended')
     });
-   
+   // -------modal carousel------------
+    $('.get-service__carousel').owlCarousel({
+    loop:true,
+    items: 1,
+    margin: 0,
+    stagePadding: 0,
+    nav: true,
+    dots: true,
+    responsive:{
+        0:{
+            autoWidth:false,
+            loop:true,
+            items:1,
+            nav: true,
+        },
+        960:{
+            items:1
+        }
+    }
+    })
+    $('.get-service__carousel').on('translated.owl.carousel', function (event) {
+    $('#proj-id').html($('.get-service__carousel .active .project-name').text());
+    })

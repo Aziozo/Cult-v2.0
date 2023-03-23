@@ -151,7 +151,6 @@ document.querySelector('#check').addEventListener('click', function(){
     }
     else{
         param.amount = summ;
-        console.log(param.amount);
         let json = JSON.stringify(param);     
         let data = btoa(unescape(encodeURIComponent(json)));;
         let sign = pubkey + data + pubkey;

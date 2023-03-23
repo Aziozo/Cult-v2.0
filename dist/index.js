@@ -1,11 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-// // ------- ScrollSmoother -----------
-// ScrollSmoother.create({
-//     wrapper: '.wrapper',
-//     content: '.content',
-//     smooth: 1,  
-//     smoothTouch: 0.1,    
-// })
 
 
 // ------- modals -----------
@@ -360,3 +352,51 @@ $(document).ready(function() {
   //init
   carousel = el.owlCarousel(carouselOptions);
 });
+
+// -------modal carousel------------
+$('.get-service__carousel').owlCarousel({
+loop:true,
+items: 1,
+margin: 0,
+stagePadding: 0,
+nav: true,
+dots: true,
+responsive:{
+    0:{
+        autoWidth:false,
+        loop:true,
+        items:1,
+        nav: true,
+    },
+    960:{
+        items:1
+    }
+}
+})
+$('.get-service__carousel').on('translated.owl.carousel', function (event) {
+$('.proj-id').html($('.get-service__carousel .active .project-name').text());
+})
+
+$('.service-carousel__mobile').owlCarousel({
+loop:true,
+items: 1,
+margin: 0,
+stagePadding: 0,
+nav: true,
+dots: true,
+responsive:{
+    0:{
+        autoWidth:false,
+        loop:true,
+        items:1,
+        nav: true,
+    },
+    960:{
+        items:1
+    }
+}
+})
+$('.service-carousel__mobile').on('translated.owl.carousel', function (event) {
+$('.proj-id').html($('.service-carousel__mobile .active .project-name').text());
+})
+
