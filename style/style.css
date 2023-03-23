@@ -3340,7 +3340,7 @@ h3 {
     margin-top: 40px;
   }
   .get-service {
-    height: 100%;
+    height: auto;
   }
   .get-service .get-service__content {
     display: none;
