@@ -56,9 +56,9 @@ let supone = {
 supone.value = newdata.val()
 varer.contact.channels[0] = supone
 settings.data = JSON.stringify(varer)
-// $.ajax(settings).done(function (response) {
-//         console.log(response);
-//     });
+$.ajax(settings).done(function (response) {
+        console.log(response);
+    });
 
 $('.checkbox').css('display', 'none')
 $('#form-email').css('display', 'none')
