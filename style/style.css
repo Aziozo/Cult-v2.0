@@ -3406,4 +3406,10 @@ h3 {
   .get-service .mobile-service .mobile-wrapper .form-wrapper .contact-form .contact-form__wrap {
     margin-top: 0px;
   }
+  .get-service .mobile-service .mobile-wrapper .form-wrapper .politic {
+    margin-top: 10px;
+  }
+  .get-service .mobile-service .mobile-wrapper .form-wrapper input[type=submit] {
+    width: 100%;
+  }
 }
