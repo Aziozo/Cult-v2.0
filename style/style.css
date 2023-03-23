@@ -1250,11 +1250,16 @@ footer .license {
   margin-bottom: 20px;
   width: 100%;
   height: 285px;
+  filter: grayscale(99%);
 }
 .team .team-member > a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.team .team-member:hover {
+  transition: filter 0.7s ease-in-out;
+  filter: grayscale(0%);
 }
 .team .name {
   margin-top: 14px;

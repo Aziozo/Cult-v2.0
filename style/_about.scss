@@ -200,6 +200,13 @@
             margin-bottom: 20px;
             width: 100%;
             height: 285px;
+            -webkit-filter: grayscale(99%);
+            filter: grayscale(99%);
+            &:hover{
+                transition: filter .7s ease-in-out;
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+            }
         }
     
         .name {
