@@ -379,7 +379,7 @@ h3 {
 }
 .team-modal{
     .modal-wrap{
-        margin-top: 64px;
+        margin-top: 32px;
         justify-content: center;
         height: 100%;
         bottom: 0px;
@@ -417,6 +417,9 @@ h3 {
             height: 300px;
             
         }
+    }
+    .modal-container{
+        gap: 0;
     }
 
 }
