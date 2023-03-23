@@ -89,7 +89,7 @@
 }
 
 .nav-button {
-  width: 148px;
+  width: 164px;
   height: 48px;
 }
 
@@ -412,10 +412,11 @@ h2 {
   border-radius: 12px;
 }
 .about .about-button {
+  border: 0px;
   position: absolute;
   right: 95px;
   margin-top: 32px;
-  max-width: 162px;
+  max-width: 164px;
   height: 51px;
   width: 100%;
 }
@@ -681,6 +682,17 @@ h2 {
 .partners .partners-desr {
   max-width: 443px;
 }
+.partners .partners-desr .partners-buttons {
+  margin-top: 32px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.partners .partners-desr .partners-buttons a {
+  height: 50px;
+  width: 200px;
+}
 .partners .partners-desr .partners__p {
   margin-top: 14px;
   font-style: normal;
@@ -689,10 +701,14 @@ h2 {
   line-height: 150%;
   letter-spacing: 0.02em;
 }
-.partners .partners-button {
-  margin-top: 32px;
-  width: 206px;
-  height: 50px;
+.partners .partner-button {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.partners .partner-button:hover {
+  background-color: #6844D0;
+  color: #FFFFFF;
+  transition: all 0.2s;
 }
 
 @media screen and (max-width: 960px) {
@@ -718,9 +734,16 @@ h2 {
     line-height: 38px;
     letter-spacing: 0.02em;
   }
-  .partners .partners-button {
+  .partners .partners-desr .partners-buttons {
+    flex-direction: column;
     width: 100%;
-    height: 69px;
+    height: 100%;
+  }
+  .partners .partners-desr .partners-buttons :nth-last-child(1) {
+    margin-top: 12px;
+  }
+  .partners .partners-desr .partners-buttons a {
+    width: 100%;
   }
 }
 .support {

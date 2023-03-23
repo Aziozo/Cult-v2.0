@@ -35,10 +35,11 @@ h2{
     }
 
     .about-button{
+        border: 0px;
         position: absolute;
         right: 95px;
         margin-top: 32px;
-        max-width: 162px;
+        max-width: 164px;
         height: 51px;
         width: 100%;
     }
@@ -351,6 +352,17 @@ h2{
     }
     .partners-desr{
         max-width: 443px;
+        .partners-buttons{
+            margin-top: 32px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                height: 50px;
+                width: 200px;
+            }
+        }
         .partners__p{
             margin-top: 14px;
             font-style: normal;
@@ -360,10 +372,14 @@ h2{
             letter-spacing: 0.02em;
         }
     }
-    .partners-button{
-        margin-top: 32px;
-        width: 206px;
-        height: 50px;
+    .partner-button{
+       background-color: #FFFFFF;
+       color: #000000;
+       &:hover{
+        background-color: #6844D0;
+        color: #FFFFFF;
+        transition: all .2s;
+       }
     }
 }
 
@@ -394,11 +410,22 @@ h2{
             line-height: 38px;
             letter-spacing: 0.02em;
         }
-    
-        .partners-button {
-            width: 100%;
-            height: 69px;
+        .partners-desr{
+            .partners-buttons {
+                    :nth-last-child(1){
+                        margin-top: 12px;
+                    }
+                    a {
+                        width: 100%;
+                    }
+            
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                }
         }
+    
+        
     }
     
 }
