@@ -48,6 +48,7 @@ let button = $('#email-send')
     var newdata = $('#email')
     $('#form-email').submit(function(){
     event.preventDefault();
+
     let varer = { contact: { channels: [{ type: 'email', value: 'test@mail.com' }] } }
     let supone = {
         type: 'email', 
@@ -59,6 +60,10 @@ let button = $('#email-send')
     $.ajax(settings).done(function (response) {
             console.log(response);
         });
+    
+    $('.checkbox').css('display', 'none')
+    $('#form-email').css('display', 'none')
+    $('.form-email__submited').css('display', 'flex')
     })
     
     $('.contact-form').submit(function (e) {

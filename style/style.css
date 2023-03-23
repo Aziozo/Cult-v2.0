@@ -2607,12 +2607,61 @@ footer .license {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+.email .form-email__submited {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 444px;
+  height: 54px;
+  background-color: #000;
+  border-radius: 12px;
+  margin-top: 9px;
+}
+.email .form-email__submited p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.email .form-email__submited .animated-check {
+  width: 32px;
+  height: 32px;
+}
+.email .form-email__submited .animated-check path {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;
+  animation: draw 0.45s linear forwards;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .email {
     margin-top: 72px;
     padding: 30px 20px 30px 20px;
     height: 100%;
+  }
+  .email .form-email__submited {
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+  }
+  .email .form-email__submited p {
+    font-size: 10px !important;
+  }
+  .email .form-email__submited .animated-check {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .email .email-container {
     flex-direction: column;
