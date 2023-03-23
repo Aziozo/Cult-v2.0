@@ -905,6 +905,9 @@ h2 {
   letter-spacing: 0.02em;
   color: #FFFFFF;
 }
+.payment .liqpay .form-wrapper input[type=submit] {
+  font-size: 14px;
+}
 .payment .liqpay .form-wrapper img {
   max-height: 53px;
   max-width: 138px;

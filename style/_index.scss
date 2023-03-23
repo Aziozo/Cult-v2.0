@@ -556,6 +556,7 @@ h2{
                     color: #000000;
             }
         }
+        
         form{
             margin-top: 63px;
         }
@@ -584,6 +585,9 @@ h2{
             line-height: 21px;
             letter-spacing: 0.02em;
             color: #FFFFFF;
+            }
+            input[type="submit"] {
+                font-size: 14px;
             }
             img{
                 max-height: 53px;
