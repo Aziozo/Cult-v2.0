@@ -2296,6 +2296,10 @@ footer .license {
 .some-news .news-wrap .news-wrap__body .news-video {
   margin-top: 32px;
 }
+.some-news .news-wrap .news-wrap__body .news-video iframe {
+  width: 544px;
+  height: 312px;
+}
 .some-news .news-wrap .news-wrap__body .news-video p {
   margin-top: 32px;
   font-family: "Raleway";
