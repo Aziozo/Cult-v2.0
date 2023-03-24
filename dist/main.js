@@ -71,4 +71,7 @@ $('.contact-form').submit(function (e) {
     $('.modal-container>h1').replaceWith( "<h1>Ваш запит було відправленно!</h1>" );
     $('.modal-container>p').replaceWith( "<p>Ми дуже шануємо ваше повідомлення, та відповімо вам як тільки його побачимо!</p>" );
     $('.modal-container').addClass('sended')
+    
 });
+
+

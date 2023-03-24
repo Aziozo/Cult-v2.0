@@ -400,3 +400,5 @@ $('.service-carousel__mobile').on('translated.owl.carousel', function (event) {
 $('.proj-id').html($('.service-carousel__mobile .active .project-name').text());
 })
 
+
+
