@@ -99,7 +99,40 @@ h2{
 .projects{
     margin-top: 120px;
     .projects-container{
+        position: relative;
         margin-top: 32px;
+        .owl-nav{
+            .owl-next,
+            .owl-prev{
+                z-index: 1000;
+            }
+            
+            .disabled{
+                display: block;
+            }
+            .owl-next{
+                margin-left: 100px;
+            }
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .owl-dots{
+            position: absolute;
+            bottom: 18px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .owl-dot{
+                width: 7px;
+                height: 7px;
+                background-color: #D9D9D9;
+                border-radius: 50%;
+            }
+            .active{
+                    background-color: #4A3AD1 ;
+            }
+        }
     }
 
  
@@ -141,7 +174,7 @@ h2{
     }
     .card-img{
         height: 200px;
-        
+
     }
 }
 
@@ -164,6 +197,9 @@ h2{
         }
        .projects-container{
         margin-top: 15px;
+        .owl-dots{
+            bottom: -30px;
+        }
        }
 
         .owl-nav{

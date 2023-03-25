@@ -467,7 +467,39 @@ h2 {
   margin-top: 120px;
 }
 .projects .projects-container {
+  position: relative;
   margin-top: 32px;
+}
+.projects .projects-container .owl-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.projects .projects-container .owl-nav .owl-next,
+.projects .projects-container .owl-nav .owl-prev {
+  z-index: 1000;
+}
+.projects .projects-container .owl-nav .disabled {
+  display: block;
+}
+.projects .projects-container .owl-nav .owl-next {
+  margin-left: 100px;
+}
+.projects .projects-container .owl-dots {
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.projects .projects-container .owl-dots .owl-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.projects .projects-container .owl-dots .active {
+  background-color: #4A3AD1;
 }
 
 .projects-card {
@@ -522,6 +554,9 @@ h2 {
   }
   .projects .projects-container {
     margin-top: 15px;
+  }
+  .projects .projects-container .owl-dots {
+    bottom: -30px;
   }
   .projects .owl-nav {
     position: relative;
@@ -1266,6 +1301,11 @@ footer .license {
   width: 1110px;
 }
 .team .team-avatar {
+  border: solid 3px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(104, 68, 208), rgba(104, 68, 208, 0));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   margin-left: auto;
   margin-right: auto;
   width: 184px;
@@ -1344,6 +1384,7 @@ footer .license {
     margin-bottom: 24px;
   }
   .team .team-avatar {
+    border: 0px;
     width: 148px;
     height: 148px;
   }
@@ -2877,6 +2918,7 @@ h3 {
   max-width: 734px !important;
 }
 .team-modal .team-avatar {
+  border: 0px;
   width: 300px;
   height: 395px;
   position: relative;
@@ -2910,6 +2952,9 @@ h3 {
   line-height: 38px;
   letter-spacing: 0.02em;
 }
+.team-modal .modal-container .modal-wrap .role {
+  margin-top: 4px;
+}
 .team-modal .modal-container .modal-wrap .role p {
   font-weight: 400;
   font-size: 12px;
@@ -2918,10 +2963,15 @@ h3 {
 }
 .team-modal .modal-container .modal-wrap .social {
   height: 24px;
-  border: 1px solid black;
   margin-top: 32px;
   display: flex;
   flex-direction: row;
+}
+.team-modal .modal-container .modal-wrap .social a {
+  margin: 0px 12px 0px 12px;
+}
+.team-modal .modal-container .modal-wrap .social a:nth-child(1) {
+  margin-left: 0px;
 }
 .team-modal .modal-container .modal-wrap .descr {
   margin-top: 24px;
@@ -3288,6 +3338,10 @@ h3 {
     height: 100%;
     bottom: 0px;
     padding: 0px 20px 20px 20px;
+  }
+  .team-modal .modal-wrap .social img {
+    height: 24px !important;
+    border-radius: 0 !important;
   }
   .team-modal .modal-wrap .name h1 {
     font-weight: 600;
