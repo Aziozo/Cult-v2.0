@@ -499,6 +499,9 @@ h2 {
 .projects-card .card-dscr {
   padding: 18px 16px;
 }
+.projects-card .card-img {
+  height: 200px;
+}
 
 @media screen and (max-width: 960px) {
   .index-page {
@@ -1232,6 +1235,12 @@ footer .license {
 @media screen and (max-width: 960px) {
   .values {
     margin-top: 72px;
+  }
+  .values .values-wrapper {
+    max-height: 100%;
+  }
+  .values h2 {
+    font-size: 18px;
   }
   .values h1 {
     min-width: 38px;

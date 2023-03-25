@@ -144,6 +144,13 @@
 }
 @media screen and (max-width: 960px){
     .values{
+        .values-wrapper {
+               
+                max-height: 100%;
+            }
+        h2{
+            font-size: 18px;
+        }
         margin-top: 72px;
         h1{
             min-width: 38px;
@@ -156,6 +163,7 @@
         flex-direction: column;
         gap: 71px !important;
     }
+    
 }
 
 // -----team-----
