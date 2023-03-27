@@ -106,6 +106,9 @@ h2{
         color: #FFFFFF;
     }
     .card .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 125px;
         height: 43px;
         cursor: pointer;
@@ -121,6 +124,7 @@ h2{
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.02em;
+        
     }
     @media (hover: hover) and (min-width: 600px) {
         .card:after {

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./dist/index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <title>Послуги</title>
 </head>
@@ -94,7 +95,8 @@
                     <p class="copy">Ми зібрали власну технічну базу, яка дозволяє підтримувати доволі різноманітні події. Здамо в
                         оренду й проконсультуємо,
                         що краще підійде під ваші потреби.</p>
-                    <button class="btn">Замовити</button>
+                    <a href="#get-service" rel="modal:open" class="btn">Замовити</a>
+                    
                 </div>
             </div>
             <div class="card" id="service-2">
@@ -105,7 +107,7 @@
                         відвідувачі. Без обмежень по формату чи кількості учасників. Втілимо ваше бачення й візьмемо на себе всі
                         організаційні
                         складнощі, пошуки й переживання.</p>
-                    <button class="btn">Замовити</button>
+                    <a href="#get-service" rel="modal:open" class="btn">Замовити</a>
                 </div>
             </div>
             <div class="card" id="service-3">
@@ -114,7 +116,7 @@
                     <p class="copy">Можемо провести трансляцію будь-якої складності: вистави, конференції, концерту або фестивалю. З
                         однієї локації або з
                         кількох — місць, міст або навіть країн.</p>
-                    <button class="btn">Замовити</button>
+                    <a href="#get-service" rel="modal:open" class="btn">Замовити</a>
                 </div>
             </div>
             <div class="card" id="service-4">
@@ -125,7 +127,7 @@
                         до фінального продукту можуть бути різні — нас не злякає велика зйомка, але й маленька, камерна історія не
                         залишиться
                         без належної уваги.</p>
-                    <button class="btn">Замовити</button>
+                    <a href="##get-service" rel="modal:open" class="btn">Замовити</a>
                 </div>
             </div>
         </div>
@@ -237,13 +239,13 @@
                 відправте нам свій
                 контакт через форму нижче</p>
             <form action="" class="contact-form">
-                <input type="text" name="partner-form__name" id="partner-form__name" placeholder="Як вас звати"
+                <input type="text" id="order-form__name" placeholder="Як вас звати"
                     required>
-                <input type="number" name="partner-form__phone" id="partner-form__phone"
+                <input type="number" id="order-form__phone"
                     placeholder="Залиште номер телефону" required>
-                <input type="email" name="partner-form__mail" id="partner-form__mail" placeholder="Залиште імейл"
+                <input type="email" id="order-form__mail" placeholder="Залиште імейл"
                     required>
-                <input type="text" name="partner-form__text" id="partner-form__text"
+                <input type="text" id="order-form__text"
                     placeholder="Що хочете запропонувати?" required>
                 <div class="contact-form__wrap">
                     <div class="politic">
@@ -263,13 +265,13 @@
                 нам свій
                 контакт через форму нижче</p>
             <form action="" class="contact-form">
-                <input type="text" name="partner-form__name" id="contact-form__name" placeholder="Як вас звати"
+                <input type="text" id="contact-form__name" placeholder="Як вас звати"
                     required>
-                <input type="number" name="partner-form__phone" id="contact-form__phone"
+                <input type="number" id="contact-form__phone"
                     placeholder="Залиште номер телефону" required>
-                <input type="email" name="partner-form__mail" id="contact-form__mail" placeholder="Залиште імейл"
+                <input type="email" id="contact-form__mail" placeholder="Залиште імейл"
                     required>
-                <input type="text" name="partner-form__text" id="contact-form__text"
+                <input type="text" id="contact-form__text"
                     placeholder="Що хочете запропонувати?" required>
                 <div class="contact-form__wrap">
                     <div class="politic">
@@ -374,5 +376,7 @@
         </div>
     </div>
 </section>
+<script src="/dist/jquery.js"></script>
+<script src="./dist/owl.carousel.min.js"></script>
 <script src="./dist/main.js"></script>
 </body>
