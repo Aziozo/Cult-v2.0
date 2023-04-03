@@ -1229,6 +1229,8 @@ footer .license {
   margin-top: 8px;
 }
 .values h1 {
+  max-width: 42px;
+  width: 100%;
   font-family: Montserrat-f;
   font-style: normal;
   font-weight: 200;
@@ -2960,7 +2962,7 @@ h3 {
 }
 .team-modal .modal-container .modal-wrap .role p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 14px;
   letter-spacing: 0.02em;
 }
