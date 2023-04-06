@@ -793,8 +793,15 @@ $('.slide').click(function(event){
   target = target.find('h3')
   $('.get-service__carousel').trigger('to.owl.carousel', i);
   $('.proj-id').html(target.text());
-  console.log(target);
-  console.log(i);
+
+});
 
 
+
+$('.slide').click(function(event){
+	var i = $(this).data('i');
+  var target = $(this)
+  target = target.find('h3')
+  $('.service-carousel__mobile').trigger('to.owl.carousel', i);
+  $('.proj-id').html(target.text());
 });
