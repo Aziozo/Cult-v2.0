@@ -40,14 +40,14 @@
                 letter-spacing: 0.02em;
                 color: #000000;
             }
-            button{
+            .button{
                 margin-top: 32px;
                 height: 51px;
-                width: 162px;
+                width: 200px;
                 background-color: transparent;
                 color: #000;
             }
-            button:hover {
+            .button:hover {
                 background-color: #6844D0;
                 color: #fff;
                 transition: all .2s;
@@ -57,7 +57,10 @@
 }
 @media screen and (max-width: 960px){
     .project-page{
-        margin-top: 64px !important; 
+        margin-top: 72px !important; 
+        section{
+            margin-top: 72px;
+        }
         .project{
             flex-direction: column;
             .project-descr{
@@ -68,7 +71,7 @@
                     font-weight: 600;
                     font-size: 24px;
                 }
-                button{
+                .button{
                     font-size: 14px;
                     font-weight: 500;
                     width: 100%;

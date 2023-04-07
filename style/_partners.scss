@@ -126,6 +126,10 @@
 
 @media screen and (max-width: 960px){
 .partners-page{
+    margin-top: 72px !important;
+    section{
+        margin-top: 120px;
+    }
     .partners-item{
         width: 100%;
         max-width: 100%;
@@ -157,6 +161,7 @@ p{
 
 }
 .banner{
+    margin-top: 120px;
     position: relative;
     align-items: center;
     justify-content: flex-start;

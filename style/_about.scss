@@ -6,11 +6,9 @@
 }
 
 
-
-
 @media screen and (max-width: 960px){
-    .services-page section {
-            margin-top: 72ppx;
+    .about-page section {
+            margin-top: 72px;
         }
     .about-page-wrapper {
         .main-content {
@@ -61,6 +59,9 @@
     h3{
         margin-top: 20px;
         font-size: 32px;
+    }
+    .reverce{
+        margin-top: 72px;
     }
 
     .about-us__container {
@@ -525,6 +526,7 @@
 
 @media screen and (max-width: 960px){
     .reports{
+        margin-top: 72px !important;
         h3{
             font-size: 32px;
         }

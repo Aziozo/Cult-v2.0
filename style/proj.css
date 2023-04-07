@@ -426,7 +426,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .about {
-    margin-top: 64px;
+    margin-top: 72px;
     flex-direction: column;
     align-items: center;
   }
@@ -510,6 +510,9 @@ h2 {
   max-width: 350px;
   background: #F9F9F9;
   cursor: pointer;
+}
+.projects-card a {
+  color: #000000;
 }
 .projects-card h3 {
   font-family: "Raleway";
@@ -979,7 +982,7 @@ h2 {
 
 @media screen and (max-width: 960px) {
   .support {
-    margin-top: 100px;
+    margin-top: 72px;
   }
   .support .support__h2 {
     font-family: "Raleway";
@@ -1144,8 +1147,8 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
-  .services-page section {
-    margin-top: 72ppx;
+  .about-page section {
+    margin-top: 72px;
   }
   .about-page-wrapper .main-content {
     margin-top: 0px;
@@ -1191,6 +1194,9 @@ footer .license {
   .about-us h3 {
     margin-top: 20px;
     font-size: 32px;
+  }
+  .about-us .reverce {
+    margin-top: 72px;
   }
   .about-us .about-us__container {
     flex-direction: column !important;
@@ -1586,6 +1592,7 @@ footer .license {
 
 @media screen and (max-width: 960px) {
   .reports {
+    margin-top: 72px !important;
     margin-top: 72px;
   }
   .reports h3 {
@@ -1680,14 +1687,14 @@ footer .license {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.project-page .project .project-descr button {
+.project-page .project .project-descr .button {
   margin-top: 32px;
   height: 51px;
-  width: 162px;
+  width: 200px;
   background-color: transparent;
   color: #000;
 }
-.project-page .project .project-descr button:hover {
+.project-page .project .project-descr .button:hover {
   background-color: #6844D0;
   color: #fff;
   transition: all 0.2s;
@@ -1695,7 +1702,10 @@ footer .license {
 
 @media screen and (max-width: 960px) {
   .project-page {
-    margin-top: 64px !important;
+    margin-top: 72px !important;
+  }
+  .project-page section {
+    margin-top: 72px;
   }
   .project-page .project {
     flex-direction: column;
@@ -1708,7 +1718,7 @@ footer .license {
     font-weight: 600;
     font-size: 24px;
   }
-  .project-page .project .project-descr button {
+  .project-page .project .project-descr .button {
     font-size: 14px;
     font-weight: 500;
     width: 100%;
@@ -1892,7 +1902,7 @@ footer .license {
 }
 @media screen and (max-width: 960px) {
   .services-page .our-services {
-    margin-top: 64px;
+    margin-top: 72px;
   }
   .services-page .our-services .services-grid {
     grid-template-columns: 1fr;
@@ -1933,7 +1943,7 @@ footer .license {
 
 @media screen and (max-width: 960px) {
   .services-page {
-    margin-top: 64px !important;
+    margin-top: 72px !important;
   }
 }
 .partners-page section {
@@ -2051,6 +2061,12 @@ footer .license {
 }
 
 @media screen and (max-width: 960px) {
+  .partners-page {
+    margin-top: 72px !important;
+  }
+  .partners-page section {
+    margin-top: 120px;
+  }
   .partners-page .partners-item {
     width: 100%;
     max-width: 100%;
@@ -2077,6 +2093,7 @@ footer .license {
     margin-top: 12px;
   }
   .banner {
+    margin-top: 120px;
     position: relative;
     align-items: center;
     justify-content: flex-start;
@@ -2393,9 +2410,47 @@ footer .license {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: red;
-  opacity: 0.5;
   height: 1000px;
+}
+.some-news .other-news .news-block {
+  margin-bottom: 24px;
+}
+.some-news .other-news h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 14px;
+}
+.some-news .other-news .news-pic {
+  max-width: 255px;
+  height: 160px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.some-news .other-news h3 {
+  margin-top: 14px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.some-news .other-news p {
+  margin-top: 6px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
 }
 
 @media screen and (max-width: 960px) {
@@ -2962,7 +3017,7 @@ h3 {
 }
 .team-modal .modal-container .modal-wrap .role p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 14px;
   letter-spacing: 0.02em;
 }
