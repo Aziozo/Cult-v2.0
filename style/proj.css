@@ -3821,6 +3821,14 @@ h3 {
     margin-top: 72px;
     flex-direction: column;
   }
+  .project-content .project-block .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100%;
+  }
+  .project-content .project-block .gallery a {
+    height: 134px;
+  }
   .project-content .project-block .stats {
     flex-direction: column;
   }

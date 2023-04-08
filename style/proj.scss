@@ -312,6 +312,14 @@
         .project-block {
             margin-top: 72px;
             flex-direction: column;
+            .gallery {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    height: 100%;
+                    a{
+                        height: 134px;
+                    }
+                }
             .stats{
                 flex-direction: column;
                 & :nth-child(1){
@@ -332,6 +340,7 @@
             margin-top: 40px;
             flex-direction: column;
         }
+        
         #more{
         .owl-nav button {
                 margin: 0px 50px 0px 50px;
