@@ -3648,6 +3648,7 @@ h3 {
   color: #4A3AD1;
 }
 .project-content .project-block .stats h3 {
+  margin-top: 14px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
