@@ -104,6 +104,7 @@
                 margin-right: 30px;
                 max-width: 255px;
             }
+            
             .count{
             font-family: Montserrat-f;
             font-style: normal;
@@ -122,16 +123,19 @@
             letter-spacing: 0.02em;
             color: #000000;
             }
-            .stats__p{
+            p {
             font-family: 'Raleway';
             font-style: normal;
-            font-weight: 250;
+            font-weight: 500;
             font-size: 14px;
             line-height: 140%;
             letter-spacing: 0.02em;
             color: #000000;
             }
 
+        }
+        .stats-wrap:last-child {
+            margin-right: 0px;
         }
         .gallery {
             margin-top: 32px;

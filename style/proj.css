@@ -3656,14 +3656,17 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.project-content .project-block .stats .stats__p {
+.project-content .project-block .stats p {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 250;
+  font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.02em;
   color: #000000;
+}
+.project-content .project-block .stats-wrap:last-child {
+  margin-right: 0px;
 }
 .project-content .project-block .gallery {
   margin-top: 32px;
