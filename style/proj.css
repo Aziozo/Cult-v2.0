@@ -3657,9 +3657,10 @@ h3 {
   color: #000000;
 }
 .project-content .project-block .stats p {
+  margin-top: 6px;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.02em;
