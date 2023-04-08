@@ -418,7 +418,8 @@
         $('.select').select2({
             minimumResultsForSearch: Infinity,
             placeholder: "Оберіть послугу",
-             allowClear: false,
+            allowClear: false,
+            forceDropdownPosition: 'below',
         });
         var $eventSelect = $(".select");
         $eventSelect.on("select2:select", function (e) { 
