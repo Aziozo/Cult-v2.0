@@ -1964,7 +1964,7 @@ footer .license {
 }
 .services-exemple .services-wrap .select2-container .select2-selection--single {
   height: 43px;
-  width: 200px;
+  width: auto;
 }
 .services-exemple .services-wrap .select2-selection {
   display: flex;
