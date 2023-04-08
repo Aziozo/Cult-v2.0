@@ -1945,6 +1945,8 @@ footer .license {
   margin-top: 100px;
 }
 .services-exemple .services-wrap {
+  padding-right: 2px;
+  padding-left: 36px;
   margin-top: 14px;
   display: flex;
   justify-content: space-between;
@@ -1987,6 +1989,9 @@ footer .license {
   max-height: 191px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.services-exemple .services-grid-container {
+  margin-top: 32px;
 }
 .services-exemple .non-selected {
   display: none;

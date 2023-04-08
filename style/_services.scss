@@ -241,6 +241,8 @@ h2{
 .services-exemple{
     margin-top: 100px;
     .services-wrap{
+        padding-right: 2px;
+        padding-left: 36px;
         margin-top: 14px;
         display: flex;
         justify-content: space-between;
@@ -255,8 +257,6 @@ h2{
         letter-spacing: 0.02em;
         text-transform: uppercase;
         }
-        
-        
         .select2-container .select2-selection--single{
             height: 43px;
             width: 200px;
@@ -284,6 +284,9 @@ h2{
             max-height: 191px;
             object-fit: cover;
         }
+    }
+    .services-grid-container{
+        margin-top: 32px;
     }
     .non-selected{
         display: none;
