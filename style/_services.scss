@@ -352,6 +352,16 @@ h2{
         }
         .services-grid-container{
             margin-top: 85px;
+            .services-grid{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                img{
+                    max-width: 194px;
+                    object-fit: cover;
+                    max-height: 134px;
+                }
+                
+            }
         }
     }
 }

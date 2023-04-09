@@ -2063,6 +2063,16 @@ footer .license {
   .services-exemple .services-grid-container {
     margin-top: 85px;
   }
+  .services-exemple .services-grid-container .services-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .services-exemple .services-grid-container .services-grid img {
+    max-width: 194px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 134px;
+  }
 }
 .partners-page section {
   margin-top: 148px;
