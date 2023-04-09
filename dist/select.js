@@ -72,7 +72,7 @@
       }
 
       if (!enoughRoomBelow && enoughRoomAbove && !isCurrentlyAbove) {
-        newDirection = 'above';
+        newDirection = 'below';
       } else if (!enoughRoomAbove && enoughRoomBelow && isCurrentlyAbove) {
         newDirection = 'below';
       }
@@ -98,3 +98,4 @@
   };
 
 })(window.jQuery);
+
