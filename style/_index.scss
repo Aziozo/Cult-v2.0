@@ -746,6 +746,12 @@ h2{
             >img{
                 border-radius: 8px;
                 object-fit: cover;
+                transition: transform 0.2s ease-in-out;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.05);
+                }
             }
             .news__card-description{
                 position: relative;

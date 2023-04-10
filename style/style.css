@@ -1056,6 +1056,10 @@ h2 {
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+.news .news__wrapper .news__card:hover img {
+  transform: scale(1.05);
 }
 .news .news__wrapper .news__card .news__card-description {
   position: relative;
