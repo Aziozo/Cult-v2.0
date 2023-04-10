@@ -1989,10 +1989,11 @@ footer .license {
 .services-exemple .services-wrap .select2-container .select2-selection--single .select2-selection__rendered {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
+  padding-left: 24px;
 }
 .services-exemple .services-grid {
   display: grid;
@@ -2017,12 +2018,26 @@ footer .license {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-top: 0px;
-  width: 200px;
+  width: 233px;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 12px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 19px !important;
 }
 
 .select2-container--open .select2-dropdown--below {
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -2038,6 +2053,7 @@ footer .license {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #000000;
+  list-style: inside;
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
@@ -2045,8 +2061,26 @@ footer .license {
   background-color: transparent !important;
 }
 
+.select2-results ul {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select2-results ul li {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
 .select2-results__option {
-  padding: 9px 20px 9px 20px !important;
+  padding: 0px !important;
 }
 
 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
