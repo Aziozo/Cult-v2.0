@@ -540,8 +540,18 @@ h2{
             position: absolute;
             right:0px;
             display: flex;
+            
+            .owl-prev:hover{
+                background: url(../img/wprew.svg) center no-repeat !important;
+                background-color: #6844D0 !important;
+            }
+            .owl-next:hover {
+                background: url(../img/wnext.svg) center no-repeat !important; 
+                background-color: #6844D0 !important;
+            }
             button{
                 margin: 0px 15px 0px 15px;
+                transition: all .2s ease-in-out;
             }
         }
         .owl-dots{

@@ -857,8 +857,17 @@ h2 {
   right: 0px;
   display: flex;
 }
+.payment .payment-carousel .owl-nav .owl-prev:hover {
+  background: url(../img/wprew.svg) center no-repeat !important;
+  background-color: #6844D0 !important;
+}
+.payment .payment-carousel .owl-nav .owl-next:hover {
+  background: url(../img/wnext.svg) center no-repeat !important;
+  background-color: #6844D0 !important;
+}
 .payment .payment-carousel .owl-nav button {
   margin: 0px 15px 0px 15px;
+  transition: all 0.2s ease-in-out;
 }
 .payment .payment-carousel .owl-dots {
   display: flex;
@@ -3238,6 +3247,20 @@ h3 {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.owl-nav button {
+  transition: all 0.2s ease-in-out;
+}
+
+.owl-prev:hover {
+  background: url(../img/wprew.svg) center no-repeat !important;
+  background-color: #6844D0 !important;
+}
+
+.owl-next:hover {
+  background: url(../img/wnext.svg) center no-repeat !important;
+  background-color: #6844D0 !important;
 }
 
 @media screen and (max-width: 960px) {
