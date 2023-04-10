@@ -613,6 +613,10 @@ h2 {
 .services .services-carousel {
   margin-top: 54px;
 }
+.services .slide {
+  margin-bottom: 5px;
+  margin-left: 2px;
+}
 .services .slide h3 {
   font-family: "Raleway";
   font-style: normal;
@@ -622,9 +626,44 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.services .slide img {
+.services .slide .image-container {
   margin-top: 12px;
+  position: relative;
   width: 255px;
+}
+.services .slide .image-container img {
+  display: block;
+  width: 100%;
+}
+.services .slide a {
+  text-decoration: none;
+}
+.services .slide .image-container .image-overlay {
+  position: absolute;
+  color: #ffffff;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 8px 12px 8px 12px;
+}
+.services .slide .image-container:hover .image-overlay {
+  opacity: 1;
+}
+.services .slide .image-container:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 @media screen and (max-width: 960px) {
