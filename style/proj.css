@@ -687,6 +687,12 @@ h2 {
   .services .services-descr .services__p {
     margin-top: 24px;
   }
+  .services .slide {
+    width: 100%;
+  }
+  .services .slide .image-container {
+    width: 100%;
+  }
   .services .owl-nav {
     position: relative;
     margin-top: 15px;
