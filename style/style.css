@@ -2495,11 +2495,11 @@ footer .license {
 }
 .news-page .news .news-descr > p {
   margin-top: 18px;
+  line-height: 140%;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
   letter-spacing: 0.02em;
   color: #000000;
 }
