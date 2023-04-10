@@ -1133,6 +1133,7 @@ h2 {
     max-width: 181px;
   }
   .news .news-button a {
+    height: 64px;
     width: 100%;
     font-family: "Raleway";
     font-style: normal;
