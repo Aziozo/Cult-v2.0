@@ -1095,6 +1095,34 @@ h2 {
   letter-spacing: 0.02em;
   color: #000000;
 }
+.news .news-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+}
+.news .news-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 51px;
+  border: 1px solid #6844D0;
+  border-radius: 18px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #000;
+  transition: all 0.2s;
+}
+.news .news-button a:hover {
+  background-color: #6844D0;
+  border: 1px solid #fff;
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 960px) {
   .news .news__wrapper {
@@ -1103,6 +1131,16 @@ h2 {
   }
   .news .news__wrapper .news__card {
     max-width: 181px;
+  }
+  .news .news-button a {
+    width: 100%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #000000;
   }
 }
 .owl-dot {
