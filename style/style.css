@@ -1116,8 +1116,8 @@ h2 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 19px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -1126,7 +1126,7 @@ h2 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #000;
@@ -2505,7 +2505,13 @@ footer .license {
 }
 .news-page .news .news-descr a {
   position: absolute;
+  ffont-family: "Raleway";
+  font-style: normal;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #000000;
   bottom: 0px;
   width: 154px;
   height: 51px;
@@ -2700,6 +2706,15 @@ footer .license {
   letter-spacing: 0.02em;
   color: #000000;
 }
+.some-news .news-wrap .new-wrap__head .date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
 .some-news .news-wrap .news-wrap__body .news-body-img {
   margin-bottom: 32px;
 }
@@ -2740,11 +2755,13 @@ footer .license {
   color: #000000;
 }
 .some-news .other-news {
+  position: sticky;
+  top: 0;
   max-width: 255px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 1000px;
+  height: 100%;
 }
 .some-news .other-news .news-block {
   margin-bottom: 24px;
