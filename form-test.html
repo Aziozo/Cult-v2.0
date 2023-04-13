@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тесты форм</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfH24QlAAAAABshHljnvFF_HfrsgXfnYI47I6VJ"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
 </head>
 
 <body>
     <section class="form__container">
-        <form action="" class="form">
-            <input type="text" placeholder="Имя" required>
-            <input type="email" name="email" id="form__email" required>
-            <div class="g-recaptcha" data-sitekey="6LfH24QlAAAAABshHljnvFF_HfrsgXfnYI47I6VJ"></div>
-            <input type="submit">
+        <form action="/" method="POST">
+            <div class="g-recaptcha" data-sitekey="6Lc0A4UlAAAAAGWPbOQ1J832-D8gys2-_Saxg-Xf"></div>
+            <input type="text" placeholder="name" required>
+            <input type="number" required>
+            <input type="submit" value="Submit">
         </form>
     </section>
 
     
-    
+
 </body>
 
 </html>
