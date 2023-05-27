@@ -136,7 +136,7 @@ h2{
         letter-spacing: 0.02em;
         
     }
-    @media (hover: hover) and (min-width: 600px) {
+    @media  (min-width: 320px) {
         .card:after {
             transform: translateY(0);
         }

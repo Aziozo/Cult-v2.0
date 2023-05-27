@@ -2019,7 +2019,7 @@ footer .license {
   line-height: 19px;
   letter-spacing: 0.02em;
 }
-@media (hover: hover) and (min-width: 600px) {
+@media (min-width: 320px) {
   .services-page .our-services .card:after {
     transform: translateY(0);
   }
