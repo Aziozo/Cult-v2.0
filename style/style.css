@@ -536,6 +536,7 @@ h2 {
 }
 .projects-card .card-img {
   height: 200px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 @media screen and (max-width: 960px) {
