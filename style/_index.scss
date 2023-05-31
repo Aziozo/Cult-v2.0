@@ -284,6 +284,8 @@ h2{
         }
 
         .image-container img {
+            object-fit: cover;
+            border-radius: 12px;
             display: block;
             width: 100%;
         }
