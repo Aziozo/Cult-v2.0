@@ -633,6 +633,9 @@ h2 {
   width: 255px;
 }
 .services .slide .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
   display: block;
   width: 100%;
 }
