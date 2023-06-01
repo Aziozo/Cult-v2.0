@@ -1837,6 +1837,9 @@ footer .license {
 .project-page .project {
   display: flex;
 }
+.project-page .project img {
+  border-radius: 12px;
+}
 .project-page .project .project-descr {
   margin-left: 95px;
   max-width: 540px;
@@ -2483,6 +2486,7 @@ footer .license {
   display: flex;
 }
 .news-page .news .news-img {
+  border-radius: 12px;
   max-width: 540px;
 }
 .news-page .news .news-descr {
@@ -2605,6 +2609,7 @@ footer .license {
   display: flex;
 }
 .news-page .owl-carousel .news-item .news-container .news-img {
+  border-radius: 12px;
   max-width: 240px;
   width: 100%;
 }
@@ -2725,6 +2730,7 @@ footer .license {
   color: #000000;
 }
 .some-news .news-wrap .news-wrap__body .news-body-img {
+  border-radius: 12px;
   margin-bottom: 32px;
 }
 .some-news .news-wrap .news-wrap__body .news-article h2 {

@@ -17,7 +17,9 @@
     }
     .project{
         display: flex;
-        
+        img{
+            border-radius: 12px;
+        }
         .project-descr{
             margin-left: 95px;
             max-width: 540px;
