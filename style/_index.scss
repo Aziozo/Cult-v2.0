@@ -567,6 +567,11 @@ h2{
     .payment-item{
         width: 350px;
         height: 329px;
+
+        .item-img{
+            object-fit: cover;
+            border-radius: 12px 12px 0px 0px;
+        }
     }
 
     .item-descr{

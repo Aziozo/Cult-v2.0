@@ -881,6 +881,11 @@ h2 {
   width: 350px;
   height: 329px;
 }
+.payment .payment-item .item-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
 .payment .item-descr {
   padding: 18px 16px 18px 16px;
 }
