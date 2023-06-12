@@ -633,8 +633,7 @@ h2 {
   width: 255px;
 }
 .services .slide .image-container img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
   display: block;
   width: 100%;
@@ -754,8 +753,7 @@ h2 {
   height: 131px;
 }
 .partners .partners-logos .logo img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .partners .partners-logos .logo #hoe {
   width: 96px;
@@ -882,8 +880,7 @@ h2 {
   height: 329px;
 }
 .payment .payment-item .item-img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
 .payment .item-descr {
@@ -974,15 +971,6 @@ h2 {
 }
 .payment .liqpay input:focus {
   outline: none;
-}
-.payment .liqpay input::-moz-placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #000000;
 }
 .payment .liqpay input::placeholder {
   font-family: "Raleway";
@@ -1108,8 +1096,7 @@ h2 {
 }
 .news .news__wrapper .news__card > img {
   border-radius: 8px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: transform 0.2s ease-in-out;
 }
 .news .news__wrapper .news__card:hover img {
@@ -1492,8 +1479,7 @@ footer .license {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 .team .team-member {
@@ -1503,6 +1489,7 @@ footer .license {
   margin-bottom: 20px;
   width: 100%;
   height: 285px;
+  -webkit-filter: grayscale(99%);
   filter: grayscale(99%);
 }
 .team .team-member > a {
@@ -1512,6 +1499,7 @@ footer .license {
 }
 .team .team-member:hover {
   transition: filter 0.2s ease-in-out;
+  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .team .team-member .name {
@@ -2172,8 +2160,7 @@ footer .license {
 .services-exemple .services-grid img {
   max-width: 278px;
   max-height: 191px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .services-exemple .services-grid-container {
   margin-top: 32px;
@@ -2287,8 +2274,7 @@ footer .license {
   }
   .services-exemple .services-grid-container .services-grid img {
     max-width: 194px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     max-height: 134px;
   }
 }
@@ -2770,6 +2756,7 @@ footer .license {
   color: #000000;
 }
 .some-news .other-news {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   max-width: 255px;
@@ -2795,8 +2782,7 @@ footer .license {
   max-width: 255px;
   height: 160px;
   border-radius: 6px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .some-news .other-news h3 {
   margin-top: 14px;
@@ -2870,8 +2856,7 @@ footer .license {
     height: 100%;
   }
   .news-page .owl-carousel .news-item .news-container .news-img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 6px;
   }
   .news-page .owl-carousel .news-item .news-container .news-wrap {
@@ -3032,14 +3017,6 @@ footer .license {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.02em;
-}
-.email .email-container .email-form .email-form__wrapper form input[type=email]::-moz-placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
@@ -3364,8 +3341,7 @@ h3 {
   position: relative;
 }
 .team-modal .team-avatar img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   max-width: 300px;
   max-height: 395px;
@@ -3490,15 +3466,6 @@ h3 {
   letter-spacing: 0.02em;
   color: #000000;
 }
-.order .modal-container .contact-form > input::-moz-placeholder, .contact-us .modal-container .contact-form > input::-moz-placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
 .order .modal-container .contact-form > input::placeholder,
 .contact-us .modal-container .contact-form > input::placeholder {
   font-family: "Raleway";
@@ -3615,8 +3582,7 @@ h3 {
   border-radius: 18px;
   width: 443px;
   height: 329px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .get-service .wrapper h2 {
   transition: all 0.2s;
@@ -3677,15 +3643,6 @@ h3 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-.get-service .form-wrapper .contact-form > input::-moz-placeholder {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.02em;
@@ -3764,8 +3721,7 @@ h3 {
     display: block !important;
   }
   .modal .modal-container img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 322px !important;
     border-radius: 15px 15px 0px 0px !important;
   }

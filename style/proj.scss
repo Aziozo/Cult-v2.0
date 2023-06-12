@@ -153,6 +153,133 @@
                }
             }
         }
+
+        .project-media {
+            margin-top: 32px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            &-card {
+                margin-right: 25px;
+                margin-bottom: 44px;
+                width: 256px;
+                height: 275px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+
+                .card-img {
+                    width: 100%;
+                    height: 160px;
+                    border-radius: 8px;
+                    background-color: teal;
+
+                    img {
+                        border-radius: 8px;
+                        object-fit: contain;
+                    }
+                }
+
+                .wrapper{
+                    margin-top: 14px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h1{
+                        font-family: 'Raleway';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.02em;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+
+                    .date{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 12px;
+                        text-align: right;
+                        letter-spacing: 0.02em;
+                        color: #000000;
+                    }
+                }
+
+                p{
+                    margin-top: 10px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 150%;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                }
+            }
+
+            .no-margin{
+                margin-right: 0px;
+            }
+        }
+
+        .more {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 32px;
+            width: 200px;
+            height: 48px;
+            background: #FFFFFF;
+            border: 1px solid #6844D0;
+            border-radius: 18px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: #000000;
+            transition: all .2s ease-in;
+
+            &:hover{
+                color: #FFFFFF;;
+                background-color: #6844D0;;
+            }
+
+            &-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 960px){
+            .project-media{
+            flex-direction: column;
+
+            &-card{
+                width: 100%;
+                margin-right: 0px;
+            }
+            }
+            
+        }
     }
 
     #more{
@@ -298,6 +425,8 @@
 .owl-carousel .owl-item img{
     max-width: 240px;
 }
+
+
 
 @media screen and (max-width: 960px){
     .project-hero{

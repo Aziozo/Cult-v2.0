@@ -812,3 +812,42 @@ $('.services-page .card').click(function(event){
   $('.get-service__carousel').trigger('to.owl.carousel', i);
   $('.proj-id').html(target.text());
 });
+
+$(document).ready(function () {
+  var screenWidth = $(window).width();
+  var initialItems = screenWidth < 960 ? 2 : 4;
+
+  $('.project-media .project-media-card:gt(' + (initialItems - 1) + ')').hide();
+  $('.project-media .project-media-card:nth-child(4n)').css(
+    'margin-right',
+    '0'
+  );
+
+  $('.more').click(function () {
+    var visibleItems = $('.project-media .project-media-card:visible').length;
+    var nextItems = screenWidth < 960 ? 2 : 4;
+
+    $('.project-media .project-media-card:hidden:lt(' + nextItems + ')').show();
+    $(
+      '.project-media .project-media-card:nth-child(' +
+        ((visibleItems + nextItems) * 2 + 3) +
+        ')'
+    ).css('margin-right', '0');
+
+    if ($('.project-media .project-media-card:hidden').length === 0) {
+      $('.more').hide();
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
