@@ -827,7 +827,7 @@ $(document).ready(function () {
     var visibleItems = $('.project-media .project-media-card:visible').length;
     var nextItems = screenWidth < 960 ? 2 : 4;
 
-    $('.project-media .project-media-card:hidden:lt(' + nextItems + ')').show();
+    $('.project-media .project-media-card:hidden:lt(' + nextItems + ')').fadeIn(500);
     $(
       '.project-media .project-media-card:nth-child(' +
         ((visibleItems + nextItems) * 2 + 3) +
