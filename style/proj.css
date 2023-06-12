@@ -4039,13 +4039,14 @@ h3 {
 }
 .project-content .project-block .project-media-card .card-img {
   width: 100%;
-  height: 160px;
+  height: fit-content;
   border-radius: 8px;
-  background-color: teal;
 }
 .project-content .project-block .project-media-card .card-img img {
+  width: 255px;
+  height: 160px;
   border-radius: 8px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .project-content .project-block .project-media-card .wrapper {
   margin-top: 14px;
@@ -4129,6 +4130,11 @@ h3 {
   .project-content .project-block .project-media-card {
     width: 100%;
     margin-right: 0px;
+    height: 360px;
+  }
+  .project-content .project-block .project-media-card .card-img img {
+    width: 100%;
+    height: 200px;
   }
 }
 .project-content #more {
