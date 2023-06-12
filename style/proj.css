@@ -4128,6 +4128,7 @@ h3 {
     flex-direction: column;
   }
   .project-content .project-block .project-media-card {
+    margin-bottom: 32px;
     width: 100%;
     margin-right: 0px;
     height: 360px;
