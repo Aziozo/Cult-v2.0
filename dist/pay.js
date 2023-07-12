@@ -146,7 +146,7 @@ document.querySelector('#check').addEventListener('click', function(){
       language: 'uk',
     };  
     param.description =
-      'Безповоротна фінансова допомога. Проєкт' + chageProjectName;
+      'Безповоротна фінансова допомога. Проєкт ' + chageProjectName;
     var summ = $('#summ').val();
     if (summ < 1)
     {
