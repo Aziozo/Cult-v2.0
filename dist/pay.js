@@ -134,7 +134,7 @@ function sha1 (str) {
 
 var owls = $('.payment-carousel');
 owls.on('translated.owl.carousel', function (event) {
-  chageProjectName = $('.liqpay-project__name').text();
+  chageProjectName = $('.liqpay-project__name');
   console.log(chageProjectName);
 });
 
@@ -152,7 +152,7 @@ document.querySelector('#check').addEventListener('click', function(){
       language: 'uk',
     };  
     param.description =
-      'Безповоротна фінансова допомога. Проєкт ' + chageProjectName;
+      'Безповоротна фінансова допомога. Проєкт' + chageProjectName;
     var summ = $('#summ').val();
     if (summ < 1)
     {
