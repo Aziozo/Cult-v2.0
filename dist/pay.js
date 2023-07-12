@@ -131,17 +131,9 @@ function sha1 (str) {
   temp = _cvtHex(H0) + _cvtHex(H1) + _cvtHex(H2) + _cvtHex(H3) + _cvtHex(H4)
   return temp
 }
-$(document).ready(function() {
-var owls = $('.payment-carousel');
-owls.on('translated.owl.carousel', function (event) {
-  chageProjectName = $('.liqpay-project__name').text().trim();
-  console.log(chageProjectName);
-});
-})
-
 
 document.querySelector('#check').addEventListener('click', function(){
-    chageProjectName = $('.liqpay-project__name').text()
+    chageProjectName = $('.liqpay-project__name').text().trim();
     let pubkey = 'sandbox_bpISwXbEenagrmrqaspArKtCYez4UH7ReUwLaFHh';
     let param = {
       public_key: 'sandbox_i86618727647',
