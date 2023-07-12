@@ -160,3 +160,4 @@ document.querySelector('#check').addEventListener('click', function(){
         $('#signature').val(signature);
     }
 });
+
