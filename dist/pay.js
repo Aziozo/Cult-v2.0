@@ -134,7 +134,7 @@ function sha1 (str) {
 $(document).ready(function() {
 var owls = $('.payment-carousel');
 owls.on('translated.owl.carousel', function (event) {
-  chageProjectName = $('.liqpay-project__name');
+  chageProjectName = $('.liqpay-project__name').text();
   console.log(chageProjectName);
 });
 })
