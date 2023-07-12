@@ -164,35 +164,3 @@ document.querySelector('#check').addEventListener('click', function(){
     }
 });
 
-$('.payment-carousel').owlCarousel({
-  items: 1,
-  loop: true,
-  mouseDrag: true,
-  nav: true,
-  dots: true,
-  autoplay: false,
-});
-// ---change project name via carousel---
-var owl = $('.payment-carousel');
-owl.on('translated.owl.carousel', function (event) {
-  $('.liqpay-project__name').html($('.active .item__h3').text());
-});
-
-// ------- summ-buttons -----------
-$('#one').click(function () {
-  $('#summ').val('100');
-});
-$('#two').click(function () {
-  $('#summ').val('200');
-});
-$('#five').click(function () {
-  $('#summ').val('500');
-});
-$('#input-clear').click(function () {
-  $('#summ').val('');
-});
-
-// cleaner summ
-$('.cleaner').click(function () {
-  $('#summ').val('');
-});

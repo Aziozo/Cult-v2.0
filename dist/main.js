@@ -842,7 +842,10 @@ $(document).ready(function () {
 
 
 
-
+$('.payment .owl-prev').click(function(){
+  console.log('1');
+  console.log(chageProjectName);
+})
 
 
 
