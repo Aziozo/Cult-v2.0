@@ -842,7 +842,9 @@ $(document).ready(function () {
 
 
 
-
+$('.payment button').click(function(){
+  console.log(chageProjectName);
+})
 
 
 
