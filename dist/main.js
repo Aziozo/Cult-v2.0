@@ -842,7 +842,7 @@ $(document).ready(function () {
 
 
 
-$('.payment button').click(function(){
+$('.payment .owl-prev').click(function(){
   console.log(chageProjectName);
 })
 
