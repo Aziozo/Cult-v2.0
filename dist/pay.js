@@ -134,16 +134,17 @@ document.querySelector('#check').addEventListener('click', function(){
     let chageProjectName = $('.liqpay-project__name').text()
     let pubkey = 'sandbox_bpISwXbEenagrmrqaspArKtCYez4UH7ReUwLaFHh';
     let param = {
-        public_key: "sandbox_i86618727647",
-        version: "3",
-        action: "pay",
-        amount: "0",
-        currency: "UAH",
-        description: "1",
-        order_id: "000001",
-        language: "uk"
-    }  
-    param.description = chageProjectName;
+      public_key: 'sandbox_i86618727647',
+      version: '3',
+      action: 'paydonate',
+      amount: '0',
+      currency: 'UAH',
+      description: '1',
+      order_id: '000001',
+      language: 'uk',
+    };  
+    param.description =
+      'Безповоротна фінансова допомога. Проєкт ' + chageProjectName;
     var summ = $('#summ').val();
     if (summ < 1)
     {
