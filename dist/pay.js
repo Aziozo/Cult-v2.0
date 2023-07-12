@@ -132,6 +132,11 @@ function sha1 (str) {
   return temp
 }
 
+var owls = $('.payment-carousel');
+owls.on('translated.owl.carousel', function (event) {
+  console.log(chageProjectName);
+});
+
 document.querySelector('#check').addEventListener('click', function(){
     chageProjectName = $('.liqpay-project__name').text()
     let pubkey = 'sandbox_bpISwXbEenagrmrqaspArKtCYez4UH7ReUwLaFHh';
